@@ -44,8 +44,8 @@
       "full_name": "openclaw/openclaw",
       "html_url": "https://github.com/openclaw/openclaw",
       "language": "TypeScript",
-      "open_issues": 6425,
-      "pushed_at": "2026-07-06T15:41:28Z",
+      "open_issues": 6424,
+      "pushed_at": "2026-07-06T15:44:16Z",
       "recent_release": {
         "draft": false,
         "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11",
@@ -72,7 +72,7 @@
         "personal"
       ],
       "trend_score": 728.005,
-      "updated_at": "2026-07-06T15:41:59Z"
+      "updated_at": "2026-07-06T15:44:02Z"
     },
     {
       "created_at": "2017-03-15T13:45:52Z",
@@ -89,7 +89,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 359488,
+      "stars": 359489,
       "topics": [
         "angular-roadmap",
         "backend-roadmap",
@@ -110,8 +110,8 @@
         "software-architect-roadmap",
         "vue-roadmap"
       ],
-      "trend_score": 689.573,
-      "updated_at": "2026-07-06T15:40:42Z"
+      "trend_score": 689.574,
+      "updated_at": "2026-07-06T15:44:03Z"
     },
     {
       "created_at": "2014-06-27T21:00:06Z",
@@ -155,7 +155,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 303249,
+      "stars": 303250,
       "topics": [
         "awesome",
         "awesome-list",
@@ -166,8 +166,8 @@
         "self-hosted",
         "selfhosted"
       ],
-      "trend_score": 640.68,
-      "updated_at": "2026-07-06T15:41:07Z"
+      "trend_score": 640.681,
+      "updated_at": "2026-07-06T15:44:07Z"
     },
     {
       "created_at": "2017-04-12T05:07:46Z",
@@ -222,7 +222,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 247562,
+      "stars": 247563,
       "topics": [
         "ai",
         "brainstorming",
@@ -233,8 +233,8 @@
         "subagent-driven-development",
         "superpowers"
       ],
-      "trend_score": 594.556,
-      "updated_at": "2026-07-06T15:41:19Z"
+      "trend_score": 594.557,
+      "updated_at": "2026-07-06T15:43:35Z"
     },
     {
       "created_at": "2013-05-24T16:15:54Z",
@@ -278,10 +278,10 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 238569,
+      "stars": 238570,
       "topics": [],
-      "trend_score": 578.435,
-      "updated_at": "2026-07-06T15:41:31Z"
+      "trend_score": 578.436,
+      "updated_at": "2026-07-06T15:43:36Z"
     },
     {
       "created_at": "2026-01-18T00:51:51Z",
@@ -316,11 +316,11 @@
       "created_at": "2025-07-22T22:22:28Z",
       "default_branch": "main",
       "description": "The agent that grows with you",
-      "forks": 38475,
+      "forks": 38477,
       "full_name": "NousResearch/hermes-agent",
       "html_url": "https://github.com/NousResearch/hermes-agent",
       "language": "Python",
-      "open_issues": 26223,
+      "open_issues": 26224,
       "pushed_at": "2026-07-06T13:03:51Z",
       "recent_release": null,
       "signal": "recent_activity",
@@ -328,7 +328,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 210181,
+      "stars": 210183,
       "topics": [
         "ai",
         "ai-agent",
@@ -347,8 +347,8 @@
         "openai",
         "openclaw"
       ],
-      "trend_score": 558.455,
-      "updated_at": "2026-07-06T15:41:42Z"
+      "trend_score": 558.457,
+      "updated_at": "2026-07-06T15:44:21Z"
     },
     {
       "created_at": "2019-06-22T09:24:21Z",
@@ -367,7 +367,7 @@
         "implementation_tooling_activity",
         "recent_activity"
       ],
-      "stars": 195411,
+      "stars": 195413,
       "topics": [
         "ai",
         "apis",
@@ -390,8 +390,8 @@
         "workflow",
         "workflow-automation"
       ],
-      "trend_score": 552.053,
-      "updated_at": "2026-07-06T15:38:23Z"
+      "trend_score": 552.055,
+      "updated_at": "2026-07-06T15:43:27Z"
     },
     {
       "created_at": "2015-11-07T01:19:20Z",
@@ -430,8 +430,8 @@
       "full_name": "microsoft/vscode",
       "html_url": "https://github.com/microsoft/vscode",
       "language": "TypeScript",
-      "open_issues": 19081,
-      "pushed_at": "2026-07-06T15:42:02Z",
+      "open_issues": 19083,
+      "pushed_at": "2026-07-06T15:43:50Z",
       "recent_release": null,
       "signal": "recent_activity",
       "signals": [
@@ -526,7 +526,7 @@
       "full_name": "anomalyco/opencode",
       "html_url": "https://github.com/anomalyco/opencode",
       "language": "TypeScript",
-      "open_issues": 4773,
+      "open_issues": 4775,
       "pushed_at": "2026-07-06T15:36:05Z",
       "recent_release": null,
       "signal": "recent_activity",
@@ -834,7 +834,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 145857,
+      "stars": 145861,
       "topics": [
         "ai",
         "ai-agents",
@@ -856,8 +856,8 @@
         "web-search",
         "webscraping"
       ],
-      "trend_score": 481.912,
-      "updated_at": "2026-07-06T15:42:19Z"
+      "trend_score": 481.918,
+      "updated_at": "2026-07-06T15:44:10Z"
     },
     {
       "created_at": "2023-02-08T22:28:03Z",
@@ -868,7 +868,7 @@
       "html_url": "https://github.com/langflow-ai/langflow",
       "language": "Python",
       "open_issues": 978,
-      "pushed_at": "2026-07-06T15:29:48Z",
+      "pushed_at": "2026-07-06T15:43:18Z",
       "recent_release": null,
       "signal": "recent_activity",
       "signals": [
@@ -936,7 +936,7 @@
       "full_name": "vercel/next.js",
       "html_url": "https://github.com/vercel/next.js",
       "language": "JavaScript",
-      "open_issues": 4178,
+      "open_issues": 4179,
       "pushed_at": "2026-07-06T15:33:13Z",
       "recent_release": null,
       "signal": "recent_activity",
@@ -978,7 +978,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 136067,
+      "stars": 136068,
       "topics": [
         "advanced-paste",
         "color-picker",
@@ -993,8 +993,8 @@
         "windows-10",
         "windows-11"
       ],
-      "trend_score": 458.873,
-      "updated_at": "2026-07-06T15:37:47Z"
+      "trend_score": 458.874,
+      "updated_at": "2026-07-06T15:43:31Z"
     },
     {
       "created_at": "2023-10-06T22:08:27Z",
@@ -1088,7 +1088,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 119619,
+      "stars": 119620,
       "topics": [
         "ai",
         "comfy",
@@ -1097,8 +1097,8 @@
         "pytorch",
         "stable-diffusion"
       ],
-      "trend_score": 435.86,
-      "updated_at": "2026-07-06T15:37:34Z"
+      "trend_score": 435.861,
+      "updated_at": "2026-07-06T15:44:13Z"
     },
     {
       "created_at": "2025-08-21T22:54:31Z",
@@ -1136,8 +1136,8 @@
       "full_name": "supabase/supabase",
       "html_url": "https://github.com/supabase/supabase",
       "language": "TypeScript",
-      "open_issues": 1099,
-      "pushed_at": "2026-07-06T15:42:11Z",
+      "open_issues": 1100,
+      "pushed_at": "2026-07-06T15:44:26Z",
       "recent_release": null,
       "signal": "ai_tooling_activity",
       "signals": [
@@ -1247,7 +1247,7 @@
       "signals": [
         "new_repository"
       ],
-      "stars": 75689,
+      "stars": 75690,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1260,8 +1260,8 @@
         "prompt-engineering",
         "yagni"
       ],
-      "trend_score": 404.116,
-      "updated_at": "2026-07-06T15:42:00Z"
+      "trend_score": 404.118,
+      "updated_at": "2026-07-06T15:43:15Z"
     },
     {
       "created_at": "2024-03-11T02:57:34Z",
@@ -1278,7 +1278,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 95964,
+      "stars": 95965,
       "topics": [
         "ai",
         "automation",
@@ -1288,8 +1288,8 @@
         "shortvideo",
         "tiktok"
       ],
-      "trend_score": 399.781,
-      "updated_at": "2026-07-06T15:35:26Z"
+      "trend_score": 399.782,
+      "updated_at": "2026-07-06T15:43:24Z"
     },
     {
       "created_at": "2024-11-30T04:49:10Z",
@@ -1401,7 +1401,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 85529,
+      "stars": 85533,
       "topics": [
         "ai",
         "anthropic",
@@ -1414,8 +1414,8 @@
         "skill",
         "tokens"
       ],
-      "trend_score": 373.453,
-      "updated_at": "2026-07-06T15:36:54Z"
+      "trend_score": 373.46,
+      "updated_at": "2026-07-06T15:44:26Z"
     },
     {
       "created_at": "2023-05-21T07:19:12Z",
@@ -1426,7 +1426,7 @@
       "html_url": "https://github.com/lobehub/lobehub",
       "language": "TypeScript",
       "open_issues": 595,
-      "pushed_at": "2026-07-06T15:39:22Z",
+      "pushed_at": "2026-07-06T15:43:06Z",
       "recent_release": null,
       "signal": "ai_tooling_activity",
       "signals": [
@@ -1605,7 +1605,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 68379,
+      "stars": 68380,
       "topics": [
         "ai",
         "ai-scraping",
@@ -1628,8 +1628,8 @@
         "webscraping",
         "xpath"
       ],
-      "trend_score": 351.494,
-      "updated_at": "2026-07-06T15:31:06Z"
+      "trend_score": 351.496,
+      "updated_at": "2026-07-06T15:43:16Z"
     },
     {
       "created_at": "2023-05-28T10:09:12Z",
@@ -1674,7 +1674,7 @@
     }
   ],
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T15:42:40.481687+00:00",
+  "generated_at": "2026-07-06T15:44:42.718128+00:00",
   "limits": {
     "github_api_request_max": 18,
     "github_api_requests_used": 14
@@ -1741,8 +1741,8 @@
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "language": "TypeScript",
-        "open_issues": 6425,
-        "pushed_at": "2026-07-06T15:41:28Z",
+        "open_issues": 6424,
+        "pushed_at": "2026-07-06T15:44:16Z",
         "signal": "ai_tooling_activity",
         "stars": 381930,
         "topics": [
@@ -1754,7 +1754,7 @@
           "own-your-data",
           "personal"
         ],
-        "updated_at": "2026-07-06T15:41:59Z"
+        "updated_at": "2026-07-06T15:44:02Z"
       },
       {
         "created_at": "2025-10-09T19:45:18Z",
@@ -1767,7 +1767,7 @@
         "open_issues": 337,
         "pushed_at": "2026-07-05T22:52:28Z",
         "signal": "ai_tooling_activity",
-        "stars": 247562,
+        "stars": 247563,
         "topics": [
           "ai",
           "brainstorming",
@@ -1778,20 +1778,20 @@
           "subagent-driven-development",
           "superpowers"
         ],
-        "updated_at": "2026-07-06T15:41:19Z"
+        "updated_at": "2026-07-06T15:43:35Z"
       },
       {
         "created_at": "2025-07-22T22:22:28Z",
         "default_branch": "main",
         "description": "The agent that grows with you",
-        "forks": 38475,
+        "forks": 38478,
         "full_name": "NousResearch/hermes-agent",
         "html_url": "https://github.com/NousResearch/hermes-agent",
         "language": "Python",
-        "open_issues": 26223,
+        "open_issues": 26224,
         "pushed_at": "2026-07-06T13:03:51Z",
         "signal": "ai_tooling_activity",
-        "stars": 210181,
+        "stars": 210183,
         "topics": [
           "ai",
           "ai-agent",
@@ -1810,7 +1810,7 @@
           "openai",
           "openclaw"
         ],
-        "updated_at": "2026-07-06T15:41:42Z"
+        "updated_at": "2026-07-06T15:44:21Z"
       },
       {
         "created_at": "2019-06-22T09:24:21Z",
@@ -1823,7 +1823,7 @@
         "open_issues": 1467,
         "pushed_at": "2026-07-06T15:41:42Z",
         "signal": "ai_tooling_activity",
-        "stars": 195411,
+        "stars": 195413,
         "topics": [
           "ai",
           "apis",
@@ -1846,7 +1846,7 @@
           "workflow",
           "workflow-automation"
         ],
-        "updated_at": "2026-07-06T15:38:23Z"
+        "updated_at": "2026-07-06T15:43:27Z"
       },
       {
         "created_at": "2023-03-16T09:21:07Z",
@@ -1985,7 +1985,7 @@
         "open_issues": 388,
         "pushed_at": "2026-07-06T13:33:04Z",
         "signal": "ai_tooling_activity",
-        "stars": 145857,
+        "stars": 145861,
         "topics": [
           "ai",
           "ai-agents",
@@ -2007,7 +2007,7 @@
           "web-search",
           "webscraping"
         ],
-        "updated_at": "2026-07-06T15:42:19Z"
+        "updated_at": "2026-07-06T15:44:10Z"
       },
       {
         "created_at": "2023-10-06T22:08:27Z",
@@ -2123,7 +2123,7 @@
         "open_issues": 4232,
         "pushed_at": "2026-07-06T04:35:33Z",
         "signal": "ai_tooling_activity",
-        "stars": 119619,
+        "stars": 119620,
         "topics": [
           "ai",
           "comfy",
@@ -2132,7 +2132,7 @@
           "pytorch",
           "stable-diffusion"
         ],
-        "updated_at": "2026-07-06T15:37:34Z"
+        "updated_at": "2026-07-06T15:44:13Z"
       },
       {
         "created_at": "2025-08-21T22:54:31Z",
@@ -2195,8 +2195,8 @@
         "full_name": "supabase/supabase",
         "html_url": "https://github.com/supabase/supabase",
         "language": "TypeScript",
-        "open_issues": 1099,
-        "pushed_at": "2026-07-06T15:42:11Z",
+        "open_issues": 1100,
+        "pushed_at": "2026-07-06T15:44:26Z",
         "signal": "ai_tooling_activity",
         "stars": 105810,
         "topics": [
@@ -2256,7 +2256,7 @@
         "open_issues": 52,
         "pushed_at": "2026-07-06T02:38:10Z",
         "signal": "ai_tooling_activity",
-        "stars": 95964,
+        "stars": 95965,
         "topics": [
           "ai",
           "automation",
@@ -2266,7 +2266,7 @@
           "shortvideo",
           "tiktok"
         ],
-        "updated_at": "2026-07-06T15:35:26Z"
+        "updated_at": "2026-07-06T15:43:24Z"
       },
       {
         "created_at": "2024-11-30T04:49:10Z",
@@ -2333,7 +2333,7 @@
         "open_issues": 364,
         "pushed_at": "2026-07-03T11:10:42Z",
         "signal": "ai_tooling_activity",
-        "stars": 85529,
+        "stars": 85533,
         "topics": [
           "ai",
           "anthropic",
@@ -2346,7 +2346,7 @@
           "skill",
           "tokens"
         ],
-        "updated_at": "2026-07-06T15:36:54Z"
+        "updated_at": "2026-07-06T15:44:26Z"
       },
       {
         "created_at": "2023-12-12T06:13:13Z",
@@ -2383,7 +2383,7 @@
         "html_url": "https://github.com/lobehub/lobehub",
         "language": "TypeScript",
         "open_issues": 595,
-        "pushed_at": "2026-07-06T15:39:22Z",
+        "pushed_at": "2026-07-06T15:43:06Z",
         "signal": "ai_tooling_activity",
         "stars": 79541,
         "topics": [
@@ -2578,7 +2578,7 @@
         "open_issues": 2,
         "pushed_at": "2026-07-06T10:00:22Z",
         "signal": "ai_tooling_activity",
-        "stars": 68379,
+        "stars": 68380,
         "topics": [
           "ai",
           "ai-scraping",
@@ -2601,7 +2601,7 @@
           "webscraping",
           "xpath"
         ],
-        "updated_at": "2026-07-06T15:31:06Z"
+        "updated_at": "2026-07-06T15:43:16Z"
       },
       {
         "created_at": "2025-12-03T01:40:05Z",
@@ -2675,8 +2675,8 @@
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "language": "TypeScript",
-        "open_issues": 6425,
-        "pushed_at": "2026-07-06T15:41:28Z",
+        "open_issues": 6424,
+        "pushed_at": "2026-07-06T15:44:16Z",
         "signal": "recent_activity",
         "stars": 381930,
         "topics": [
@@ -2688,7 +2688,7 @@
           "own-your-data",
           "personal"
         ],
-        "updated_at": "2026-07-06T15:41:59Z"
+        "updated_at": "2026-07-06T15:44:02Z"
       },
       {
         "created_at": "2017-03-15T13:45:52Z",
@@ -2701,7 +2701,7 @@
         "open_issues": 17,
         "pushed_at": "2026-07-06T14:00:54Z",
         "signal": "recent_activity",
-        "stars": 359488,
+        "stars": 359489,
         "topics": [
           "angular-roadmap",
           "backend-roadmap",
@@ -2722,7 +2722,7 @@
           "software-architect-roadmap",
           "vue-roadmap"
         ],
-        "updated_at": "2026-07-06T15:40:42Z"
+        "updated_at": "2026-07-06T15:44:03Z"
       },
       {
         "created_at": "2014-06-27T21:00:06Z",
@@ -2757,7 +2757,7 @@
         "open_issues": 0,
         "pushed_at": "2026-07-06T15:18:34Z",
         "signal": "recent_activity",
-        "stars": 303249,
+        "stars": 303250,
         "topics": [
           "awesome",
           "awesome-list",
@@ -2768,7 +2768,7 @@
           "self-hosted",
           "selfhosted"
         ],
-        "updated_at": "2026-07-06T15:41:07Z"
+        "updated_at": "2026-07-06T15:44:07Z"
       },
       {
         "created_at": "2017-04-12T05:07:46Z",
@@ -2805,7 +2805,7 @@
         "open_issues": 337,
         "pushed_at": "2026-07-05T22:52:28Z",
         "signal": "recent_activity",
-        "stars": 247562,
+        "stars": 247563,
         "topics": [
           "ai",
           "brainstorming",
@@ -2816,7 +2816,7 @@
           "subagent-driven-development",
           "superpowers"
         ],
-        "updated_at": "2026-07-06T15:41:19Z"
+        "updated_at": "2026-07-06T15:43:35Z"
       },
       {
         "created_at": "2013-05-24T16:15:54Z",
@@ -2851,9 +2851,9 @@
         "open_issues": 3,
         "pushed_at": "2026-07-06T00:44:48Z",
         "signal": "recent_activity",
-        "stars": 238569,
+        "stars": 238570,
         "topics": [],
-        "updated_at": "2026-07-06T15:41:31Z"
+        "updated_at": "2026-07-06T15:43:36Z"
       },
       {
         "created_at": "2026-01-18T00:51:51Z",
@@ -2883,14 +2883,14 @@
         "created_at": "2025-07-22T22:22:28Z",
         "default_branch": "main",
         "description": "The agent that grows with you",
-        "forks": 38475,
+        "forks": 38477,
         "full_name": "NousResearch/hermes-agent",
         "html_url": "https://github.com/NousResearch/hermes-agent",
         "language": "Python",
-        "open_issues": 26223,
+        "open_issues": 26224,
         "pushed_at": "2026-07-06T13:03:51Z",
         "signal": "recent_activity",
-        "stars": 210181,
+        "stars": 210183,
         "topics": [
           "ai",
           "ai-agent",
@@ -2909,7 +2909,7 @@
           "openai",
           "openclaw"
         ],
-        "updated_at": "2026-07-06T15:41:42Z"
+        "updated_at": "2026-07-06T15:44:21Z"
       },
       {
         "created_at": "2015-11-07T01:19:20Z",
@@ -2946,7 +2946,7 @@
         "open_issues": 1467,
         "pushed_at": "2026-07-06T15:41:42Z",
         "signal": "recent_activity",
-        "stars": 195411,
+        "stars": 195413,
         "topics": [
           "ai",
           "apis",
@@ -2969,7 +2969,7 @@
           "workflow",
           "workflow-automation"
         ],
-        "updated_at": "2026-07-06T15:38:23Z"
+        "updated_at": "2026-07-06T15:43:27Z"
       },
       {
         "created_at": "2009-08-28T18:15:37Z",
@@ -3010,8 +3010,8 @@
         "full_name": "microsoft/vscode",
         "html_url": "https://github.com/microsoft/vscode",
         "language": "TypeScript",
-        "open_issues": 19081,
-        "pushed_at": "2026-07-06T15:42:02Z",
+        "open_issues": 19083,
+        "pushed_at": "2026-07-06T15:43:50Z",
         "signal": "recent_activity",
         "stars": 187152,
         "topics": [
@@ -3058,7 +3058,7 @@
         "full_name": "anomalyco/opencode",
         "html_url": "https://github.com/anomalyco/opencode",
         "language": "TypeScript",
-        "open_issues": 4773,
+        "open_issues": 4775,
         "pushed_at": "2026-07-06T15:36:05Z",
         "signal": "recent_activity",
         "stars": 182915,
@@ -3275,7 +3275,7 @@
         "html_url": "https://github.com/langflow-ai/langflow",
         "language": "Python",
         "open_issues": 978,
-        "pushed_at": "2026-07-06T15:29:48Z",
+        "pushed_at": "2026-07-06T15:43:18Z",
         "signal": "recent_activity",
         "stars": 151244,
         "topics": [
@@ -3335,7 +3335,7 @@
         "open_issues": 388,
         "pushed_at": "2026-07-06T13:33:04Z",
         "signal": "recent_activity",
-        "stars": 145857,
+        "stars": 145861,
         "topics": [
           "ai",
           "ai-agents",
@@ -3357,7 +3357,7 @@
           "web-search",
           "webscraping"
         ],
-        "updated_at": "2026-07-06T15:42:19Z"
+        "updated_at": "2026-07-06T15:44:10Z"
       },
       {
         "created_at": "2022-10-17T02:58:36Z",
@@ -3403,7 +3403,7 @@
         "full_name": "vercel/next.js",
         "html_url": "https://github.com/vercel/next.js",
         "language": "JavaScript",
-        "open_issues": 4178,
+        "open_issues": 4179,
         "pushed_at": "2026-07-06T15:33:13Z",
         "signal": "recent_activity",
         "stars": 140365,
@@ -3436,7 +3436,7 @@
         "open_issues": 7368,
         "pushed_at": "2026-07-06T15:14:57Z",
         "signal": "recent_activity",
-        "stars": 136067,
+        "stars": 136068,
         "topics": [
           "advanced-paste",
           "color-picker",
@@ -3451,7 +3451,7 @@
           "windows-10",
           "windows-11"
         ],
-        "updated_at": "2026-07-06T15:37:47Z"
+        "updated_at": "2026-07-06T15:43:31Z"
       }
     ],
     "new_repositories": [
@@ -3466,7 +3466,7 @@
         "open_issues": 167,
         "pushed_at": "2026-07-01T23:34:52Z",
         "signal": "new_repository",
-        "stars": 75689,
+        "stars": 75690,
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -3479,7 +3479,7 @@
           "prompt-engineering",
           "yagni"
         ],
-        "updated_at": "2026-07-06T15:42:00Z"
+        "updated_at": "2026-07-06T15:43:15Z"
       },
       {
         "created_at": "2026-06-18T08:40:15Z",
@@ -3573,9 +3573,9 @@
         "open_issues": 87,
         "pushed_at": "2026-07-06T09:23:19Z",
         "signal": "new_repository",
-        "stars": 6894,
+        "stars": 6897,
         "topics": [],
-        "updated_at": "2026-07-06T15:41:23Z"
+        "updated_at": "2026-07-06T15:44:13Z"
       },
       {
         "created_at": "2026-06-11T12:18:13Z",
@@ -3683,7 +3683,7 @@
         "open_issues": 7,
         "pushed_at": "2026-07-06T04:34:33Z",
         "signal": "new_repository",
-        "stars": 3739,
+        "stars": 3740,
         "topics": [
           "3d-printing",
           "arduino",
@@ -3700,7 +3700,7 @@
           "vacuum-cleaner",
           "vacuum-robot"
         ],
-        "updated_at": "2026-07-06T15:37:34Z"
+        "updated_at": "2026-07-06T15:44:13Z"
       },
       {
         "created_at": "2026-06-23T05:14:11Z",
@@ -3923,14 +3923,14 @@
         "created_at": "2026-07-02T17:53:55Z",
         "default_branch": "main",
         "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
-        "forks": 569,
+        "forks": 570,
         "full_name": "elder-plinius/T3MP3ST",
         "html_url": "https://github.com/elder-plinius/T3MP3ST",
         "language": "TypeScript",
-        "open_issues": 25,
+        "open_issues": 26,
         "pushed_at": "2026-07-06T15:35:36Z",
         "signal": "new_repository",
-        "stars": 2355,
+        "stars": 2359,
         "topics": [
           "agents",
           "ai",
@@ -3938,7 +3938,7 @@
           "offensive-security",
           "redteam"
         ],
-        "updated_at": "2026-07-06T15:42:29Z"
+        "updated_at": "2026-07-06T15:44:19Z"
       },
       {
         "created_at": "2026-06-18T14:08:44Z",
@@ -3981,7 +3981,7 @@
         "open_issues": 60,
         "pushed_at": "2026-07-06T05:55:49Z",
         "signal": "new_repository",
-        "stars": 2028,
+        "stars": 2029,
         "topics": [
           "ai",
           "cli",
@@ -3991,7 +3991,7 @@
           "test-automation",
           "testing"
         ],
-        "updated_at": "2026-07-06T15:37:53Z"
+        "updated_at": "2026-07-06T15:44:03Z"
       },
       {
         "created_at": "2026-06-12T13:17:07Z",
@@ -4034,7 +4034,7 @@
         "open_issues": 14,
         "pushed_at": "2026-07-06T14:26:47Z",
         "signal": "new_repository",
-        "stars": 1664,
+        "stars": 1665,
         "topics": [
           "a-stock",
           "ai-agent",
@@ -4056,10 +4056,220 @@
           "tdx",
           "tickflow"
         ],
-        "updated_at": "2026-07-06T15:37:43Z"
+        "updated_at": "2026-07-06T15:43:56Z"
       }
     ],
     "typescript_python_tooling": [
+      {
+        "created_at": "2022-08-19T07:57:29Z",
+        "default_branch": "main",
+        "description": "Custom AI agent platform to speed up your work.",
+        "forks": 296,
+        "full_name": "dust-tt/dust",
+        "html_url": "https://github.com/dust-tt/dust",
+        "language": "TypeScript",
+        "open_issues": 220,
+        "pushed_at": "2026-07-06T15:43:56Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1408,
+        "topics": [
+          "agents",
+          "large-language-models",
+          "llm",
+          "rust"
+        ],
+        "updated_at": "2026-07-06T15:44:10Z"
+      },
+      {
+        "created_at": "2026-05-14T09:22:35Z",
+        "default_branch": "master",
+        "description": "Comet: agent Skill harness for turning ideas into evaluated workflows",
+        "forks": 208,
+        "full_name": "rpamis/comet",
+        "html_url": "https://github.com/rpamis/comet",
+        "language": "TypeScript",
+        "open_issues": 35,
+        "pushed_at": "2026-07-06T15:44:01Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1996,
+        "topics": [
+          "ai",
+          "eval",
+          "harness-engineering",
+          "phase-guarded",
+          "sdd",
+          "skill-creator",
+          "skills",
+          "spec",
+          "spec-driven-development"
+        ],
+        "updated_at": "2026-07-06T15:43:24Z"
+      },
+      {
+        "created_at": "2020-08-07T19:08:07Z",
+        "default_branch": "main",
+        "description": "Welcome to New Expensify: a complete re-imagination of financial collaboration, centered around chat. Help us build the next generation of Expensify by sharing feedback and contributing to the code.",
+        "forks": 3922,
+        "full_name": "Expensify/App",
+        "html_url": "https://github.com/Expensify/App",
+        "language": "TypeScript",
+        "open_issues": 2225,
+        "pushed_at": "2026-07-06T15:43:53Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 4931,
+        "topics": [],
+        "updated_at": "2026-07-06T15:44:08Z"
+      },
+      {
+        "created_at": "2012-05-15T12:35:38Z",
+        "default_branch": "master",
+        "description": "SonarSource Static Analyzer for JavaScript and TypeScript",
+        "forks": 193,
+        "full_name": "SonarSource/SonarJS",
+        "html_url": "https://github.com/SonarSource/SonarJS",
+        "language": "TypeScript",
+        "open_issues": 32,
+        "pushed_at": "2026-07-06T15:43:43Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1247,
+        "topics": [
+          "code-quality",
+          "javascript",
+          "language-team",
+          "sonarcloud",
+          "sonarqube",
+          "static-analysis",
+          "static-analyzer",
+          "static-code-analysis",
+          "typescript"
+        ],
+        "updated_at": "2026-07-06T15:28:25Z"
+      },
+      {
+        "created_at": "2016-11-16T21:57:59Z",
+        "default_branch": "master",
+        "description": "The open-source hub to build & deploy GPT/LLM Agents ⚡️",
+        "forks": 2273,
+        "full_name": "botpress/botpress",
+        "html_url": "https://github.com/botpress/botpress",
+        "language": "TypeScript",
+        "open_issues": 24,
+        "pushed_at": "2026-07-06T15:43:37Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 14770,
+        "topics": [
+          "agent",
+          "ai",
+          "botpress",
+          "chatbot",
+          "chatgpt",
+          "gpt",
+          "gpt-4",
+          "langchain",
+          "llm",
+          "nlp",
+          "openai",
+          "prompt"
+        ],
+        "updated_at": "2026-07-06T15:43:46Z"
+      },
+      {
+        "created_at": "2025-11-24T10:16:47Z",
+        "default_branch": "main",
+        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+        "forks": 80115,
+        "full_name": "openclaw/openclaw",
+        "html_url": "https://github.com/openclaw/openclaw",
+        "language": "TypeScript",
+        "open_issues": 6424,
+        "pushed_at": "2026-07-06T15:44:16Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 381930,
+        "topics": [
+          "ai",
+          "assistant",
+          "crustacean",
+          "molty",
+          "openclaw",
+          "own-your-data",
+          "personal"
+        ],
+        "updated_at": "2026-07-06T15:44:02Z"
+      },
+      {
+        "created_at": "2013-01-25T19:54:46Z",
+        "default_branch": "main",
+        "description": "Perseus is Khan Academy's exercise question editor and renderer.",
+        "forks": 368,
+        "full_name": "Khan/perseus",
+        "html_url": "https://github.com/Khan/perseus",
+        "language": "TypeScript",
+        "open_issues": 81,
+        "pushed_at": "2026-07-06T15:43:23Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1576,
+        "topics": [],
+        "updated_at": "2026-07-06T15:43:36Z"
+      },
+      {
+        "created_at": "2018-09-09T12:23:33Z",
+        "default_branch": "main",
+        "description": "Alert dashboard for Prometheus Alertmanager",
+        "forks": 199,
+        "full_name": "prymitive/karma",
+        "html_url": "https://github.com/prymitive/karma",
+        "language": "TypeScript",
+        "open_issues": 46,
+        "pushed_at": "2026-07-06T15:42:49Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 2654,
+        "topics": [
+          "alerting",
+          "alertmanager",
+          "dashboard",
+          "monitoring",
+          "prometheus",
+          "prometheus-alertmanager",
+          "prometheus-utility"
+        ],
+        "updated_at": "2026-07-06T15:43:06Z"
+      },
+      {
+        "created_at": "2025-05-26T10:38:07Z",
+        "default_branch": "main",
+        "description": "Aesthetic, minimalist platform for learning Japanese inspired by Duolingo and Monkeytype, built with Next.js and sponsored by Vercel. Beginner-friendly with plenty of good first issues - all contributions are welcome!",
+        "forks": 2604,
+        "full_name": "lingdojo/kana-dojo",
+        "html_url": "https://github.com/lingdojo/kana-dojo",
+        "language": "TypeScript",
+        "open_issues": 332,
+        "pushed_at": "2026-07-06T15:42:43Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 2871,
+        "topics": [
+          "beginner",
+          "beginner-friendly",
+          "contribute",
+          "contribution",
+          "contributions-welcome",
+          "first-contributions",
+          "first-timers-only",
+          "good-first-contribution",
+          "good-first-issue",
+          "good-first-pr",
+          "hacktoberfest",
+          "help-wanted",
+          "japanese",
+          "japanese-language",
+          "language-learning",
+          "learn-japanese",
+          "nextjs",
+          "open-source",
+          "react",
+          "up-for-grabs"
+        ],
+        "updated_at": "2026-07-06T15:43:10Z"
+      },
       {
         "created_at": "2026-03-29T15:33:21Z",
         "default_branch": "main",
@@ -4089,7 +4299,7 @@
           "video",
           "video-processing"
         ],
-        "updated_at": "2026-07-06T15:24:27Z"
+        "updated_at": "2026-07-06T15:42:44Z"
       },
       {
         "created_at": "2021-03-19T09:44:40Z",
@@ -4119,8 +4329,8 @@
         "full_name": "microsoft/vscode",
         "html_url": "https://github.com/microsoft/vscode",
         "language": "TypeScript",
-        "open_issues": 19081,
-        "pushed_at": "2026-07-06T15:42:02Z",
+        "open_issues": 19083,
+        "pushed_at": "2026-07-06T15:43:50Z",
         "signal": "implementation_tooling_activity",
         "stars": 187152,
         "topics": [
@@ -4140,8 +4350,8 @@
         "full_name": "supabase/supabase",
         "html_url": "https://github.com/supabase/supabase",
         "language": "TypeScript",
-        "open_issues": 1099,
-        "pushed_at": "2026-07-06T15:42:11Z",
+        "open_issues": 1100,
+        "pushed_at": "2026-07-06T15:44:26Z",
         "signal": "implementation_tooling_activity",
         "stars": 105810,
         "topics": [
@@ -4196,6 +4406,42 @@
         "updated_at": "2026-07-06T15:42:06Z"
       },
       {
+        "created_at": "2019-06-22T09:24:21Z",
+        "default_branch": "master",
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "forks": 59112,
+        "full_name": "n8n-io/n8n",
+        "html_url": "https://github.com/n8n-io/n8n",
+        "language": "TypeScript",
+        "open_issues": 1467,
+        "pushed_at": "2026-07-06T15:41:42Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 195413,
+        "topics": [
+          "ai",
+          "apis",
+          "automation",
+          "cli",
+          "data-flow",
+          "development",
+          "integration-framework",
+          "integrations",
+          "ipaas",
+          "low-code",
+          "low-code-platform",
+          "mcp",
+          "mcp-client",
+          "mcp-server",
+          "n8n",
+          "no-code",
+          "self-hosted",
+          "typescript",
+          "workflow",
+          "workflow-automation"
+        ],
+        "updated_at": "2026-07-06T15:43:27Z"
+      },
+      {
         "created_at": "2021-12-14T16:53:48Z",
         "default_branch": "main",
         "description": "Official JavaScript repository for Clerk authentication",
@@ -4229,29 +4475,6 @@
         "updated_at": "2026-07-06T15:41:58Z"
       },
       {
-        "created_at": "2025-11-24T10:16:47Z",
-        "default_branch": "main",
-        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "forks": 80115,
-        "full_name": "openclaw/openclaw",
-        "html_url": "https://github.com/openclaw/openclaw",
-        "language": "TypeScript",
-        "open_issues": 6425,
-        "pushed_at": "2026-07-06T15:41:28Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 381930,
-        "topics": [
-          "ai",
-          "assistant",
-          "crustacean",
-          "molty",
-          "openclaw",
-          "own-your-data",
-          "personal"
-        ],
-        "updated_at": "2026-07-06T15:41:59Z"
-      },
-      {
         "created_at": "2025-11-15T03:15:04Z",
         "default_branch": "main",
         "description": "用于安卓 GKD 的第三方订阅规则 (👻Fork版)",
@@ -4272,19 +4495,32 @@
         "updated_at": "2026-07-06T15:41:39Z"
       },
       {
-        "created_at": "2020-08-07T19:08:07Z",
+        "created_at": "2021-05-09T11:48:37Z",
         "default_branch": "main",
-        "description": "Welcome to New Expensify: a complete re-imagination of financial collaboration, centered around chat. Help us build the next generation of Expensify by sharing feedback and contributing to the code.",
-        "forks": 3922,
-        "full_name": "Expensify/App",
-        "html_url": "https://github.com/Expensify/App",
+        "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+        "forks": 3360,
+        "full_name": "tldraw/tldraw",
+        "html_url": "https://github.com/tldraw/tldraw",
         "language": "TypeScript",
-        "open_issues": 2226,
-        "pushed_at": "2026-07-06T15:40:36Z",
+        "open_issues": 432,
+        "pushed_at": "2026-07-06T15:40:47Z",
         "signal": "implementation_tooling_activity",
-        "stars": 4931,
-        "topics": [],
-        "updated_at": "2026-07-06T15:40:37Z"
+        "stars": 48584,
+        "topics": [
+          "canvas",
+          "collaboration",
+          "design",
+          "diagram",
+          "drawing",
+          "infinite",
+          "multiplayer",
+          "react",
+          "sdk",
+          "sketch",
+          "sync",
+          "whiteboard"
+        ],
+        "updated_at": "2026-07-06T15:43:46Z"
       },
       {
         "created_at": "2021-03-18T21:55:22Z",
@@ -4321,6 +4557,31 @@
         "updated_at": "2026-07-06T15:40:42Z"
       },
       {
+        "created_at": "2020-01-18T13:39:04Z",
+        "default_branch": "develop",
+        "description": "The world's most flexible commerce platform.",
+        "forks": 4860,
+        "full_name": "medusajs/medusa",
+        "html_url": "https://github.com/medusajs/medusa",
+        "language": "TypeScript",
+        "open_issues": 141,
+        "pushed_at": "2026-07-06T15:40:30Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 34958,
+        "topics": [
+          "commerce",
+          "e-commerce",
+          "ecommerce",
+          "framework",
+          "javascript",
+          "medusa",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "updated_at": "2026-07-06T15:44:18Z"
+      },
+      {
         "created_at": "2018-12-17T22:57:34Z",
         "default_branch": "master",
         "description": "Open Cyber Threat Intelligence Platform",
@@ -4329,7 +4590,7 @@
         "html_url": "https://github.com/OpenCTI-Platform/opencti",
         "language": "TypeScript",
         "open_issues": 2045,
-        "pushed_at": "2026-07-06T15:40:25Z",
+        "pushed_at": "2026-07-06T15:44:10Z",
         "signal": "implementation_tooling_activity",
         "stars": 9637,
         "topics": [
@@ -4399,65 +4660,6 @@
         "updated_at": "2026-07-06T15:40:21Z"
       },
       {
-        "created_at": "2025-05-26T10:38:07Z",
-        "default_branch": "main",
-        "description": "Aesthetic, minimalist platform for learning Japanese inspired by Duolingo and Monkeytype, built with Next.js and sponsored by Vercel. Beginner-friendly with plenty of good first issues - all contributions are welcome!",
-        "forks": 2604,
-        "full_name": "lingdojo/kana-dojo",
-        "html_url": "https://github.com/lingdojo/kana-dojo",
-        "language": "TypeScript",
-        "open_issues": 332,
-        "pushed_at": "2026-07-06T15:40:23Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 2871,
-        "topics": [
-          "beginner",
-          "beginner-friendly",
-          "contribute",
-          "contribution",
-          "contributions-welcome",
-          "first-contributions",
-          "first-timers-only",
-          "good-first-contribution",
-          "good-first-issue",
-          "good-first-pr",
-          "hacktoberfest",
-          "help-wanted",
-          "japanese",
-          "japanese-language",
-          "language-learning",
-          "learn-japanese",
-          "nextjs",
-          "open-source",
-          "react",
-          "up-for-grabs"
-        ],
-        "updated_at": "2026-07-06T15:40:12Z"
-      },
-      {
-        "created_at": "2018-09-09T12:23:33Z",
-        "default_branch": "main",
-        "description": "Alert dashboard for Prometheus Alertmanager",
-        "forks": 199,
-        "full_name": "prymitive/karma",
-        "html_url": "https://github.com/prymitive/karma",
-        "language": "TypeScript",
-        "open_issues": 47,
-        "pushed_at": "2026-07-06T15:40:29Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 2654,
-        "topics": [
-          "alerting",
-          "alertmanager",
-          "dashboard",
-          "monitoring",
-          "prometheus",
-          "prometheus-alertmanager",
-          "prometheus-utility"
-        ],
-        "updated_at": "2026-07-06T15:40:16Z"
-      },
-      {
         "created_at": "2026-03-02T15:01:51Z",
         "default_branch": "master",
         "description": "The open-source app everyone uses to manage agents at work",
@@ -4515,7 +4717,7 @@
         "html_url": "https://github.com/OneKeyHQ/app-monorepo",
         "language": "TypeScript",
         "open_issues": 120,
-        "pushed_at": "2026-07-06T15:40:08Z",
+        "pushed_at": "2026-07-06T15:44:16Z",
         "signal": "implementation_tooling_activity",
         "stars": 2388,
         "topics": [
@@ -4601,7 +4803,7 @@
         "html_url": "https://github.com/generalaction/emdash",
         "language": "TypeScript",
         "open_issues": 143,
-        "pushed_at": "2026-07-06T15:41:42Z",
+        "pushed_at": "2026-07-06T15:43:03Z",
         "signal": "implementation_tooling_activity",
         "stars": 5080,
         "topics": [
@@ -4636,7 +4838,7 @@
         "html_url": "https://github.com/langwatch/langwatch",
         "language": "TypeScript",
         "open_issues": 733,
-        "pushed_at": "2026-07-06T15:38:59Z",
+        "pushed_at": "2026-07-06T15:43:21Z",
         "signal": "implementation_tooling_activity",
         "stars": 3324,
         "topics": [
@@ -4655,234 +4857,6 @@
           "prompt-engineering"
         ],
         "updated_at": "2026-07-06T15:39:04Z"
-      },
-      {
-        "created_at": "2025-01-15T20:43:05Z",
-        "default_branch": "main",
-        "description": "AI Native platform to get companies compliant - Vanta & Drata Alternative",
-        "forks": 332,
-        "full_name": "trycompai/comp",
-        "html_url": "https://github.com/trycompai/comp",
-        "language": "TypeScript",
-        "open_issues": 17,
-        "pushed_at": "2026-07-06T15:38:55Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1674,
-        "topics": [
-          "ai",
-          "audit",
-          "authjs",
-          "compliance",
-          "drata",
-          "gdpr",
-          "iso27001",
-          "nextjs",
-          "open",
-          "open-source",
-          "prisma",
-          "security",
-          "soc2",
-          "t3-stack",
-          "tailwindcss",
-          "turborepo",
-          "vanta",
-          "zod"
-        ],
-        "updated_at": "2026-07-06T15:40:29Z"
-      },
-      {
-        "created_at": "2026-06-01T12:52:57Z",
-        "default_branch": "develop",
-        "description": "Open-source Cursor-style agent IDE — but built for reviewability and control. Built-in rust harness; supports 10+ CLIs.",
-        "forks": 119,
-        "full_name": "yorgai/ORG2",
-        "html_url": "https://github.com/yorgai/ORG2",
-        "language": "TypeScript",
-        "open_issues": 43,
-        "pushed_at": "2026-07-06T15:38:54Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1475,
-        "topics": [
-          "ai-coding-assistant",
-          "coding-agents",
-          "ide",
-          "local-first",
-          "reliability-engineering",
-          "rust",
-          "self-hosted",
-          "tuari"
-        ],
-        "updated_at": "2026-07-06T15:39:00Z"
-      },
-      {
-        "created_at": "2022-12-01T13:04:40Z",
-        "default_branch": "main",
-        "description": "The open alternative to Salesforce, designed for AI.",
-        "forks": 7790,
-        "full_name": "twentyhq/twenty",
-        "html_url": "https://github.com/twentyhq/twenty",
-        "language": "TypeScript",
-        "open_issues": 89,
-        "pushed_at": "2026-07-06T15:42:10Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 52257,
-        "topics": [
-          "crm",
-          "crm-system",
-          "customer",
-          "good-first-issue",
-          "graphql",
-          "hacktoberfest",
-          "javascript",
-          "marketing",
-          "monorepo",
-          "nestjs",
-          "open-source",
-          "postgresql",
-          "react",
-          "reactjs",
-          "sales",
-          "typescript",
-          "web"
-        ],
-        "updated_at": "2026-07-06T15:38:35Z"
-      },
-      {
-        "created_at": "2013-01-26T04:00:59Z",
-        "default_branch": "main",
-        "description": "Your window into all of your data",
-        "forks": 8596,
-        "full_name": "elastic/kibana",
-        "html_url": "https://github.com/elastic/kibana",
-        "language": "TypeScript",
-        "open_issues": 14705,
-        "pushed_at": "2026-07-06T15:38:16Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 21173,
-        "topics": [
-          "dashboards",
-          "elasticsearch",
-          "hacktoberfest",
-          "kibana",
-          "metrics",
-          "observability",
-          "visualizations"
-        ],
-        "updated_at": "2026-07-06T15:40:59Z"
-      },
-      {
-        "created_at": "2023-09-13T00:46:19Z",
-        "default_branch": "main",
-        "description": "Resolve production issues, fast. An open source observability platform unifying session replays, logs, metrics, traces and errors powered by ClickHouse and OpenTelemetry.",
-        "forks": 422,
-        "full_name": "hyperdxio/hyperdx",
-        "html_url": "https://github.com/hyperdxio/hyperdx",
-        "language": "TypeScript",
-        "open_issues": 163,
-        "pushed_at": "2026-07-06T15:39:45Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 9647,
-        "topics": [
-          "alerting",
-          "analytics",
-          "apm",
-          "application-monitoring",
-          "clickhouse",
-          "dashboard",
-          "frontend-monitoring",
-          "kubernetes",
-          "log-management",
-          "logs",
-          "metrics",
-          "monitoring",
-          "observability",
-          "opentelemetry",
-          "react",
-          "self-hosted",
-          "session-replay",
-          "traces",
-          "typescript"
-        ],
-        "updated_at": "2026-07-06T15:37:57Z"
-      },
-      {
-        "created_at": "2025-03-10T13:25:27Z",
-        "default_branch": "main",
-        "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
-        "forks": 1070,
-        "full_name": "vas3k/TaxHacker",
-        "html_url": "https://github.com/vas3k/TaxHacker",
-        "language": "TypeScript",
-        "open_issues": 62,
-        "pushed_at": "2026-07-06T15:37:34Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 6487,
-        "topics": [
-          "accounting",
-          "ai-analysis",
-          "currency-exchange",
-          "expenses",
-          "gemini",
-          "invoices",
-          "llm",
-          "ocr-recognition",
-          "ollama",
-          "openai",
-          "self-hosted",
-          "taxes"
-        ],
-        "updated_at": "2026-07-06T15:41:04Z"
-      },
-      {
-        "created_at": "2019-06-22T09:24:21Z",
-        "default_branch": "master",
-        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-        "forks": 59112,
-        "full_name": "n8n-io/n8n",
-        "html_url": "https://github.com/n8n-io/n8n",
-        "language": "TypeScript",
-        "open_issues": 1467,
-        "pushed_at": "2026-07-06T15:41:42Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 195411,
-        "topics": [
-          "ai",
-          "apis",
-          "automation",
-          "cli",
-          "data-flow",
-          "development",
-          "integration-framework",
-          "integrations",
-          "ipaas",
-          "low-code",
-          "low-code-platform",
-          "mcp",
-          "mcp-client",
-          "mcp-server",
-          "n8n",
-          "no-code",
-          "self-hosted",
-          "typescript",
-          "workflow",
-          "workflow-automation"
-        ],
-        "updated_at": "2026-07-06T15:38:23Z"
-      },
-      {
-        "created_at": "2017-08-03T01:57:18Z",
-        "default_branch": "main",
-        "description": "Utility for detecting phishing domains targeting Web3 users",
-        "forks": 1082,
-        "full_name": "MetaMask/eth-phishing-detect",
-        "html_url": "https://github.com/MetaMask/eth-phishing-detect",
-        "language": "TypeScript",
-        "open_issues": 20,
-        "pushed_at": "2026-07-06T15:37:14Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1300,
-        "topics": [],
-        "updated_at": "2026-07-06T15:37:20Z"
       }
     ]
   }
