@@ -107,6 +107,148 @@ def gh_search_repositories(max_pages: int = 4) -> list[dict[str, Any]]:
     return repos
 
 
+def root_dockerfile_repos_from_code_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return unique non-fork, non-archived repos whose code-search hit is exactly root Dockerfile."""
+    by_name: dict[str, dict[str, Any]] = {}
+    for item in items:
+        if item.get("path") != "Dockerfile":
+            continue
+        repo = dict(item.get("repository") or {})
+        full_name = repo.get("full_name")
+        if not full_name or repo.get("fork") or repo.get("archived"):
+            continue
+        if full_name not in by_name:
+            by_name[full_name] = repo
+    repos = list(by_name.values())
+    repos.sort(key=lambda r: int(r.get("stargazers_count") or 0), reverse=True)
+    return repos
+
+
+def merge_repository_candidates(preferred: list[dict[str, Any]], fallback: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep high-confidence Dockerfile hits first, then append broad star-search fallback repos."""
+    merged: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for repo in [*preferred, *fallback]:
+        full_name = repo.get("full_name")
+        if full_name and full_name not in seen:
+            seen.add(full_name)
+            merged.append(repo)
+    return merged
+
+
+def root_dockerfile_repos_from_graphql_nodes(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Normalize GraphQL repository search nodes that have a root Dockerfile blob."""
+    repos: list[dict[str, Any]] = []
+    for node in nodes:
+        dockerfile = node.get("dockerfile")
+        if not dockerfile or dockerfile.get("__typename") != "Blob":
+            continue
+        if node.get("isFork") or node.get("isArchived"):
+            continue
+        full_name = node.get("nameWithOwner")
+        if not full_name:
+            continue
+        repos.append({
+            "full_name": full_name,
+            "stargazers_count": int(node.get("stargazerCount") or 0),
+            "default_branch": ((node.get("defaultBranchRef") or {}).get("name") or "main"),
+            "fork": False,
+            "archived": False,
+        })
+    repos.sort(key=lambda r: int(r.get("stargazers_count") or 0), reverse=True)
+    return repos
+
+
+def gh_graphql_top_repositories_with_root_dockerfile(max_pages: int = 8, page_size: int = 25) -> list[dict[str, Any]]:
+    """Batch preselect popular repos whose default branch has a root Dockerfile.
+
+    One GraphQL search page checks a small batch of high-star repositories and asks for
+    object(expression: "HEAD:Dockerfile"). This preserves the mission's raw
+    collection path (raw.githubusercontent.com fetches are still used for the
+    Dockerfile text) while avoiding most raw 404 misses.
+    """
+    query = """
+    query($first: Int!, $after: String) {
+      search(query: "stars:>10000 fork:false archived:false sort:stars-desc", type: REPOSITORY, first: $first, after: $after) {
+        pageInfo { hasNextPage endCursor }
+        nodes {
+          ... on Repository {
+            nameWithOwner
+            stargazerCount
+            isFork
+            isArchived
+            defaultBranchRef { name }
+            dockerfile: object(expression: "HEAD:Dockerfile") { __typename }
+          }
+        }
+      }
+    }
+    """
+    repos: list[dict[str, Any]] = []
+    after = None
+    for _ in range(max_pages):
+        args = ["graphql", "-f", f"query={query}", "-F", f"first={page_size}"]
+        if after:
+            args.extend(["-F", f"after={after}"])
+        try:
+            data = gh_json(args)
+        except subprocess.CalledProcessError as e:
+            print(f"warning: GraphQL Dockerfile preselection failed after {len(repos)} candidates: {e}", file=sys.stderr)
+            break
+        search = data.get("data", data).get("search", {})
+        repos.extend(root_dockerfile_repos_from_graphql_nodes(search.get("nodes") or []))
+        page_info = search.get("pageInfo") or {}
+        if not page_info.get("hasNextPage"):
+            break
+        after = page_info.get("endCursor")
+    return merge_repository_candidates(repos, [])
+
+
+def gh_repo_details(full_name: str) -> dict[str, Any] | None:
+    try:
+        return gh_json([f"repos/{full_name}"])
+    except subprocess.CalledProcessError:
+        return None
+
+
+def gh_code_search_root_dockerfile_repositories(max_pages: int = 10, max_repos: int = 200) -> list[dict[str, Any]]:
+    """Use GitHub code search to preselect repos that actually have a root Dockerfile.
+
+    The legacy code-search API does not support sorting by repository stars and may
+    return paths like Dockerfile.md. We therefore filter exact path == Dockerfile,
+    fetch repository metadata for star counts/fork/archive flags, then sort by stars.
+    This spends GitHub API quota to save the observatory's stricter raw collection
+    budget and Apex lint budget.
+    """
+    root_hits: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for page in range(1, max_pages + 1):
+        data = gh_json([
+            "search/code",
+            "--method", "GET",
+            "-f", "q=FROM filename:Dockerfile language:Dockerfile",
+            "-f", "per_page=100",
+            "-f", f"page={page}",
+        ])
+        for item in data.get("items", []):
+            if item.get("path") != "Dockerfile":
+                continue
+            full_name = (item.get("repository") or {}).get("full_name")
+            if not full_name or full_name in seen:
+                continue
+            seen.add(full_name)
+            details = gh_repo_details(full_name)
+            if not details or details.get("fork") or details.get("archived"):
+                continue
+            root_hits.append(details)
+            if len(root_hits) >= max_repos:
+                break
+        if len(root_hits) >= max_repos:
+            break
+    root_hits.sort(key=lambda r: int(r.get("stargazers_count") or 0), reverse=True)
+    return root_hits
+
+
 def git_ls_remote_head(full_name: str, branch: str) -> str | None:
     try:
         out = subprocess.check_output(
@@ -323,7 +465,12 @@ def main() -> int:
     if args.limit > MAX_LINT_RUNS:
         raise SystemExit(f"limit {args.limit} exceeds daily lint max {MAX_LINT_RUNS}")
     AGENT_KEY = load_agent_key(args.key_file)
-    repos = gh_search_repositories()
+    graph_dockerfile_repos = gh_graphql_top_repositories_with_root_dockerfile()
+    code_dockerfile_repos = gh_code_search_root_dockerfile_repositories(max_pages=2, max_repos=100)
+    repos = merge_repository_candidates(
+        merge_repository_candidates(graph_dockerfile_repos, code_dockerfile_repos),
+        gh_search_repositories(),
+    )
     result_path = ROOT / "results" / f"{args.date}.json"
     existing_rows: list[dict[str, Any]] = []
     existing_collection_requests = 0
@@ -388,7 +535,7 @@ def main() -> int:
         "date": args.date,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "collection": {
-            "repo_query": "GitHub search repositories: stars:>10000 fork:false archived:false sorted by stars desc",
+            "repo_query": "GitHub GraphQL top-star preselection checks HEAD:Dockerfile, then GitHub code search fallback filters root Dockerfile, then broad repository search stars:>10000 fork:false archived:false as last fallback",
             "dockerfile_path_policy": "root Dockerfile only for Day 1",
             "collection_requests_used": existing_collection_requests + collect_requests,
             "lint_runs_used": existing_lint_runs + lint_runs,

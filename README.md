@@ -20,7 +20,11 @@ Raw Dockerfile text is **not** stored. Finding prose and instruction text are **
 
 Day 1 limits: at most 100 lint runs and at most 200 Dockerfile collection requests.
 
-## Reproduce
+## Reproduce / operations
+
+Daily scans are automated by `.github/workflows/daily-scan.yml` at 03:17 UTC. Do **not** run the scanner manually during normal operation; a manual run can double-spend the daily collection/lint budget and race the scheduled commit. Manual fallback is for operator-requested outage recovery only.
+
+For third-party reproduction outside the scheduled workflow:
 
 ```bash
 APEX_AGENT_KEY=<your-agent-key> python3 scripts/collect_and_scan.py --key-file env --limit 50
