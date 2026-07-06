@@ -1,9 +1,9 @@
 {
   "schema": "dockerfile-hygiene-observatory-results/1",
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T14:20:07.059294+00:00",
+  "generated_at": "2026-07-06T15:06:32.163312+00:00",
   "collection": {
-    "repo_query": "GitHub search repositories: stars:>10000 fork:false archived:false sorted by stars desc",
+    "repo_query": "GitHub GraphQL top-star preselection checks HEAD:Dockerfile, then GitHub code search fallback filters root Dockerfile, then broad repository search stars:>10000 fork:false archived:false as last fallback",
     "dockerfile_path_policy": "root Dockerfile only for Day 1",
     "collection_requests_used": 200,
     "lint_runs_used": 32,
