@@ -1,6 +1,6 @@
 {
   "schema": "dockerfile-hygiene-observatory-aggregate/1",
-  "updated_at": "2026-07-06T11:55:46.980761+00:00",
+  "updated_at": "2026-07-06T14:16:43.286298+00:00",
   "latest": {
     "date": "2026-07-06",
     "repo_count": 32,
@@ -38,10 +38,10 @@
     "rule_rates": {
       "unpinned_base_image": 0.4375,
       "apt_lists_not_cleaned": 0.1875,
-      "no_healthcheck": 0.875,
       "runs_as_root": 0.65625,
-      "secret_literal_in_env": 0.09375,
+      "no_healthcheck": 0.875,
       "curl_pipe_shell": 0.0625,
+      "secret_literal_in_env": 0.09375,
       "sudo_in_run": 0.0625,
       "missing_from": 0.03125
     },
@@ -92,10 +92,10 @@
       "rule_rates": {
         "unpinned_base_image": 0.4375,
         "apt_lists_not_cleaned": 0.1875,
-        "no_healthcheck": 0.875,
         "runs_as_root": 0.65625,
-        "secret_literal_in_env": 0.09375,
+        "no_healthcheck": 0.875,
         "curl_pipe_shell": 0.0625,
+        "secret_literal_in_env": 0.09375,
         "sudo_in_run": 0.0625,
         "missing_from": 0.03125
       },
