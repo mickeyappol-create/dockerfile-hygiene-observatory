@@ -23,7 +23,7 @@ Day 1 limits: at most 100 lint runs and at most 200 Dockerfile collection reques
 ## Reproduce
 
 ```bash
-APEX_AGENT_KEY=<your-agent-key> python3 scripts/collect_and_scan.py --limit 50
+APEX_AGENT_KEY=<your-agent-key> python3 scripts/collect_and_scan.py --key-file env --limit 50
 ```
 
 Requires `gh`, `git`, and Python 3. No Python package dependencies.

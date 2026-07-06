@@ -31,6 +31,8 @@ TOOL_ID = "agent-dockerfile-lint"
 CARD_ID = "card_agent_dockerfile_lint"
 MAX_COLLECT_REQUESTS = 200
 MAX_LINT_RUNS = 100
+DEFAULT_PASSPORT_FILE = ROOT.parent / ".agents" / "agentbbs-hermes-passport.txt"
+AGENT_KEY = ""
 
 
 def canonical_json(obj: Any) -> str:
@@ -60,6 +62,26 @@ def fetch_text(url: str, timeout: int = 25) -> tuple[int, dict[str, str], str]:
 def gh_json(args: list[str]) -> Any:
     out = subprocess.check_output(["gh", "api", *args], text=True)
     return json.loads(out)
+
+
+def load_agent_key(key_file: str | None = None) -> str:
+    """Load the dedicated Hermes Supply Agent key without printing it.
+
+    Mission runs must use /opt/data/.agents/agentbbs-hermes-passport.txt.
+    For third-party reproduction only, pass --key-file env to opt into APEX_AGENT_KEY.
+    """
+    if key_file == "env":
+        key = os.environ.get("APEX_AGENT_KEY", "").strip()
+        if key.startswith("agd_"):
+            return key
+        raise RuntimeError("--key-file env was requested, but APEX_AGENT_KEY is not an agd_ key")
+    path = Path(key_file) if key_file else DEFAULT_PASSPORT_FILE
+    if path.exists():
+        key = path.read_text(encoding="utf-8").strip()
+        if key.startswith("agd_"):
+            return key
+        raise RuntimeError(f"Agent passport file exists but does not look like an agd_ key: {path}")
+    raise RuntimeError(f"No dedicated Hermes Supply Agent passport found. Expected file: {path}")
 
 
 def gh_search_repositories(max_pages: int = 4) -> list[dict[str, Any]]:
@@ -99,9 +121,9 @@ def git_ls_remote_head(full_name: str, branch: str) -> str | None:
 
 
 def sign_agent_headers(path: str, body: dict[str, Any], intent: str) -> dict[str, str]:
-    key = os.environ.get("APEX_AGENT_KEY", "")
+    key = AGENT_KEY
     if not key:
-        raise RuntimeError("APEX_AGENT_KEY is not set")
+        raise RuntimeError("Apex Agent Passport key not loaded")
     canon = canonical_json(body)
     sha = hashlib.sha256(canon.encode("utf-8")).hexdigest()
     ts = str(int(time.time() * 1000))
@@ -281,21 +303,37 @@ def render_page(aggregate: dict[str, Any], rows: list[dict[str, Any]]) -> None:
 
 
 def main() -> int:
+    global AGENT_KEY
     ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, default=50)
+    ap.add_argument("--limit", type=int, default=50, help="Target total rows for the date when --append is used; otherwise rows for this run.")
     ap.add_argument("--date", default=dt.datetime.now(dt.timezone.utc).date().isoformat())
+    ap.add_argument("--append", action="store_true", help="Append to results/YYYY-MM-DD.json, skipping repos already present for that date.")
+    ap.add_argument("--key-file", default=str(DEFAULT_PASSPORT_FILE), help="Apex Agent Passport file. Defaults to /opt/data/.agents/agentbbs-hermes-passport.txt")
     args = ap.parse_args()
     if args.limit > MAX_LINT_RUNS:
         raise SystemExit(f"limit {args.limit} exceeds daily lint max {MAX_LINT_RUNS}")
+    AGENT_KEY = load_agent_key(args.key_file)
     repos = gh_search_repositories()
-    rows: list[dict[str, Any]] = []
+    result_path = ROOT / "results" / f"{args.date}.json"
+    existing_rows: list[dict[str, Any]] = []
+    existing_collection_requests = 0
+    existing_lint_runs = 0
+    if args.append and result_path.exists():
+        previous = json.loads(result_path.read_text(encoding="utf-8"))
+        existing_rows = list(previous.get("rows") or [])
+        existing_collection_requests = int((previous.get("collection") or {}).get("collection_requests_used") or 0)
+        existing_lint_runs = int((previous.get("collection") or {}).get("lint_runs_used") or len(existing_rows))
+    rows: list[dict[str, Any]] = list(existing_rows)
+    existing_repos = {r.get("repo") for r in existing_rows}
     collect_requests = 0
     lint_runs = 0
     collected_at = dt.datetime.now(dt.timezone.utc).isoformat()
     for repo in repos:
         if len(rows) >= args.limit:
             break
-        if collect_requests >= MAX_COLLECT_REQUESTS:
+        if repo["full_name"] in existing_repos:
+            continue
+        if existing_collection_requests + collect_requests >= MAX_COLLECT_REQUESTS:
             break
         branch = repo.get("default_branch") or "main"
         raw_url = f"https://raw.githubusercontent.com/{repo['full_name']}/{branch}/Dockerfile"
@@ -312,7 +350,7 @@ def main() -> int:
             continue
         if not text.strip() or len(text) > 200000:
             continue
-        if lint_runs >= MAX_LINT_RUNS:
+        if existing_lint_runs + lint_runs >= MAX_LINT_RUNS:
             break
         commit_sha = git_ls_remote_head(repo["full_name"], branch)
         try:
@@ -342,8 +380,10 @@ def main() -> int:
         "collection": {
             "repo_query": "GitHub search repositories: stars:>10000 fork:false archived:false sorted by stars desc",
             "dockerfile_path_policy": "root Dockerfile only for Day 1",
-            "collection_requests_used": collect_requests,
-            "lint_runs_used": lint_runs,
+            "collection_requests_used": existing_collection_requests + collect_requests,
+            "lint_runs_used": existing_lint_runs + lint_runs,
+            "collection_requests_used_this_run": collect_requests,
+            "lint_runs_used_this_run": lint_runs,
             "raw_text_stored": False,
         },
         "rows": rows,
