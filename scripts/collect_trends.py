@@ -147,6 +147,16 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
     day_1 = days_before(date_s, 1)
     day_7 = days_before(date_s, 7)
     day_30 = days_before(date_s, 30)
+    out_dir = ROOT / "trends"
+    out_path = out_dir / f"{date_s}.json"
+    prior_generated_at: str | None = None
+    if out_path.exists():
+        try:
+            prior = json.loads(out_path.read_text(encoding="utf-8"))
+            if prior.get("date") == date_s and isinstance(prior.get("generated_at"), str):
+                prior_generated_at = prior["generated_at"]
+        except Exception:
+            prior_generated_at = None
 
     queries = [
         {
@@ -212,7 +222,7 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
     payload = {
         "schema": SCHEMA,
         "date": date_s,
-        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "generated_at": prior_generated_at or dt.datetime.now(dt.timezone.utc).isoformat(),
         "method": "Deterministic GitHub API proxy for trends: recent high-star activity, new repositories, AI/tooling activity, and latest releases. No repository source is cloned or stored.",
         "limits": {
             "github_api_request_max": max_requests,
@@ -224,9 +234,7 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
         "candidates": candidates[:50],
     }
 
-    out_dir = ROOT / "trends"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"{date_s}.json"
     out_path.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
     return payload, out_path
 
@@ -236,10 +244,28 @@ def main() -> int:
     parser.add_argument("--date", default=utc_today())
     parser.add_argument("--max-requests", type=int, default=MAX_GH_REQUESTS)
     parser.add_argument("--no-commit", action="store_true")
+    parser.add_argument("--refresh", action="store_true", help="Re-query GitHub even if today's trends file already exists.")
     args = parser.parse_args()
 
     if args.max_requests < 4:
         raise SystemExit("--max-requests must be at least 4")
+
+    existing_path = ROOT / "trends" / f"{args.date}.json"
+    if existing_path.exists() and not args.refresh:
+        payload = json.loads(existing_path.read_text(encoding="utf-8"))
+        top = payload["candidates"][0]["full_name"] if payload.get("candidates") else "none"
+        print(json.dumps({
+            "ok": True,
+            "schema": payload.get("schema"),
+            "date": payload.get("date"),
+            "path": str(existing_path.relative_to(ROOT)),
+            "github_api_requests_used": 0,
+            "candidate_count": len(payload.get("candidates") or []),
+            "top_candidate": top,
+            "commit": "unchanged",
+            "cached": True,
+        }, sort_keys=True))
+        return 0
 
     payload, out_path = collect(args.date, max_requests=args.max_requests)
     commit_status = "skipped"

@@ -4,7 +4,7 @@
       "created_at": "2014-12-24T17:49:19Z",
       "default_branch": "main",
       "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "forks": 45378,
+      "forks": 45379,
       "full_name": "freeCodeCamp/freeCodeCamp",
       "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
       "language": "TypeScript",
@@ -15,7 +15,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 451163,
+      "stars": 451164,
       "topics": [
         "careers",
         "certification",
@@ -34,7 +34,7 @@
         "teachers"
       ],
       "trend_score": 761.687,
-      "updated_at": "2026-07-06T15:40:23Z"
+      "updated_at": "2026-07-06T15:47:12Z"
     },
     {
       "created_at": "2025-11-24T10:16:47Z",
@@ -44,8 +44,8 @@
       "full_name": "openclaw/openclaw",
       "html_url": "https://github.com/openclaw/openclaw",
       "language": "TypeScript",
-      "open_issues": 6424,
-      "pushed_at": "2026-07-06T15:44:16Z",
+      "open_issues": 6428,
+      "pushed_at": "2026-07-06T15:47:15Z",
       "recent_release": {
         "draft": false,
         "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11",
@@ -167,7 +167,7 @@
         "selfhosted"
       ],
       "trend_score": 640.681,
-      "updated_at": "2026-07-06T15:44:07Z"
+      "updated_at": "2026-07-06T15:47:17Z"
     },
     {
       "created_at": "2017-04-12T05:07:46Z",
@@ -222,7 +222,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 247563,
+      "stars": 247566,
       "topics": [
         "ai",
         "brainstorming",
@@ -233,8 +233,8 @@
         "subagent-driven-development",
         "superpowers"
       ],
-      "trend_score": 594.557,
-      "updated_at": "2026-07-06T15:43:35Z"
+      "trend_score": 594.56,
+      "updated_at": "2026-07-06T15:46:37Z"
     },
     {
       "created_at": "2013-05-24T16:15:54Z",
@@ -298,7 +298,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 226571,
+      "stars": 226572,
       "topics": [
         "ai-agents",
         "anthropic",
@@ -309,14 +309,14 @@
         "mcp",
         "productivity"
       ],
-      "trend_score": 565.995,
-      "updated_at": "2026-07-06T15:38:25Z"
+      "trend_score": 565.996,
+      "updated_at": "2026-07-06T15:45:42Z"
     },
     {
       "created_at": "2025-07-22T22:22:28Z",
       "default_branch": "main",
       "description": "The agent that grows with you",
-      "forks": 38477,
+      "forks": 38478,
       "full_name": "NousResearch/hermes-agent",
       "html_url": "https://github.com/NousResearch/hermes-agent",
       "language": "Python",
@@ -328,7 +328,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 210183,
+      "stars": 210185,
       "topics": [
         "ai",
         "ai-agent",
@@ -347,8 +347,8 @@
         "openai",
         "openclaw"
       ],
-      "trend_score": 558.457,
-      "updated_at": "2026-07-06T15:44:21Z"
+      "trend_score": 558.459,
+      "updated_at": "2026-07-06T15:46:26Z"
     },
     {
       "created_at": "2019-06-22T09:24:21Z",
@@ -358,8 +358,8 @@
       "full_name": "n8n-io/n8n",
       "html_url": "https://github.com/n8n-io/n8n",
       "language": "TypeScript",
-      "open_issues": 1467,
-      "pushed_at": "2026-07-06T15:41:42Z",
+      "open_issues": 1466,
+      "pushed_at": "2026-07-06T15:47:07Z",
       "recent_release": null,
       "signal": "recent_activity",
       "signals": [
@@ -391,7 +391,7 @@
         "workflow-automation"
       ],
       "trend_score": 552.055,
-      "updated_at": "2026-07-06T15:43:27Z"
+      "updated_at": "2026-07-06T15:45:49Z"
     },
     {
       "created_at": "2015-11-07T01:19:20Z",
@@ -430,7 +430,7 @@
       "full_name": "microsoft/vscode",
       "html_url": "https://github.com/microsoft/vscode",
       "language": "TypeScript",
-      "open_issues": 19083,
+      "open_issues": 19084,
       "pushed_at": "2026-07-06T15:43:50Z",
       "recent_release": null,
       "signal": "recent_activity",
@@ -438,7 +438,7 @@
         "implementation_tooling_activity",
         "recent_activity"
       ],
-      "stars": 187152,
+      "stars": 187153,
       "topics": [
         "editor",
         "electron",
@@ -446,8 +446,8 @@
         "typescript",
         "visual-studio-code"
       ],
-      "trend_score": 532.611,
-      "updated_at": "2026-07-06T15:42:13Z"
+      "trend_score": 532.612,
+      "updated_at": "2026-07-06T15:46:23Z"
     },
     {
       "created_at": "2023-03-16T09:21:07Z",
@@ -497,7 +497,7 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 188432,
+      "stars": 188433,
       "topics": [
         "cli",
         "cli-app",
@@ -515,14 +515,14 @@
         "zsh",
         "zsh-configuration"
       ],
-      "trend_score": 524.088,
-      "updated_at": "2026-07-06T15:42:05Z"
+      "trend_score": 524.089,
+      "updated_at": "2026-07-06T15:45:41Z"
     },
     {
       "created_at": "2025-04-30T20:08:00Z",
       "default_branch": "dev",
       "description": "The open source coding agent.",
-      "forks": 22663,
+      "forks": 22662,
       "full_name": "anomalyco/opencode",
       "html_url": "https://github.com/anomalyco/opencode",
       "language": "TypeScript",
@@ -533,10 +533,10 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 182915,
+      "stars": 182916,
       "topics": [],
-      "trend_score": 517.686,
-      "updated_at": "2026-07-06T15:42:22Z"
+      "trend_score": 517.687,
+      "updated_at": "2026-07-06T15:46:41Z"
     },
     {
       "created_at": "2015-03-06T22:54:58Z",
@@ -697,7 +697,7 @@
         "ai_tooling_activity",
         "recent_activity"
       ],
-      "stars": 156834,
+      "stars": 156835,
       "topics": [
         "agent",
         "ai",
@@ -713,8 +713,8 @@
         "springai",
         "system-design"
       ],
-      "trend_score": 496.023,
-      "updated_at": "2026-07-06T14:55:21Z"
+      "trend_score": 496.024,
+      "updated_at": "2026-07-06T15:47:30Z"
     },
     {
       "created_at": "2018-10-29T13:56:00Z",
@@ -771,16 +771,16 @@
       "signals": [
         "recent_activity"
       ],
-      "stars": 158395,
+      "stars": 158398,
       "topics": [],
-      "trend_score": 487.989,
-      "updated_at": "2026-07-06T15:42:10Z"
+      "trend_score": 487.992,
+      "updated_at": "2026-07-06T15:47:29Z"
     },
     {
       "created_at": "2023-04-12T07:40:24Z",
       "default_branch": "main",
       "description": "Production-ready platform for agentic workflow development.",
-      "forks": 23290,
+      "forks": 23291,
       "full_name": "langgenius/dify",
       "html_url": "https://github.com/langgenius/dify",
       "language": "TypeScript",
@@ -890,7 +890,7 @@
       "created_at": "2022-10-17T02:58:36Z",
       "default_branch": "master",
       "description": "The agent engineering platform.",
-      "forks": 23448,
+      "forks": 23449,
       "full_name": "langchain-ai/langchain",
       "html_url": "https://github.com/langchain-ai/langchain",
       "language": "Python",
@@ -1088,7 +1088,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 119620,
+      "stars": 119621,
       "topics": [
         "ai",
         "comfy",
@@ -1097,8 +1097,8 @@
         "pytorch",
         "stable-diffusion"
       ],
-      "trend_score": 435.861,
-      "updated_at": "2026-07-06T15:44:13Z"
+      "trend_score": 435.863,
+      "updated_at": "2026-07-06T15:46:14Z"
     },
     {
       "created_at": "2025-08-21T22:54:31Z",
@@ -1108,8 +1108,8 @@
       "full_name": "github/spec-kit",
       "html_url": "https://github.com/github/spec-kit",
       "language": "Python",
-      "open_issues": 405,
-      "pushed_at": "2026-07-06T14:22:49Z",
+      "open_issues": 406,
+      "pushed_at": "2026-07-06T15:46:34Z",
       "recent_release": null,
       "signal": "ai_tooling_activity",
       "signals": [
@@ -1136,7 +1136,7 @@
       "full_name": "supabase/supabase",
       "html_url": "https://github.com/supabase/supabase",
       "language": "TypeScript",
-      "open_issues": 1100,
+      "open_issues": 1101,
       "pushed_at": "2026-07-06T15:44:26Z",
       "recent_release": null,
       "signal": "ai_tooling_activity",
@@ -1173,7 +1173,7 @@
       "created_at": "2023-06-19T16:28:59Z",
       "default_branch": "main",
       "description": "21 Lessons, Get Started Building with Generative AI ",
-      "forks": 60530,
+      "forks": 60531,
       "full_name": "microsoft/generative-ai-for-beginners",
       "html_url": "https://github.com/microsoft/generative-ai-for-beginners",
       "language": "Jupyter Notebook",
@@ -1219,7 +1219,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 105802,
+      "stars": 105801,
       "topics": [
         "ai",
         "ai-agents",
@@ -1229,8 +1229,8 @@
         "mcp-client",
         "mcp-server"
       ],
-      "trend_score": 415.272,
-      "updated_at": "2026-07-06T15:37:54Z"
+      "trend_score": 415.271,
+      "updated_at": "2026-07-06T15:46:57Z"
     },
     {
       "created_at": "2026-06-12T00:52:37Z",
@@ -1247,7 +1247,7 @@
       "signals": [
         "new_repository"
       ],
-      "stars": 75690,
+      "stars": 75693,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1260,8 +1260,8 @@
         "prompt-engineering",
         "yagni"
       ],
-      "trend_score": 404.118,
-      "updated_at": "2026-07-06T15:43:15Z"
+      "trend_score": 404.124,
+      "updated_at": "2026-07-06T15:46:32Z"
     },
     {
       "created_at": "2024-03-11T02:57:34Z",
@@ -1278,7 +1278,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 95965,
+      "stars": 95966,
       "topics": [
         "ai",
         "automation",
@@ -1288,8 +1288,8 @@
         "shortvideo",
         "tiktok"
       ],
-      "trend_score": 399.782,
-      "updated_at": "2026-07-06T15:43:24Z"
+      "trend_score": 399.784,
+      "updated_at": "2026-07-06T15:45:57Z"
     },
     {
       "created_at": "2024-11-30T04:49:10Z",
@@ -1349,7 +1349,7 @@
       "created_at": "2025-08-31T20:50:03Z",
       "default_branch": "main",
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "forks": 7449,
+      "forks": 7450,
       "full_name": "thedotmack/claude-mem",
       "html_url": "https://github.com/thedotmack/claude-mem",
       "language": "JavaScript",
@@ -1360,7 +1360,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 86131,
+      "stars": 86132,
       "topics": [
         "ai",
         "ai-agents",
@@ -1383,8 +1383,8 @@
         "sqlite",
         "supermemory"
       ],
-      "trend_score": 380.481,
-      "updated_at": "2026-07-06T15:32:41Z"
+      "trend_score": 380.483,
+      "updated_at": "2026-07-06T15:45:14Z"
     },
     {
       "created_at": "2026-04-04T10:03:00Z",
@@ -1401,7 +1401,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 85533,
+      "stars": 85535,
       "topics": [
         "ai",
         "anthropic",
@@ -1414,8 +1414,8 @@
         "skill",
         "tokens"
       ],
-      "trend_score": 373.46,
-      "updated_at": "2026-07-06T15:44:26Z"
+      "trend_score": 373.464,
+      "updated_at": "2026-07-06T15:44:55Z"
     },
     {
       "created_at": "2023-05-21T07:19:12Z",
@@ -1537,24 +1537,45 @@
       "updated_at": "2026-07-06T15:28:32Z"
     },
     {
-      "created_at": "2026-03-02T15:01:51Z",
-      "default_branch": "master",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "forks": 13584,
-      "full_name": "paperclipai/paperclip",
-      "html_url": "https://github.com/paperclipai/paperclip",
+      "created_at": "2026-04-28T04:25:20Z",
+      "default_branch": "main",
+      "description": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
+      "forks": 8619,
+      "full_name": "nexu-io/open-design",
+      "html_url": "https://github.com/nexu-io/open-design",
       "language": "TypeScript",
-      "open_issues": 5028,
-      "pushed_at": "2026-07-06T15:39:13Z",
+      "open_issues": 531,
+      "pushed_at": "2026-07-06T15:42:40Z",
       "recent_release": null,
       "signal": "implementation_tooling_activity",
       "signals": [
         "implementation_tooling_activity"
       ],
-      "stars": 72863,
-      "topics": [],
-      "trend_score": 359.931,
-      "updated_at": "2026-07-06T15:40:35Z"
+      "stars": 75494,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-design",
+        "byok",
+        "claude-code-for-design",
+        "claude-design",
+        "codex-design",
+        "coding-agents",
+        "cursor-design",
+        "design-systems",
+        "design-tools",
+        "desktop-app",
+        "figma-alternative",
+        "generative-ai",
+        "hermes-agent",
+        "local-first",
+        "no-code",
+        "prototyping",
+        "ui-generator",
+        "vibe-coding"
+      ],
+      "trend_score": 364.762,
+      "updated_at": "2026-07-06T15:45:50Z"
     },
     {
       "created_at": "2020-12-20T10:46:38Z",
@@ -1605,7 +1626,7 @@
       "signals": [
         "ai_tooling_activity"
       ],
-      "stars": 68380,
+      "stars": 68381,
       "topics": [
         "ai",
         "ai-scraping",
@@ -1628,8 +1649,8 @@
         "webscraping",
         "xpath"
       ],
-      "trend_score": 351.496,
-      "updated_at": "2026-07-06T15:43:16Z"
+      "trend_score": 351.498,
+      "updated_at": "2026-07-06T15:45:20Z"
     },
     {
       "created_at": "2023-05-28T10:09:12Z",
@@ -1741,8 +1762,8 @@
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "language": "TypeScript",
-        "open_issues": 6424,
-        "pushed_at": "2026-07-06T15:44:16Z",
+        "open_issues": 6428,
+        "pushed_at": "2026-07-06T15:47:15Z",
         "signal": "ai_tooling_activity",
         "stars": 381930,
         "topics": [
@@ -1767,7 +1788,7 @@
         "open_issues": 337,
         "pushed_at": "2026-07-05T22:52:28Z",
         "signal": "ai_tooling_activity",
-        "stars": 247563,
+        "stars": 247566,
         "topics": [
           "ai",
           "brainstorming",
@@ -1778,7 +1799,7 @@
           "subagent-driven-development",
           "superpowers"
         ],
-        "updated_at": "2026-07-06T15:43:35Z"
+        "updated_at": "2026-07-06T15:46:37Z"
       },
       {
         "created_at": "2025-07-22T22:22:28Z",
@@ -1791,7 +1812,7 @@
         "open_issues": 26224,
         "pushed_at": "2026-07-06T13:03:51Z",
         "signal": "ai_tooling_activity",
-        "stars": 210183,
+        "stars": 210185,
         "topics": [
           "ai",
           "ai-agent",
@@ -1810,7 +1831,7 @@
           "openai",
           "openclaw"
         ],
-        "updated_at": "2026-07-06T15:44:21Z"
+        "updated_at": "2026-07-06T15:46:26Z"
       },
       {
         "created_at": "2019-06-22T09:24:21Z",
@@ -1820,8 +1841,8 @@
         "full_name": "n8n-io/n8n",
         "html_url": "https://github.com/n8n-io/n8n",
         "language": "TypeScript",
-        "open_issues": 1467,
-        "pushed_at": "2026-07-06T15:41:42Z",
+        "open_issues": 1466,
+        "pushed_at": "2026-07-06T15:47:07Z",
         "signal": "ai_tooling_activity",
         "stars": 195413,
         "topics": [
@@ -1846,7 +1867,7 @@
           "workflow",
           "workflow-automation"
         ],
-        "updated_at": "2026-07-06T15:43:27Z"
+        "updated_at": "2026-07-06T15:45:49Z"
       },
       {
         "created_at": "2023-03-16T09:21:07Z",
@@ -1920,7 +1941,7 @@
         "open_issues": 57,
         "pushed_at": "2026-07-06T14:54:42Z",
         "signal": "ai_tooling_activity",
-        "stars": 156834,
+        "stars": 156835,
         "topics": [
           "agent",
           "ai",
@@ -1936,13 +1957,13 @@
           "springai",
           "system-design"
         ],
-        "updated_at": "2026-07-06T14:55:21Z"
+        "updated_at": "2026-07-06T15:47:30Z"
       },
       {
         "created_at": "2023-04-12T07:40:24Z",
         "default_branch": "main",
         "description": "Production-ready platform for agentic workflow development.",
-        "forks": 23290,
+        "forks": 23291,
         "full_name": "langgenius/dify",
         "html_url": "https://github.com/langgenius/dify",
         "language": "TypeScript",
@@ -2080,7 +2101,7 @@
         "created_at": "2022-10-17T02:58:36Z",
         "default_branch": "master",
         "description": "The agent engineering platform.",
-        "forks": 23448,
+        "forks": 23449,
         "full_name": "langchain-ai/langchain",
         "html_url": "https://github.com/langchain-ai/langchain",
         "language": "Python",
@@ -2123,7 +2144,7 @@
         "open_issues": 4232,
         "pushed_at": "2026-07-06T04:35:33Z",
         "signal": "ai_tooling_activity",
-        "stars": 119620,
+        "stars": 119621,
         "topics": [
           "ai",
           "comfy",
@@ -2132,7 +2153,7 @@
           "pytorch",
           "stable-diffusion"
         ],
-        "updated_at": "2026-07-06T15:44:13Z"
+        "updated_at": "2026-07-06T15:46:14Z"
       },
       {
         "created_at": "2025-08-21T22:54:31Z",
@@ -2142,8 +2163,8 @@
         "full_name": "github/spec-kit",
         "html_url": "https://github.com/github/spec-kit",
         "language": "Python",
-        "open_issues": 405,
-        "pushed_at": "2026-07-06T14:22:49Z",
+        "open_issues": 406,
+        "pushed_at": "2026-07-06T15:46:34Z",
         "signal": "ai_tooling_activity",
         "stars": 118356,
         "topics": [
@@ -2161,7 +2182,7 @@
         "created_at": "2023-06-19T16:28:59Z",
         "default_branch": "main",
         "description": "21 Lessons, Get Started Building with Generative AI ",
-        "forks": 60530,
+        "forks": 60531,
         "full_name": "microsoft/generative-ai-for-beginners",
         "html_url": "https://github.com/microsoft/generative-ai-for-beginners",
         "language": "Jupyter Notebook",
@@ -2195,7 +2216,7 @@
         "full_name": "supabase/supabase",
         "html_url": "https://github.com/supabase/supabase",
         "language": "TypeScript",
-        "open_issues": 1100,
+        "open_issues": 1101,
         "pushed_at": "2026-07-06T15:44:26Z",
         "signal": "ai_tooling_activity",
         "stars": 105810,
@@ -2233,7 +2254,7 @@
         "open_issues": 1365,
         "pushed_at": "2026-07-06T01:31:22Z",
         "signal": "ai_tooling_activity",
-        "stars": 105802,
+        "stars": 105801,
         "topics": [
           "ai",
           "ai-agents",
@@ -2243,7 +2264,7 @@
           "mcp-client",
           "mcp-server"
         ],
-        "updated_at": "2026-07-06T15:37:54Z"
+        "updated_at": "2026-07-06T15:46:57Z"
       },
       {
         "created_at": "2024-03-11T02:57:34Z",
@@ -2256,7 +2277,7 @@
         "open_issues": 52,
         "pushed_at": "2026-07-06T02:38:10Z",
         "signal": "ai_tooling_activity",
-        "stars": 95965,
+        "stars": 95966,
         "topics": [
           "ai",
           "automation",
@@ -2266,7 +2287,7 @@
           "shortvideo",
           "tiktok"
         ],
-        "updated_at": "2026-07-06T15:43:24Z"
+        "updated_at": "2026-07-06T15:45:57Z"
       },
       {
         "created_at": "2024-11-30T04:49:10Z",
@@ -2290,14 +2311,14 @@
         "created_at": "2025-08-31T20:50:03Z",
         "default_branch": "main",
         "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-        "forks": 7449,
+        "forks": 7450,
         "full_name": "thedotmack/claude-mem",
         "html_url": "https://github.com/thedotmack/claude-mem",
         "language": "JavaScript",
         "open_issues": 218,
         "pushed_at": "2026-07-05T22:47:21Z",
         "signal": "ai_tooling_activity",
-        "stars": 86131,
+        "stars": 86132,
         "topics": [
           "ai",
           "ai-agents",
@@ -2320,7 +2341,7 @@
           "sqlite",
           "supermemory"
         ],
-        "updated_at": "2026-07-06T15:32:41Z"
+        "updated_at": "2026-07-06T15:45:14Z"
       },
       {
         "created_at": "2026-04-04T10:03:00Z",
@@ -2333,7 +2354,7 @@
         "open_issues": 364,
         "pushed_at": "2026-07-03T11:10:42Z",
         "signal": "ai_tooling_activity",
-        "stars": 85533,
+        "stars": 85535,
         "topics": [
           "ai",
           "anthropic",
@@ -2346,7 +2367,7 @@
           "skill",
           "tokens"
         ],
-        "updated_at": "2026-07-06T15:44:26Z"
+        "updated_at": "2026-07-06T15:44:55Z"
       },
       {
         "created_at": "2023-12-12T06:13:13Z",
@@ -2525,7 +2546,7 @@
         "open_issues": 441,
         "pushed_at": "2026-06-30T11:51:26Z",
         "signal": "ai_tooling_activity",
-        "stars": 72273,
+        "stars": 72272,
         "topics": [
           "agentic-workflow",
           "ai",
@@ -2536,7 +2557,7 @@
           "code-interpreter",
           "developer-tools"
         ],
-        "updated_at": "2026-07-06T14:33:54Z"
+        "updated_at": "2026-07-06T15:47:12Z"
       },
       {
         "created_at": "2020-12-20T10:46:38Z",
@@ -2578,7 +2599,7 @@
         "open_issues": 2,
         "pushed_at": "2026-07-06T10:00:22Z",
         "signal": "ai_tooling_activity",
-        "stars": 68380,
+        "stars": 68381,
         "topics": [
           "ai",
           "ai-scraping",
@@ -2601,7 +2622,7 @@
           "webscraping",
           "xpath"
         ],
-        "updated_at": "2026-07-06T15:43:16Z"
+        "updated_at": "2026-07-06T15:45:20Z"
       },
       {
         "created_at": "2025-12-03T01:40:05Z",
@@ -2640,14 +2661,14 @@
         "created_at": "2014-12-24T17:49:19Z",
         "default_branch": "main",
         "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-        "forks": 45378,
+        "forks": 45379,
         "full_name": "freeCodeCamp/freeCodeCamp",
         "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
         "language": "TypeScript",
         "open_issues": 219,
         "pushed_at": "2026-07-06T15:22:49Z",
         "signal": "recent_activity",
-        "stars": 451163,
+        "stars": 451164,
         "topics": [
           "careers",
           "certification",
@@ -2665,7 +2686,7 @@
           "react",
           "teachers"
         ],
-        "updated_at": "2026-07-06T15:40:23Z"
+        "updated_at": "2026-07-06T15:47:12Z"
       },
       {
         "created_at": "2025-11-24T10:16:47Z",
@@ -2675,8 +2696,8 @@
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "language": "TypeScript",
-        "open_issues": 6424,
-        "pushed_at": "2026-07-06T15:44:16Z",
+        "open_issues": 6428,
+        "pushed_at": "2026-07-06T15:47:15Z",
         "signal": "recent_activity",
         "stars": 381930,
         "topics": [
@@ -2768,7 +2789,7 @@
           "self-hosted",
           "selfhosted"
         ],
-        "updated_at": "2026-07-06T15:44:07Z"
+        "updated_at": "2026-07-06T15:47:17Z"
       },
       {
         "created_at": "2017-04-12T05:07:46Z",
@@ -2805,7 +2826,7 @@
         "open_issues": 337,
         "pushed_at": "2026-07-05T22:52:28Z",
         "signal": "recent_activity",
-        "stars": 247563,
+        "stars": 247566,
         "topics": [
           "ai",
           "brainstorming",
@@ -2816,7 +2837,7 @@
           "subagent-driven-development",
           "superpowers"
         ],
-        "updated_at": "2026-07-06T15:43:35Z"
+        "updated_at": "2026-07-06T15:46:37Z"
       },
       {
         "created_at": "2013-05-24T16:15:54Z",
@@ -2866,7 +2887,7 @@
         "open_issues": 66,
         "pushed_at": "2026-07-06T04:55:16Z",
         "signal": "recent_activity",
-        "stars": 226571,
+        "stars": 226572,
         "topics": [
           "ai-agents",
           "anthropic",
@@ -2877,20 +2898,20 @@
           "mcp",
           "productivity"
         ],
-        "updated_at": "2026-07-06T15:38:25Z"
+        "updated_at": "2026-07-06T15:45:42Z"
       },
       {
         "created_at": "2025-07-22T22:22:28Z",
         "default_branch": "main",
         "description": "The agent that grows with you",
-        "forks": 38477,
+        "forks": 38478,
         "full_name": "NousResearch/hermes-agent",
         "html_url": "https://github.com/NousResearch/hermes-agent",
         "language": "Python",
         "open_issues": 26224,
         "pushed_at": "2026-07-06T13:03:51Z",
         "signal": "recent_activity",
-        "stars": 210183,
+        "stars": 210185,
         "topics": [
           "ai",
           "ai-agent",
@@ -2909,7 +2930,7 @@
           "openai",
           "openclaw"
         ],
-        "updated_at": "2026-07-06T15:44:21Z"
+        "updated_at": "2026-07-06T15:46:26Z"
       },
       {
         "created_at": "2015-11-07T01:19:20Z",
@@ -2943,8 +2964,8 @@
         "full_name": "n8n-io/n8n",
         "html_url": "https://github.com/n8n-io/n8n",
         "language": "TypeScript",
-        "open_issues": 1467,
-        "pushed_at": "2026-07-06T15:41:42Z",
+        "open_issues": 1466,
+        "pushed_at": "2026-07-06T15:47:07Z",
         "signal": "recent_activity",
         "stars": 195413,
         "topics": [
@@ -2969,7 +2990,7 @@
           "workflow",
           "workflow-automation"
         ],
-        "updated_at": "2026-07-06T15:43:27Z"
+        "updated_at": "2026-07-06T15:45:49Z"
       },
       {
         "created_at": "2009-08-28T18:15:37Z",
@@ -2982,7 +3003,7 @@
         "open_issues": 574,
         "pushed_at": "2026-07-06T08:31:15Z",
         "signal": "recent_activity",
-        "stars": 188432,
+        "stars": 188433,
         "topics": [
           "cli",
           "cli-app",
@@ -3000,7 +3021,7 @@
           "zsh",
           "zsh-configuration"
         ],
-        "updated_at": "2026-07-06T15:42:05Z"
+        "updated_at": "2026-07-06T15:45:41Z"
       },
       {
         "created_at": "2015-09-03T20:23:38Z",
@@ -3010,10 +3031,10 @@
         "full_name": "microsoft/vscode",
         "html_url": "https://github.com/microsoft/vscode",
         "language": "TypeScript",
-        "open_issues": 19083,
+        "open_issues": 19084,
         "pushed_at": "2026-07-06T15:43:50Z",
         "signal": "recent_activity",
-        "stars": 187152,
+        "stars": 187153,
         "topics": [
           "editor",
           "electron",
@@ -3021,7 +3042,7 @@
           "typescript",
           "visual-studio-code"
         ],
-        "updated_at": "2026-07-06T15:42:13Z"
+        "updated_at": "2026-07-06T15:46:23Z"
       },
       {
         "created_at": "2023-03-16T09:21:07Z",
@@ -3054,16 +3075,16 @@
         "created_at": "2025-04-30T20:08:00Z",
         "default_branch": "dev",
         "description": "The open source coding agent.",
-        "forks": 22663,
+        "forks": 22662,
         "full_name": "anomalyco/opencode",
         "html_url": "https://github.com/anomalyco/opencode",
         "language": "TypeScript",
         "open_issues": 4775,
         "pushed_at": "2026-07-06T15:36:05Z",
         "signal": "recent_activity",
-        "stars": 182915,
+        "stars": 182916,
         "topics": [],
-        "updated_at": "2026-07-06T15:42:22Z"
+        "updated_at": "2026-07-06T15:46:41Z"
       },
       {
         "created_at": "2015-03-06T22:54:58Z",
@@ -3233,9 +3254,9 @@
         "open_issues": 110,
         "pushed_at": "2026-07-06T15:17:23Z",
         "signal": "recent_activity",
-        "stars": 158395,
+        "stars": 158398,
         "topics": [],
-        "updated_at": "2026-07-06T15:42:10Z"
+        "updated_at": "2026-07-06T15:47:29Z"
       },
       {
         "created_at": "2018-05-07T13:27:00Z",
@@ -3248,7 +3269,7 @@
         "open_issues": 57,
         "pushed_at": "2026-07-06T14:54:42Z",
         "signal": "recent_activity",
-        "stars": 156834,
+        "stars": 156835,
         "topics": [
           "agent",
           "ai",
@@ -3264,7 +3285,7 @@
           "springai",
           "system-design"
         ],
-        "updated_at": "2026-07-06T14:55:21Z"
+        "updated_at": "2026-07-06T15:47:30Z"
       },
       {
         "created_at": "2023-02-08T22:28:03Z",
@@ -3292,7 +3313,7 @@
         "created_at": "2023-04-12T07:40:24Z",
         "default_branch": "main",
         "description": "Production-ready platform for agentic workflow development.",
-        "forks": 23290,
+        "forks": 23291,
         "full_name": "langgenius/dify",
         "html_url": "https://github.com/langgenius/dify",
         "language": "TypeScript",
@@ -3363,7 +3384,7 @@
         "created_at": "2022-10-17T02:58:36Z",
         "default_branch": "master",
         "description": "The agent engineering platform.",
-        "forks": 23448,
+        "forks": 23449,
         "full_name": "langchain-ai/langchain",
         "html_url": "https://github.com/langchain-ai/langchain",
         "language": "Python",
@@ -3466,7 +3487,7 @@
         "open_issues": 167,
         "pushed_at": "2026-07-01T23:34:52Z",
         "signal": "new_repository",
-        "stars": 75690,
+        "stars": 75693,
         "topics": [
           "agent-skills",
           "ai-agents",
@@ -3479,7 +3500,7 @@
           "prompt-engineering",
           "yagni"
         ],
-        "updated_at": "2026-07-06T15:43:15Z"
+        "updated_at": "2026-07-06T15:46:32Z"
       },
       {
         "created_at": "2026-06-18T08:40:15Z",
@@ -3492,9 +3513,9 @@
         "open_issues": 50,
         "pushed_at": "2026-07-03T05:14:30Z",
         "signal": "new_repository",
-        "stars": 13466,
+        "stars": 13467,
         "topics": [],
-        "updated_at": "2026-07-06T15:31:12Z"
+        "updated_at": "2026-07-06T15:46:28Z"
       },
       {
         "created_at": "2026-06-10T11:52:41Z",
@@ -3573,9 +3594,9 @@
         "open_issues": 87,
         "pushed_at": "2026-07-06T09:23:19Z",
         "signal": "new_repository",
-        "stars": 6897,
+        "stars": 6907,
         "topics": [],
-        "updated_at": "2026-07-06T15:44:13Z"
+        "updated_at": "2026-07-06T15:47:26Z"
       },
       {
         "created_at": "2026-06-11T12:18:13Z",
@@ -3635,7 +3656,7 @@
         "open_issues": 19,
         "pushed_at": "2026-07-06T15:05:21Z",
         "signal": "new_repository",
-        "stars": 6154,
+        "stars": 6155,
         "topics": [
           "agentic-ai",
           "ai-agents",
@@ -3655,7 +3676,7 @@
           "mcp",
           "prompt-engineering"
         ],
-        "updated_at": "2026-07-06T15:36:45Z"
+        "updated_at": "2026-07-06T15:47:31Z"
       },
       {
         "created_at": "2026-06-18T16:08:30Z",
@@ -3930,7 +3951,7 @@
         "open_issues": 26,
         "pushed_at": "2026-07-06T15:35:36Z",
         "signal": "new_repository",
-        "stars": 2359,
+        "stars": 2360,
         "topics": [
           "agents",
           "ai",
@@ -3938,7 +3959,7 @@
           "offensive-security",
           "redteam"
         ],
-        "updated_at": "2026-07-06T15:44:19Z"
+        "updated_at": "2026-07-06T15:46:29Z"
       },
       {
         "created_at": "2026-06-18T14:08:44Z",
@@ -4034,7 +4055,7 @@
         "open_issues": 14,
         "pushed_at": "2026-07-06T14:26:47Z",
         "signal": "new_repository",
-        "stars": 1665,
+        "stars": 1666,
         "topics": [
           "a-stock",
           "ai-agent",
@@ -4056,10 +4077,316 @@
           "tdx",
           "tickflow"
         ],
-        "updated_at": "2026-07-06T15:43:56Z"
+        "updated_at": "2026-07-06T15:46:14Z"
       }
     ],
     "typescript_python_tooling": [
+      {
+        "created_at": "2026-04-05T05:27:07Z",
+        "default_branch": "main",
+        "description": "基于 Karpathy llm-wiki 方法论的个人知识库构建 Skill，支持多平台！",
+        "forks": 262,
+        "full_name": "sdyckjq-lab/llm-wiki-skill",
+        "html_url": "https://github.com/sdyckjq-lab/llm-wiki-skill",
+        "language": "TypeScript",
+        "open_issues": 9,
+        "pushed_at": "2026-07-06T15:46:45Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 2074,
+        "topics": [],
+        "updated_at": "2026-07-06T15:36:36Z"
+      },
+      {
+        "created_at": "2025-03-10T15:34:26Z",
+        "default_branch": "main",
+        "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+        "forks": 2858,
+        "full_name": "Kilo-Org/kilocode",
+        "html_url": "https://github.com/Kilo-Org/kilocode",
+        "language": "TypeScript",
+        "open_issues": 763,
+        "pushed_at": "2026-07-06T15:45:53Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 25658,
+        "topics": [
+          "ai",
+          "ai-age",
+          "ai-coding",
+          "ai-developer-tools",
+          "chatgpt",
+          "claude",
+          "cli",
+          "gemini",
+          "jetbrains",
+          "sonnet",
+          "vscode",
+          "vscode-extension"
+        ],
+        "updated_at": "2026-07-06T15:46:04Z"
+      },
+      {
+        "created_at": "2025-11-14T17:13:57Z",
+        "default_branch": "main",
+        "description": "Ask the oracle when you're stuck. Invoke GPT-5 Pro with a custom context and files.",
+        "forks": 308,
+        "full_name": "steipete/oracle",
+        "html_url": "https://github.com/steipete/oracle",
+        "language": "TypeScript",
+        "open_issues": 2,
+        "pushed_at": "2026-07-06T15:45:49Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 3203,
+        "topics": [
+          "agents",
+          "ai",
+          "anthropic",
+          "gemini-pro",
+          "gpt-5-pro",
+          "openai",
+          "opus",
+          "sonnet"
+        ],
+        "updated_at": "2026-07-06T15:47:31Z"
+      },
+      {
+        "created_at": "2024-10-05T17:01:01Z",
+        "default_branch": "main",
+        "description": "The Company AI Command Center",
+        "forks": 3421,
+        "full_name": "kortix-ai/suna",
+        "html_url": "https://github.com/kortix-ai/suna",
+        "language": "TypeScript",
+        "open_issues": 37,
+        "pushed_at": "2026-07-06T15:45:46Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 19919,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "llm"
+        ],
+        "updated_at": "2026-07-06T15:46:10Z"
+      },
+      {
+        "created_at": "2013-01-26T04:00:59Z",
+        "default_branch": "main",
+        "description": "Your window into all of your data",
+        "forks": 8596,
+        "full_name": "elastic/kibana",
+        "html_url": "https://github.com/elastic/kibana",
+        "language": "TypeScript",
+        "open_issues": 14702,
+        "pushed_at": "2026-07-06T15:45:25Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 21173,
+        "topics": [
+          "dashboards",
+          "elasticsearch",
+          "hacktoberfest",
+          "kibana",
+          "metrics",
+          "observability",
+          "visualizations"
+        ],
+        "updated_at": "2026-07-06T15:45:46Z"
+      },
+      {
+        "created_at": "2024-08-06T20:44:31Z",
+        "default_branch": "main",
+        "description": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
+        "forks": 2369,
+        "full_name": "mastra-ai/mastra",
+        "html_url": "https://github.com/mastra-ai/mastra",
+        "language": "TypeScript",
+        "open_issues": 379,
+        "pushed_at": "2026-07-06T15:45:19Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 25866,
+        "topics": [
+          "agents",
+          "ai",
+          "chatbots",
+          "evals",
+          "javascript",
+          "llm",
+          "mcp",
+          "nextjs",
+          "nodejs",
+          "reactjs",
+          "tts",
+          "typescript",
+          "workflows"
+        ],
+        "updated_at": "2026-07-06T15:45:39Z"
+      },
+      {
+        "created_at": "2026-05-22T08:02:03Z",
+        "default_branch": "main",
+        "description": "Kimi Code CLI  —  The Starting Point for Next-Gen Agents",
+        "forks": 395,
+        "full_name": "MoonshotAI/kimi-code",
+        "html_url": "https://github.com/MoonshotAI/kimi-code",
+        "language": "TypeScript",
+        "open_issues": 453,
+        "pushed_at": "2026-07-06T15:45:19Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 2993,
+        "topics": [],
+        "updated_at": "2026-07-06T15:45:49Z"
+      },
+      {
+        "created_at": "2019-06-22T09:24:21Z",
+        "default_branch": "master",
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "forks": 59112,
+        "full_name": "n8n-io/n8n",
+        "html_url": "https://github.com/n8n-io/n8n",
+        "language": "TypeScript",
+        "open_issues": 1466,
+        "pushed_at": "2026-07-06T15:47:07Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 195413,
+        "topics": [
+          "ai",
+          "apis",
+          "automation",
+          "cli",
+          "data-flow",
+          "development",
+          "integration-framework",
+          "integrations",
+          "ipaas",
+          "low-code",
+          "low-code-platform",
+          "mcp",
+          "mcp-client",
+          "mcp-server",
+          "n8n",
+          "no-code",
+          "self-hosted",
+          "typescript",
+          "workflow",
+          "workflow-automation"
+        ],
+        "updated_at": "2026-07-06T15:45:49Z"
+      },
+      {
+        "created_at": "2020-11-16T20:33:30Z",
+        "default_branch": "canary",
+        "description": "Faust.js™ - The Headless WordPress Toolkit",
+        "forks": 155,
+        "full_name": "wpengine/faustjs",
+        "html_url": "https://github.com/wpengine/faustjs",
+        "language": "TypeScript",
+        "open_issues": 69,
+        "pushed_at": "2026-07-06T15:45:12Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1585,
+        "topics": [
+          "composable-architecture",
+          "hacktoberfest",
+          "headless",
+          "headless-cms",
+          "headless-wordpress",
+          "javascript",
+          "nextjs",
+          "react",
+          "wordpress"
+        ],
+        "updated_at": "2026-07-06T15:46:28Z"
+      },
+      {
+        "created_at": "2025-06-25T06:35:32Z",
+        "default_branch": "main",
+        "description": "AI coding platform for teams",
+        "forks": 454,
+        "full_name": "chaitin/MonkeyCode",
+        "html_url": "https://github.com/chaitin/MonkeyCode",
+        "language": "TypeScript",
+        "open_issues": 70,
+        "pushed_at": "2026-07-06T15:45:02Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 3567,
+        "topics": [
+          "ai",
+          "ai-agent",
+          "ai-coding",
+          "ai-coding-assistant",
+          "aicoding",
+          "claude",
+          "codex",
+          "coding",
+          "cursor",
+          "opencode",
+          "vibe-coding"
+        ],
+        "updated_at": "2026-07-06T15:45:21Z"
+      },
+      {
+        "created_at": "2019-01-13T17:52:15Z",
+        "default_branch": "main",
+        "description": ":sparkles: Monorepo for all the tooling which enables ESLint to support TypeScript",
+        "forks": 2923,
+        "full_name": "typescript-eslint/typescript-eslint",
+        "html_url": "https://github.com/typescript-eslint/typescript-eslint",
+        "language": "TypeScript",
+        "open_issues": 292,
+        "pushed_at": "2026-07-06T15:44:59Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 16294,
+        "topics": [
+          "eslint",
+          "eslint-plugin",
+          "eslintplugin",
+          "plugin",
+          "tslint",
+          "typescript"
+        ],
+        "updated_at": "2026-07-06T15:45:43Z"
+      },
+      {
+        "created_at": "2026-01-21T07:15:20Z",
+        "default_branch": "main",
+        "description": "AI skill for OpenClaw & Claude Code — recommend from 10000+ Nano Banana Pro (Gemini) image prompts. Smart search by use case, content remix, sample images.",
+        "forks": 182,
+        "full_name": "YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill",
+        "html_url": "https://github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill",
+        "language": "TypeScript",
+        "open_issues": 7,
+        "pushed_at": "2026-07-06T15:44:41Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1743,
+        "topics": [
+          "ai-agent",
+          "ai-image",
+          "claude-code-skill",
+          "clawhub",
+          "content-creation",
+          "gemini",
+          "image-generation",
+          "nano-banana",
+          "openclaw",
+          "openclaw-skill",
+          "prompt-engineering",
+          "prompt-library"
+        ],
+        "updated_at": "2026-07-06T15:44:55Z"
+      },
+      {
+        "created_at": "2026-03-27T21:15:39Z",
+        "default_branch": "main",
+        "description": "The best place to build with your AI sub",
+        "forks": 146,
+        "full_name": "Emanuele-web04/synara",
+        "html_url": "https://github.com/Emanuele-web04/synara",
+        "language": "TypeScript",
+        "open_issues": 83,
+        "pushed_at": "2026-07-06T15:44:31Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 1151,
+        "topics": [],
+        "updated_at": "2026-07-06T15:47:27Z"
+      },
       {
         "created_at": "2022-08-19T07:57:29Z",
         "default_branch": "main",
@@ -4081,31 +4408,6 @@
         "updated_at": "2026-07-06T15:44:10Z"
       },
       {
-        "created_at": "2026-05-14T09:22:35Z",
-        "default_branch": "master",
-        "description": "Comet: agent Skill harness for turning ideas into evaluated workflows",
-        "forks": 208,
-        "full_name": "rpamis/comet",
-        "html_url": "https://github.com/rpamis/comet",
-        "language": "TypeScript",
-        "open_issues": 35,
-        "pushed_at": "2026-07-06T15:44:01Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1996,
-        "topics": [
-          "ai",
-          "eval",
-          "harness-engineering",
-          "phase-guarded",
-          "sdd",
-          "skill-creator",
-          "skills",
-          "spec",
-          "spec-driven-development"
-        ],
-        "updated_at": "2026-07-06T15:43:24Z"
-      },
-      {
         "created_at": "2020-08-07T19:08:07Z",
         "default_branch": "main",
         "description": "Welcome to New Expensify: a complete re-imagination of financial collaboration, centered around chat. Help us build the next generation of Expensify by sharing feedback and contributing to the code.",
@@ -4113,12 +4415,33 @@
         "full_name": "Expensify/App",
         "html_url": "https://github.com/Expensify/App",
         "language": "TypeScript",
-        "open_issues": 2225,
+        "open_issues": 2227,
         "pushed_at": "2026-07-06T15:43:53Z",
         "signal": "implementation_tooling_activity",
         "stars": 4931,
         "topics": [],
         "updated_at": "2026-07-06T15:44:08Z"
+      },
+      {
+        "created_at": "2015-09-03T20:23:38Z",
+        "default_branch": "main",
+        "description": "Visual Studio Code",
+        "forks": 40940,
+        "full_name": "microsoft/vscode",
+        "html_url": "https://github.com/microsoft/vscode",
+        "language": "TypeScript",
+        "open_issues": 19084,
+        "pushed_at": "2026-07-06T15:43:50Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 187153,
+        "topics": [
+          "editor",
+          "electron",
+          "microsoft",
+          "typescript",
+          "visual-studio-code"
+        ],
+        "updated_at": "2026-07-06T15:46:23Z"
       },
       {
         "created_at": "2012-05-15T12:35:38Z",
@@ -4154,7 +4477,7 @@
         "html_url": "https://github.com/botpress/botpress",
         "language": "TypeScript",
         "open_issues": 24,
-        "pushed_at": "2026-07-06T15:43:37Z",
+        "pushed_at": "2026-07-06T15:47:33Z",
         "signal": "implementation_tooling_activity",
         "stars": 14770,
         "topics": [
@@ -4181,8 +4504,8 @@
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "language": "TypeScript",
-        "open_issues": 6424,
-        "pushed_at": "2026-07-06T15:44:16Z",
+        "open_issues": 6428,
+        "pushed_at": "2026-07-06T15:47:15Z",
         "signal": "implementation_tooling_activity",
         "stars": 381930,
         "topics": [
@@ -4197,6 +4520,42 @@
         "updated_at": "2026-07-06T15:44:02Z"
       },
       {
+        "created_at": "2024-03-03T01:44:32Z",
+        "default_branch": "main",
+        "description": "🌐 The Internet Computer! Free, Open-Source, and Self-Hostable.",
+        "forks": 3933,
+        "full_name": "HeyPuter/puter",
+        "html_url": "https://github.com/HeyPuter/puter",
+        "language": "TypeScript",
+        "open_issues": 28,
+        "pushed_at": "2026-07-06T15:43:25Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 42639,
+        "topics": [
+          "cloud",
+          "cloud-os",
+          "cloud-storage",
+          "desktop",
+          "desktop-environment",
+          "dropbox",
+          "good-first-issue",
+          "gui",
+          "javascript",
+          "nas",
+          "open-source",
+          "operating-system",
+          "os",
+          "osjs",
+          "puter",
+          "remote-desktop",
+          "storage",
+          "web-desktop",
+          "web-os",
+          "webtop"
+        ],
+        "updated_at": "2026-07-06T15:45:33Z"
+      },
+      {
         "created_at": "2013-01-25T19:54:46Z",
         "default_branch": "main",
         "description": "Perseus is Khan Academy's exercise question editor and renderer.",
@@ -4205,7 +4564,7 @@
         "html_url": "https://github.com/Khan/perseus",
         "language": "TypeScript",
         "open_issues": 81,
-        "pushed_at": "2026-07-06T15:43:23Z",
+        "pushed_at": "2026-07-06T15:46:06Z",
         "signal": "implementation_tooling_activity",
         "stars": 1576,
         "topics": [],
@@ -4233,6 +4592,42 @@
           "prometheus-utility"
         ],
         "updated_at": "2026-07-06T15:43:06Z"
+      },
+      {
+        "created_at": "2025-07-15T12:07:55Z",
+        "default_branch": "main",
+        "description": "Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
+        "forks": 1095,
+        "full_name": "archestra-ai/archestra",
+        "html_url": "https://github.com/archestra-ai/archestra",
+        "language": "TypeScript",
+        "open_issues": 81,
+        "pushed_at": "2026-07-06T15:46:01Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 3932,
+        "topics": [
+          "a2a",
+          "a2a-mcp",
+          "acp",
+          "agent",
+          "ai",
+          "chatgpt",
+          "chatgpt-api",
+          "claude",
+          "deepseek",
+          "gemini",
+          "k8s",
+          "mcp",
+          "mcp-client",
+          "mcp-gateway",
+          "mcp-host",
+          "mcp-server",
+          "mcp-servers",
+          "mcp-tools",
+          "openai",
+          "runtime"
+        ],
+        "updated_at": "2026-07-06T15:44:52Z"
       },
       {
         "created_at": "2025-05-26T10:38:07Z",
@@ -4268,7 +4663,43 @@
           "react",
           "up-for-grabs"
         ],
-        "updated_at": "2026-07-06T15:43:10Z"
+        "updated_at": "2026-07-06T15:44:36Z"
+      },
+      {
+        "created_at": "2026-04-28T04:25:20Z",
+        "default_branch": "main",
+        "description": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
+        "forks": 8619,
+        "full_name": "nexu-io/open-design",
+        "html_url": "https://github.com/nexu-io/open-design",
+        "language": "TypeScript",
+        "open_issues": 531,
+        "pushed_at": "2026-07-06T15:42:40Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 75494,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "ai-design",
+          "byok",
+          "claude-code-for-design",
+          "claude-design",
+          "codex-design",
+          "coding-agents",
+          "cursor-design",
+          "design-systems",
+          "design-tools",
+          "desktop-app",
+          "figma-alternative",
+          "generative-ai",
+          "hermes-agent",
+          "local-first",
+          "no-code",
+          "prototyping",
+          "ui-generator",
+          "vibe-coding"
+        ],
+        "updated_at": "2026-07-06T15:45:50Z"
       },
       {
         "created_at": "2026-03-29T15:33:21Z",
@@ -4302,6 +4733,41 @@
         "updated_at": "2026-07-06T15:42:44Z"
       },
       {
+        "created_at": "2023-03-25T17:10:26Z",
+        "default_branch": "main",
+        "description": "An otaku index for everything! ⭐ Star the project if you like it!",
+        "forks": 137,
+        "full_name": "wotakumoe/wotaku",
+        "html_url": "https://github.com/wotakumoe/wotaku",
+        "language": "TypeScript",
+        "open_issues": 0,
+        "pushed_at": "2026-07-06T15:42:12Z",
+        "signal": "implementation_tooling_activity",
+        "stars": 2903,
+        "topics": [
+          "acg",
+          "anime",
+          "doujin",
+          "glossary",
+          "guide",
+          "hentai",
+          "japan",
+          "japanese-language",
+          "japanese-study",
+          "language-learning",
+          "manga",
+          "mihon",
+          "music",
+          "novel",
+          "scanlation",
+          "tachiyomi",
+          "vtuber",
+          "weeb",
+          "wiki"
+        ],
+        "updated_at": "2026-07-06T15:45:22Z"
+      },
+      {
         "created_at": "2021-03-19T09:44:40Z",
         "default_branch": "main",
         "description": "Agentic BI. Analytics at the speed of code ⚡️",
@@ -4322,27 +4788,6 @@
         "updated_at": "2026-07-06T15:42:20Z"
       },
       {
-        "created_at": "2015-09-03T20:23:38Z",
-        "default_branch": "main",
-        "description": "Visual Studio Code",
-        "forks": 40940,
-        "full_name": "microsoft/vscode",
-        "html_url": "https://github.com/microsoft/vscode",
-        "language": "TypeScript",
-        "open_issues": 19083,
-        "pushed_at": "2026-07-06T15:43:50Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 187152,
-        "topics": [
-          "editor",
-          "electron",
-          "microsoft",
-          "typescript",
-          "visual-studio-code"
-        ],
-        "updated_at": "2026-07-06T15:42:13Z"
-      },
-      {
         "created_at": "2019-10-12T05:56:49Z",
         "default_branch": "master",
         "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
@@ -4350,7 +4795,7 @@
         "full_name": "supabase/supabase",
         "html_url": "https://github.com/supabase/supabase",
         "language": "TypeScript",
-        "open_issues": 1100,
+        "open_issues": 1101,
         "pushed_at": "2026-07-06T15:44:26Z",
         "signal": "implementation_tooling_activity",
         "stars": 105810,
@@ -4404,459 +4849,6 @@
           "prometheus"
         ],
         "updated_at": "2026-07-06T15:42:06Z"
-      },
-      {
-        "created_at": "2019-06-22T09:24:21Z",
-        "default_branch": "master",
-        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-        "forks": 59112,
-        "full_name": "n8n-io/n8n",
-        "html_url": "https://github.com/n8n-io/n8n",
-        "language": "TypeScript",
-        "open_issues": 1467,
-        "pushed_at": "2026-07-06T15:41:42Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 195413,
-        "topics": [
-          "ai",
-          "apis",
-          "automation",
-          "cli",
-          "data-flow",
-          "development",
-          "integration-framework",
-          "integrations",
-          "ipaas",
-          "low-code",
-          "low-code-platform",
-          "mcp",
-          "mcp-client",
-          "mcp-server",
-          "n8n",
-          "no-code",
-          "self-hosted",
-          "typescript",
-          "workflow",
-          "workflow-automation"
-        ],
-        "updated_at": "2026-07-06T15:43:27Z"
-      },
-      {
-        "created_at": "2021-12-14T16:53:48Z",
-        "default_branch": "main",
-        "description": "Official JavaScript repository for Clerk authentication",
-        "forks": 461,
-        "full_name": "clerk/javascript",
-        "html_url": "https://github.com/clerk/javascript",
-        "language": "TypeScript",
-        "open_issues": 103,
-        "pushed_at": "2026-07-06T15:42:07Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1722,
-        "topics": [
-          "astro",
-          "auth",
-          "authentication",
-          "expo",
-          "express",
-          "fastify",
-          "javascript",
-          "jwt",
-          "jwt-authentication",
-          "next",
-          "nextjs",
-          "nodejs",
-          "nuxt",
-          "react",
-          "react-router",
-          "tanstack",
-          "vue"
-        ],
-        "updated_at": "2026-07-06T15:41:58Z"
-      },
-      {
-        "created_at": "2025-11-15T03:15:04Z",
-        "default_branch": "main",
-        "description": "用于安卓 GKD 的第三方订阅规则 (👻Fork版)",
-        "forks": 99,
-        "full_name": "Lin-arm/GKD_subscription",
-        "html_url": "https://github.com/Lin-arm/GKD_subscription",
-        "language": "TypeScript",
-        "open_issues": 0,
-        "pushed_at": "2026-07-06T15:41:24Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 3905,
-        "topics": [
-          "ad",
-          "gkd",
-          "gkd-subscription",
-          "subscription"
-        ],
-        "updated_at": "2026-07-06T15:41:39Z"
-      },
-      {
-        "created_at": "2021-05-09T11:48:37Z",
-        "default_branch": "main",
-        "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
-        "forks": 3360,
-        "full_name": "tldraw/tldraw",
-        "html_url": "https://github.com/tldraw/tldraw",
-        "language": "TypeScript",
-        "open_issues": 432,
-        "pushed_at": "2026-07-06T15:40:47Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 48584,
-        "topics": [
-          "canvas",
-          "collaboration",
-          "design",
-          "diagram",
-          "drawing",
-          "infinite",
-          "multiplayer",
-          "react",
-          "sdk",
-          "sketch",
-          "sync",
-          "whiteboard"
-        ],
-        "updated_at": "2026-07-06T15:43:46Z"
-      },
-      {
-        "created_at": "2021-03-18T21:55:22Z",
-        "default_branch": "main",
-        "description": "📈 Open source, privacy-first web analytics — a cookie-less Google Analytics alternative with built-in error tracking and performance monitoring. Self-host it or use our cloud. Get started for free!",
-        "forks": 61,
-        "full_name": "Swetrix/swetrix",
-        "html_url": "https://github.com/Swetrix/swetrix",
-        "language": "TypeScript",
-        "open_issues": 13,
-        "pushed_at": "2026-07-06T15:40:31Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 1062,
-        "topics": [
-          "charts",
-          "clickhouse",
-          "docker",
-          "gdpr",
-          "google-analytics",
-          "metrics",
-          "monitoring",
-          "mysql",
-          "nestjs",
-          "privacy",
-          "redis",
-          "self-hosted",
-          "selfhosted",
-          "statistics",
-          "tailwindcss",
-          "web-analytics",
-          "webanalytics",
-          "website"
-        ],
-        "updated_at": "2026-07-06T15:40:42Z"
-      },
-      {
-        "created_at": "2020-01-18T13:39:04Z",
-        "default_branch": "develop",
-        "description": "The world's most flexible commerce platform.",
-        "forks": 4860,
-        "full_name": "medusajs/medusa",
-        "html_url": "https://github.com/medusajs/medusa",
-        "language": "TypeScript",
-        "open_issues": 141,
-        "pushed_at": "2026-07-06T15:40:30Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 34958,
-        "topics": [
-          "commerce",
-          "e-commerce",
-          "ecommerce",
-          "framework",
-          "javascript",
-          "medusa",
-          "nodejs",
-          "react",
-          "typescript"
-        ],
-        "updated_at": "2026-07-06T15:44:18Z"
-      },
-      {
-        "created_at": "2018-12-17T22:57:34Z",
-        "default_branch": "master",
-        "description": "Open Cyber Threat Intelligence Platform",
-        "forks": 1390,
-        "full_name": "OpenCTI-Platform/opencti",
-        "html_url": "https://github.com/OpenCTI-Platform/opencti",
-        "language": "TypeScript",
-        "open_issues": 2045,
-        "pushed_at": "2026-07-06T15:44:10Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 9637,
-        "topics": [
-          "cti",
-          "cyber",
-          "cybersecurity",
-          "intelligence",
-          "osint",
-          "security",
-          "threat-intelligence"
-        ],
-        "updated_at": "2026-07-06T15:40:34Z"
-      },
-      {
-        "created_at": "2023-06-19T04:08:31Z",
-        "default_branch": "main",
-        "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol",
-        "forks": 4436,
-        "full_name": "CopilotKit/CopilotKit",
-        "html_url": "https://github.com/CopilotKit/CopilotKit",
-        "language": "TypeScript",
-        "open_issues": 629,
-        "pushed_at": "2026-07-06T15:40:23Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 35805,
-        "topics": [
-          "agent",
-          "agent-native",
-          "agentic-ai",
-          "agents",
-          "ai",
-          "ai-agent",
-          "ai-assistant",
-          "assistant",
-          "assistant-chat-bots",
-          "copilot",
-          "copilot-chat",
-          "generative-ui",
-          "js",
-          "llm",
-          "nextjs",
-          "open-source",
-          "react",
-          "reactjs",
-          "ts",
-          "typescript"
-        ],
-        "updated_at": "2026-07-06T15:41:39Z"
-      },
-      {
-        "created_at": "2024-10-05T17:01:01Z",
-        "default_branch": "main",
-        "description": "The Company AI Command Center",
-        "forks": 3421,
-        "full_name": "kortix-ai/suna",
-        "html_url": "https://github.com/kortix-ai/suna",
-        "language": "TypeScript",
-        "open_issues": 37,
-        "pushed_at": "2026-07-06T15:42:06Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 19919,
-        "topics": [
-          "ai",
-          "ai-agents",
-          "llm"
-        ],
-        "updated_at": "2026-07-06T15:40:21Z"
-      },
-      {
-        "created_at": "2026-03-02T15:01:51Z",
-        "default_branch": "master",
-        "description": "The open-source app everyone uses to manage agents at work",
-        "forks": 13584,
-        "full_name": "paperclipai/paperclip",
-        "html_url": "https://github.com/paperclipai/paperclip",
-        "language": "TypeScript",
-        "open_issues": 5028,
-        "pushed_at": "2026-07-06T15:39:13Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 72863,
-        "topics": [],
-        "updated_at": "2026-07-06T15:40:35Z"
-      },
-      {
-        "created_at": "2021-02-02T19:37:59Z",
-        "default_branch": "master",
-        "description": "Visual builder for React. Build apps, websites, and content. Integrate with your codebase.",
-        "forks": 697,
-        "full_name": "plasmicapp/plasmic",
-        "html_url": "https://github.com/plasmicapp/plasmic",
-        "language": "TypeScript",
-        "open_issues": 42,
-        "pushed_at": "2026-07-06T15:39:13Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 6896,
-        "topics": [
-          "builder",
-          "cms",
-          "design",
-          "design-systems",
-          "design-tools",
-          "drag-drop",
-          "frontend",
-          "gatsby",
-          "headless",
-          "headless-cms",
-          "jamstack",
-          "lowcode",
-          "nextjs",
-          "nocode",
-          "page-builder",
-          "react",
-          "ui-builder",
-          "wysiwyg"
-        ],
-        "updated_at": "2026-07-06T15:41:51Z"
-      },
-      {
-        "created_at": "2021-11-22T14:54:51Z",
-        "default_branch": "x",
-        "description": "Secure, open source and community driven crypto wallet runs on all platforms and trusted by millions.",
-        "forks": 520,
-        "full_name": "OneKeyHQ/app-monorepo",
-        "html_url": "https://github.com/OneKeyHQ/app-monorepo",
-        "language": "TypeScript",
-        "open_issues": 120,
-        "pushed_at": "2026-07-06T15:44:16Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 2388,
-        "topics": [
-          "android",
-          "bitcoin",
-          "blockchain",
-          "crypto",
-          "defi",
-          "electron",
-          "ethereum",
-          "expo",
-          "ios",
-          "mobile",
-          "native",
-          "near",
-          "react",
-          "react-native",
-          "redux",
-          "solana",
-          "universal",
-          "wallet",
-          "web"
-        ],
-        "updated_at": "2026-07-06T15:39:54Z"
-      },
-      {
-        "created_at": "2026-03-28T15:15:01Z",
-        "default_branch": "main",
-        "description": "A local-first AI agent with persistent memory, emotional intelligence, and a peer-to-peer skills economy.",
-        "forks": 421,
-        "full_name": "Bitterbot-AI/bitterbot-desktop",
-        "html_url": "https://github.com/Bitterbot-AI/bitterbot-desktop",
-        "language": "TypeScript",
-        "open_issues": 2,
-        "pushed_at": "2026-07-06T15:39:12Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 2421,
-        "topics": [
-          "a2a-protocol",
-          "agent-economy",
-          "agent-memory",
-          "ai-agent",
-          "chatbot",
-          "cognitive-architecture",
-          "decentralized-ai",
-          "desktop-app",
-          "dream-engine",
-          "local-first",
-          "multi-channel",
-          "open-source",
-          "p2p",
-          "personal-ai",
-          "skills-marketplace",
-          "typescript",
-          "x402"
-        ],
-        "updated_at": "2026-07-06T15:39:18Z"
-      },
-      {
-        "created_at": "2015-07-22T05:32:15Z",
-        "default_branch": "develop",
-        "description": "A glossy Matrix collaboration client for the web.",
-        "forks": 2676,
-        "full_name": "element-hq/element-web",
-        "html_url": "https://github.com/element-hq/element-web",
-        "language": "TypeScript",
-        "open_issues": 3757,
-        "pushed_at": "2026-07-06T15:39:10Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 13263,
-        "topics": [
-          "hacktoberfest",
-          "matrix"
-        ],
-        "updated_at": "2026-07-06T15:39:14Z"
-      },
-      {
-        "created_at": "2025-08-28T07:19:57Z",
-        "default_branch": "main",
-        "description": "Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. Use any provider.",
-        "forks": 525,
-        "full_name": "generalaction/emdash",
-        "html_url": "https://github.com/generalaction/emdash",
-        "language": "TypeScript",
-        "open_issues": 143,
-        "pushed_at": "2026-07-06T15:43:03Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 5080,
-        "topics": [
-          "agenticdevelopment",
-          "agenticdevelopmentenvironment",
-          "ai",
-          "claude-code",
-          "cli",
-          "coding-agents",
-          "codingagents",
-          "containerization",
-          "docker",
-          "gitworktrees",
-          "jira",
-          "linear",
-          "llm",
-          "openai",
-          "opensource",
-          "orchestration",
-          "parallel-agents",
-          "parallelexecution",
-          "terminal"
-        ],
-        "updated_at": "2026-07-06T15:39:07Z"
-      },
-      {
-        "created_at": "2023-09-09T11:33:18Z",
-        "default_branch": "main",
-        "description": "The platform for LLM evaluations and AI agent testing",
-        "forks": 327,
-        "full_name": "langwatch/langwatch",
-        "html_url": "https://github.com/langwatch/langwatch",
-        "language": "TypeScript",
-        "open_issues": 733,
-        "pushed_at": "2026-07-06T15:43:21Z",
-        "signal": "implementation_tooling_activity",
-        "stars": 3324,
-        "topics": [
-          "ai",
-          "analytics",
-          "datasets",
-          "dspy",
-          "evaluation",
-          "gpt",
-          "llm",
-          "llm-ops",
-          "llmops",
-          "low-code",
-          "observability",
-          "openai",
-          "prompt-engineering"
-        ],
-        "updated_at": "2026-07-06T15:39:04Z"
       }
     ]
   }
