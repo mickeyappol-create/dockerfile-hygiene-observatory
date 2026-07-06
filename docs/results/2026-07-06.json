@@ -1,7 +1,7 @@
 {
   "schema": "dockerfile-hygiene-observatory-results/1",
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T14:16:43.284153+00:00",
+  "generated_at": "2026-07-06T14:20:07.059294+00:00",
   "collection": {
     "repo_query": "GitHub search repositories: stars:>10000 fork:false archived:false sorted by stars desc",
     "dockerfile_path_policy": "root Dockerfile only for Day 1",
