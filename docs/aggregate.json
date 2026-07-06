@@ -1,0 +1,95 @@
+{
+  "schema": "dockerfile-hygiene-observatory-aggregate/1",
+  "updated_at": "2026-07-06T06:58:16.501562+00:00",
+  "latest": {
+    "date": "2026-07-06",
+    "repo_count": 32,
+    "decision_counts": {
+      "REVIEW": 21,
+      "PASS": 6,
+      "BLOCK": 5
+    },
+    "decision_rates": {
+      "REVIEW": 0.65625,
+      "PASS": 0.1875,
+      "BLOCK": 0.15625
+    },
+    "rule_counts": {
+      "unpinned_base_image": 67,
+      "no_healthcheck": 28,
+      "runs_as_root": 21,
+      "apt_lists_not_cleaned": 12,
+      "secret_literal_in_env": 9,
+      "sudo_in_run": 3,
+      "curl_pipe_shell": 2,
+      "missing_from": 1
+    },
+    "rule_rates": {
+      "unpinned_base_image": 2.09375,
+      "apt_lists_not_cleaned": 0.375,
+      "runs_as_root": 0.65625,
+      "no_healthcheck": 0.875,
+      "secret_literal_in_env": 0.28125,
+      "curl_pipe_shell": 0.0625,
+      "sudo_in_run": 0.09375,
+      "missing_from": 0.03125
+    },
+    "severity_counts": {
+      "warn": 91,
+      "info": 40,
+      "critical": 12
+    },
+    "receipt_count": 32,
+    "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored."
+  },
+  "series": [
+    {
+      "date": "2026-07-06",
+      "repo_count": 32,
+      "decision_counts": {
+        "REVIEW": 21,
+        "PASS": 6,
+        "BLOCK": 5
+      },
+      "decision_rates": {
+        "REVIEW": 0.65625,
+        "PASS": 0.1875,
+        "BLOCK": 0.15625
+      },
+      "rule_counts": {
+        "unpinned_base_image": 67,
+        "no_healthcheck": 28,
+        "runs_as_root": 21,
+        "apt_lists_not_cleaned": 12,
+        "secret_literal_in_env": 9,
+        "sudo_in_run": 3,
+        "curl_pipe_shell": 2,
+        "missing_from": 1
+      },
+      "rule_rates": {
+        "unpinned_base_image": 2.09375,
+        "apt_lists_not_cleaned": 0.375,
+        "runs_as_root": 0.65625,
+        "no_healthcheck": 0.875,
+        "secret_literal_in_env": 0.28125,
+        "curl_pipe_shell": 0.0625,
+        "sudo_in_run": 0.09375,
+        "missing_from": 0.03125
+      },
+      "severity_counts": {
+        "warn": 91,
+        "info": 40,
+        "critical": 12
+      },
+      "receipt_count": 32,
+      "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored."
+    }
+  ],
+  "data_links": {
+    "latest_results": "results/2026-07-06.json"
+  },
+  "limits": {
+    "daily_lint_max": 100,
+    "daily_collect_request_max": 200
+  }
+}
