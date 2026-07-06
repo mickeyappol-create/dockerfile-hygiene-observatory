@@ -1,0 +1,46 @@
+name: Daily Dockerfile hygiene scan and deploy
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  scan-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run daily scan (signed Apex lane via APEX_AGENT_KEY secret)
+        env:
+          APEX_AGENT_KEY: ${{ secrets.APEX_AGENT_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/collect_and_scan.py --append --limit 50 --key-file env
+      - name: Commit data + dashboard
+        run: |
+          git config user.name "hermes-observatory-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results aggregate.json docs
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "data: scheduled scan $(date -u +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
