@@ -223,13 +223,21 @@ def gh_code_search_root_dockerfile_repositories(max_pages: int = 10, max_repos: 
     root_hits: list[dict[str, Any]] = []
     seen: set[str] = set()
     for page in range(1, max_pages + 1):
-        data = gh_json([
-            "search/code",
-            "--method", "GET",
-            "-f", "q=FROM filename:Dockerfile language:Dockerfile",
-            "-f", "per_page=100",
-            "-f", f"page={page}",
-        ])
+        try:
+            data = gh_json([
+                "search/code",
+                "--method", "GET",
+                "-f", "q=FROM filename:Dockerfile language:Dockerfile",
+                "-f", "per_page=100",
+                "-f", f"page={page}",
+            ])
+        except Exception as e:
+            # REST code search needs a user PAT; the ephemeral GITHUB_TOKEN in
+            # GitHub Actions cannot call /search/code (exit 1). Degrade like the
+            # GraphQL path: keep whatever we found and let the caller fall back
+            # to GraphQL preselection + broad star search.
+            print(f"warning: code-search Dockerfile preselection unavailable after {len(root_hits)} candidates: {e}", file=sys.stderr)
+            break
         for item in data.get("items", []):
             if item.get("path") != "Dockerfile":
                 continue
