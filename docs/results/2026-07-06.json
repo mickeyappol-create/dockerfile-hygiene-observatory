@@ -1,12 +1,14 @@
 {
   "schema": "dockerfile-hygiene-observatory-results/1",
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T06:58:16.500437+00:00",
+  "generated_at": "2026-07-06T11:12:36.061291+00:00",
   "collection": {
     "repo_query": "GitHub search repositories: stars:>10000 fork:false archived:false sorted by stars desc",
     "dockerfile_path_policy": "root Dockerfile only for Day 1",
     "collection_requests_used": 200,
     "lint_runs_used": 32,
+    "collection_requests_used_this_run": 0,
+    "lint_runs_used_this_run": 0,
     "raw_text_stored": false
   },
   "rows": [
