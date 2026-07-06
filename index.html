@@ -11,15 +11,15 @@
 <tr><td>REVIEW</td><td>21</td><td>65.6%</td></tr>
 <tr><td>BLOCK</td><td>5</td><td>15.6%</td></tr>
 <tr><td>UNKNOWN</td><td>0</td><td>0.0%</td></tr></tbody></table>
-<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repositories</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>unpinned_base_image</td><td>67</td><td>209.4%</td></tr>
-<tr><td>no_healthcheck</td><td>28</td><td>87.5%</td></tr>
-<tr><td>runs_as_root</td><td>21</td><td>65.6%</td></tr>
-<tr><td>apt_lists_not_cleaned</td><td>12</td><td>37.5%</td></tr>
-<tr><td>secret_literal_in_env</td><td>9</td><td>28.1%</td></tr>
-<tr><td>sudo_in_run</td><td>3</td><td>9.4%</td></tr>
-<tr><td>curl_pipe_shell</td><td>2</td><td>6.2%</td></tr>
-<tr><td>missing_from</td><td>1</td><td>3.1%</td></tr></tbody></table>
-<h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored.</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
+<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>28</td><td>28</td><td>1.00</td><td>87.5%</td></tr>
+<tr><td>runs_as_root</td><td>21</td><td>21</td><td>1.00</td><td>65.6%</td></tr>
+<tr><td>unpinned_base_image</td><td>14</td><td>67</td><td>4.79</td><td>43.8%</td></tr>
+<tr><td>apt_lists_not_cleaned</td><td>6</td><td>12</td><td>2.00</td><td>18.8%</td></tr>
+<tr><td>secret_literal_in_env</td><td>3</td><td>9</td><td>3.00</td><td>9.4%</td></tr>
+<tr><td>curl_pipe_shell</td><td>2</td><td>2</td><td>1.00</td><td>6.2%</td></tr>
+<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>6.2%</td></tr>
+<tr><td>missing_from</td><td>1</td><td>1</td><td>1.00</td><td>3.1%</td></tr></tbody></table>
+<h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
 <h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/06e6cf0d3fd63c9d67d740963d89382c95c8f61633a01093000230be747c59f9'>06e6cf0d3fd6…</a></td><td>verified_agent_passport</td><td>2026-07-06T06:56:49.840Z</td></tr>
 <tr><td><a href='https://api.smartapex.uk/v1/receipts/3e3207fb8cfa4366d63454bdf360d5134550ec12aacd45ecdf70f63275e5e80d'>3e3207fb8cfa…</a></td><td>verified_agent_passport</td><td>2026-07-06T06:56:55.041Z</td></tr>
 <tr><td><a href='https://api.smartapex.uk/v1/receipts/742e192ecc03b12f33ae5e325f69c8e15cd5af3764dfaa314404a629da3767b8'>742e192ecc03…</a></td><td>verified_agent_passport</td><td>2026-07-06T06:57:00.590Z</td></tr>
