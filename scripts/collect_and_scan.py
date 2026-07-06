@@ -232,7 +232,14 @@ def build_aggregate(date: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
         except Exception:
             previous = None
     decision_counts = Counter(r.get("decision") or "UNKNOWN" for r in rows)
+    # rule_counts is total occurrences. A rule can occur multiple times in one Dockerfile.
     rule_counts = Counter(rule["rule"] for r in rows for rule in (r.get("rules") or []))
+    # rule_repos_with_rule is the repo-level prevalence count: each rule is counted at most once per repo.
+    rule_repos_with_rule = Counter(
+        rule_name
+        for r in rows
+        for rule_name in {rule.get("rule") for rule in (r.get("rules") or []) if rule.get("rule")}
+    )
     severity_counts = Counter((rule.get("severity") or "unknown") for r in rows for rule in (r.get("rules") or []))
     total = len(rows)
     snapshot = {
@@ -241,10 +248,13 @@ def build_aggregate(date: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "decision_counts": dict(decision_counts),
         "decision_rates": {k: (v / total if total else 0) for k, v in decision_counts.items()},
         "rule_counts": dict(rule_counts.most_common()),
-        "rule_rates": {k: (v / total if total else 0) for k, v in rule_counts.items()},
+        "rule_counts_meaning": "occurrences across all scanned Dockerfiles; a single repo can contribute multiple occurrences",
+        "rule_repos_with_rule": dict(rule_repos_with_rule.most_common()),
+        "rule_rates": {k: (v / total if total else 0) for k, v in rule_repos_with_rule.items()},
+        "rule_rates_meaning": "repos_with_rule divided by repo_count; each rule counted at most once per repo",
         "severity_counts": dict(severity_counts),
         "receipt_count": sum(1 for r in rows if (r.get("verification_receipt") or {}).get("receipt_id")),
-        "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored.",
+        "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).",
     }
     series = [] if not previous else list(previous.get("series", []))
     series = [s for s in series if s.get("date") != date]
@@ -269,8 +279,8 @@ def render_page(aggregate: dict[str, Any], rows: list[dict[str, Any]]) -> None:
         for k in ["PASS", "REVIEW", "BLOCK", "UNKNOWN"]
     )
     rule_rows = "\n".join(
-        f"<tr><td>{rule}</td><td>{count}</td><td>{pct(latest['rule_rates'].get(rule,0))}</td></tr>"
-        for rule, count in list(latest["rule_counts"].items())[:20]
+        f"<tr><td>{rule}</td><td>{repos}</td><td>{latest['rule_counts'].get(rule, 0)}</td><td>{(latest['rule_counts'].get(rule, 0) / repos):.2f}</td><td>{pct(latest['rule_rates'].get(rule, 0))}</td></tr>"
+        for rule, repos in list(latest.get("rule_repos_with_rule", {}).items())[:20]
     )
     sample_receipts = [r["verification_receipt"] for r in rows if (r.get("verification_receipt") or {}).get("receipt_id")][:5]
     receipt_rows = "\n".join(
@@ -287,7 +297,7 @@ def render_page(aggregate: dict[str, Any], rows: list[dict[str, Any]]) -> None:
 <h2>Latest snapshot: {latest['date']}</h2>
 <ul><li>Repositories scanned: <strong>{latest['repo_count']}</strong></li><li>Apex verification receipts preserved: <strong>{latest['receipt_count']}</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="{aggregate['data_links']['latest_results']}"><code>{aggregate['data_links']['latest_results']}</code></a></li></ul>
 <h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody>{dec_rows}</tbody></table>
-<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repositories</th><th>Rate over scanned repos</th></tr></thead><tbody>{rule_rows}</tbody></table>
+<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody>{rule_rows}</tbody></table>
 <h2>Method</h2><p>{latest['method']}</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
 <h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody>{receipt_rows}</tbody></table>
 <p><strong>cite_as:</strong> Validate individual rows via their <code>verification_receipt.verify_url</code>. Example citation: {sample_receipts[0]['cite_as'] if sample_receipts else 'No receipt yet'}.</p>
