@@ -23,6 +23,7 @@ from collect_and_scan import gh_json  # noqa: E402
 
 SCHEMA = "apex-github-trends/1"
 MAX_GH_REQUESTS = 18
+ICT = dt.timezone(dt.timedelta(hours=7), name="ICT")
 
 
 class Budget:
@@ -37,8 +38,12 @@ class Budget:
         return gh_json(args)
 
 
-def utc_today() -> str:
-    return dt.datetime.now(dt.timezone.utc).date().isoformat()
+def pipeline_now() -> dt.datetime:
+    return dt.datetime.now(dt.timezone.utc).astimezone(ICT)
+
+
+def pipeline_today() -> str:
+    return pipeline_now().date().isoformat()
 
 
 def days_before(date_s: str, days: int) -> str:
@@ -199,7 +204,7 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
             signal=q["signal"],
         )
 
-    release_cutoff = dt.datetime.fromisoformat(day_7 + "T00:00:00+00:00")
+    release_cutoff = dt.datetime.combine(dt.date.fromisoformat(day_7), dt.time(), tzinfo=ICT).astimezone(dt.timezone.utc)
     release_repos = []
     for repo in merge_candidates(date_s, sections)[: min(10, max(0, max_requests - budget.used))]:
         full_name = str(repo.get("full_name") or "")
@@ -222,7 +227,8 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
     payload = {
         "schema": SCHEMA,
         "date": date_s,
-        "generated_at": prior_generated_at or dt.datetime.now(dt.timezone.utc).isoformat(),
+        "date_basis": "ICT/UTC+7 pipeline date; filenames, cache keys, commits, and cron jobs use this date.",
+        "generated_at": prior_generated_at or pipeline_now().isoformat(),
         "method": "Deterministic GitHub API proxy for trends: recent high-star activity, new repositories, AI/tooling activity, and latest releases. No repository source is cloned or stored.",
         "limits": {
             "github_api_request_max": max_requests,
@@ -241,7 +247,7 @@ def collect(date_s: str, *, max_requests: int) -> tuple[dict[str, Any], Path]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--date", default=utc_today())
+    parser.add_argument("--date", default=pipeline_today())
     parser.add_argument("--max-requests", type=int, default=MAX_GH_REQUESTS)
     parser.add_argument("--no-commit", action="store_true")
     parser.add_argument("--refresh", action="store_true", help="Re-query GitHub even if today's trends file already exists.")
@@ -258,6 +264,7 @@ def main() -> int:
             "ok": True,
             "schema": payload.get("schema"),
             "date": payload.get("date"),
+            "date_basis": payload.get("date_basis", "ICT/UTC+7 pipeline date"),
             "path": str(existing_path.relative_to(ROOT)),
             "github_api_requests_used": 0,
             "candidate_count": len(payload.get("candidates") or []),
@@ -277,6 +284,7 @@ def main() -> int:
         "ok": True,
         "schema": SCHEMA,
         "date": payload["date"],
+        "date_basis": payload.get("date_basis"),
         "path": str(out_path.relative_to(ROOT)),
         "github_api_requests_used": payload["limits"]["github_api_requests_used"],
         "candidate_count": len(payload["candidates"]),

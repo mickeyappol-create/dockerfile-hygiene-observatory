@@ -1,0 +1,10 @@
+{
+  "candidate": "candidates/2026-07-07-openbb-portfolio-exposure",
+  "date": "2026-07-07",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "Created by the initial trend synthesis cadence before the stricter pinned-upstream golden-vector prefilter was installed.",
+  "recorded_at": "2026-07-07T13:36:00+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "created"
+}

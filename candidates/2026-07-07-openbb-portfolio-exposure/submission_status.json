@@ -1,0 +1,9 @@
+{
+  "candidate": "candidates/2026-07-07-openbb-portfolio-exposure",
+  "date": "2026-07-07",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "not_submitted",
+  "reason": "Rejected by provenance filter: candidate was a narrow locally authored demo inspired by OpenBB metadata, but it did not regenerate golden vectors from a pinned public upstream library version.",
+  "schema": "apex-candidate-submission-status/1",
+  "submitted": false
+}

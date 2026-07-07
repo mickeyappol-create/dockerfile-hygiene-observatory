@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-07",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decisions": [
+    {
+      "candidate": "candidates/2026-07-07-openbb-portfolio-exposure",
+      "decision": "not_submitted",
+      "reason": "Rejected by provenance filter: no pinned public upstream library version was used to regenerate golden vectors.",
+      "submitted": false
+    }
+  ],
+  "schema": "apex-submission-decision/1"
+}
