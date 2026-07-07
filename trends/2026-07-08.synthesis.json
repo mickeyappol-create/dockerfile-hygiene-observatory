@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-08",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "No trend item passed strict prefilter: listed repositories are apps/frameworks/services/platforms/UI products/awesome lists/AI agent tools/ML frameworks/system utilities or trading/data platforms, not narrow public OSS pure calculation/data libraries with pinned upstream versions suitable for deterministic offline TypeScript reimplementation.",
+  "recorded_at": "2026-07-08T06:30:30.119748+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
