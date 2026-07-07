@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apex Portfolio Exposure Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.45; }
+    textarea { width: 100%; min-height: 12rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 1rem; overflow: auto; }
+    button { padding: 0.6rem 1rem; margin: 0.75rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Apex Portfolio Exposure Demo</h1>
+  <p>Pure in-browser calculation. No network calls, storage, order execution, broker access, wallets, balances, secrets, or admin paths.</p>
+  <textarea id="input">{
+  "holdings": [
+    {"symbol": "AAPL", "quantity": 10, "price": 150, "sector": "Technology", "currency": "USD"},
+    {"symbol": "MSFT", "quantity": 5, "price": 300, "sector": "Technology", "currency": "USD"},
+    {"symbol": "BND", "quantity": 20, "price": 75, "sector": "Fixed Income", "currency": "USD"}
+  ]
+}</textarea>
+  <br />
+  <button id="run">Calculate exposure</button>
+  <pre id="output"></pre>
+  <script src="src/exposure.js"></script>
+  <script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    document.getElementById('run').addEventListener('click', () => {
+      try {
+        const result = ApexPortfolioExposure.calculateExposure(JSON.parse(input.value));
+        output.textContent = JSON.stringify(result, null, 2);
+      } catch (error) {
+        output.textContent = String(error && error.stack || error);
+      }
+    });
+    document.getElementById('run').click();
+  </script>
+</body>
+</html>

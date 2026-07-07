@@ -1,0 +1,78 @@
+# Evidence — 2026-07-07 OpenBB Portfolio Exposure
+
+Environment checks:
+- `date +%F` => `2026-07-07`
+- `APEX_AGENT_KEY` exists and has `agd_` prefix; value was not printed.
+- Tools found: node `/usr/local/bin/node`, npm `/usr/local/bin/npm`, python3 `/usr/bin/python3`, git `/usr/bin/git`, gh `/usr/bin/gh`.
+
+Trend input:
+- Read `trends/2026-07-07.json`.
+- Selected at most one candidate: `OpenBB-finance/OpenBB`.
+- GitHub metadata checked:
+  - repository: `OpenBB-finance/OpenBB`
+  - default branch: `develop`
+  - pushed_at: `2026-07-06T21:35:06Z`
+  - license field: `NOASSERTION`
+  - latest release tag: `ODP`, published `2026-04-25T04:19:09Z`
+
+TDD RED:
+- Created `test_vectors.json` before implementation with 3 deterministic vectors.
+- Created `test.js` before implementation.
+- Ran `node test.js` before `src/exposure.js` existed.
+- Expected failure observed:
+
+```text
+Error: Cannot find module './src/exposure.js'
+code: 'MODULE_NOT_FOUND'
+Node.js v22.22.3
+```
+
+TDD GREEN / local tests:
+
+Command:
+
+```bash
+node --check src/exposure.js && node --check test.js && node test.js
+```
+
+Output:
+
+```json
+{"ok":true,"vectors":3,"assertions":5}
+```
+
+Safety scan:
+
+Command scanned `src/exposure.js`, `index.html`, `README.md`, `test.js`, and `test_vectors.json` for external IO / secret / forbidden-path strings, with implementation treated as the enforcement target.
+
+Output:
+
+```text
+src/exposure.js: []
+index.html: ['wallet', 'broker', 'order', 'balance', 'admin']
+README.md: ['http://', 'https://', 'wallet', 'broker', 'order', 'balance', 'admin', 'source vault']
+test.js: []
+test_vectors.json: []
+implementation_forbidden_hits= []
+```
+
+The demo/README hits are explanatory safety-boundary prose and provenance URLs; the implementation has no forbidden hits.
+
+Codebase inspection:
+
+```text
+Language               Files  Code  Comment
+JavaScript+Genshi Text     2   100        0
+JSON                       1    52        0
+HTML                       1    39        0
+Markdown                   1     0       50
+Sum                        5   191       50
+```
+
+Vector comparison summary for Apex review:
+- Vectors: 3
+- Matched: 3
+- Match rate: 100%
+- Tolerance: 1e-12
+- Edge cases: multi-sector long-only equal weights; cash plus short/net exposure; zero-net-value zero weights.
+- Validation: rejects non-numeric quantity; enforces 1000-holding bound.

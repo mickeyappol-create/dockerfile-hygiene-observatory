@@ -1,0 +1,72 @@
+[
+  {
+    "name": "multi_sector_long_only_weights",
+    "input": {
+      "holdings": [
+        {"symbol": "AAPL", "quantity": 10, "price": 150, "sector": "Technology", "currency": "USD"},
+        {"symbol": "MSFT", "quantity": 5, "price": 300, "sector": "Technology", "currency": "USD"},
+        {"symbol": "BND", "quantity": 20, "price": 75, "sector": "Fixed Income", "currency": "USD"}
+      ]
+    },
+    "expected": {
+      "total_value": 4500,
+      "positions": [
+        {"symbol": "AAPL", "value": 1500, "weight": 0.333333333333},
+        {"symbol": "MSFT", "value": 1500, "weight": 0.333333333333},
+        {"symbol": "BND", "value": 1500, "weight": 0.333333333333}
+      ],
+      "exposure_by_sector": {"Fixed Income": 1500, "Technology": 3000},
+      "weights_by_sector": {"Fixed Income": 0.333333333333, "Technology": 0.666666666667},
+      "exposure_by_currency": {"USD": 4500},
+      "weights_by_currency": {"USD": 1},
+      "largest_position": {"symbol": "AAPL", "value": 1500, "weight": 0.333333333333},
+      "position_count": 3
+    }
+  },
+  {
+    "name": "cash_and_short_position_net_exposure",
+    "input": {
+      "holdings": [
+        {"symbol": "CASH", "quantity": 1, "price": 1000, "sector": "Cash", "currency": "USD"},
+        {"symbol": "SPY", "quantity": 3, "price": 400, "sector": "Equity", "currency": "USD"},
+        {"symbol": "HEDGE", "quantity": -2, "price": 100, "sector": "Equity", "currency": "USD"}
+      ]
+    },
+    "expected": {
+      "total_value": 2000,
+      "positions": [
+        {"symbol": "CASH", "value": 1000, "weight": 0.5},
+        {"symbol": "SPY", "value": 1200, "weight": 0.6},
+        {"symbol": "HEDGE", "value": -200, "weight": -0.1}
+      ],
+      "exposure_by_sector": {"Cash": 1000, "Equity": 1000},
+      "weights_by_sector": {"Cash": 0.5, "Equity": 0.5},
+      "exposure_by_currency": {"USD": 2000},
+      "weights_by_currency": {"USD": 1},
+      "largest_position": {"symbol": "SPY", "value": 1200, "weight": 0.6},
+      "position_count": 3
+    }
+  },
+  {
+    "name": "zero_net_value_returns_zero_weights",
+    "input": {
+      "holdings": [
+        {"symbol": "LONG", "quantity": 1, "price": 100, "sector": "Equity", "currency": "USD"},
+        {"symbol": "SHORT", "quantity": -1, "price": 100, "sector": "Equity", "currency": "USD"}
+      ]
+    },
+    "expected": {
+      "total_value": 0,
+      "positions": [
+        {"symbol": "LONG", "value": 100, "weight": 0},
+        {"symbol": "SHORT", "value": -100, "weight": 0}
+      ],
+      "exposure_by_sector": {"Equity": 0},
+      "weights_by_sector": {"Equity": 0},
+      "exposure_by_currency": {"USD": 0},
+      "weights_by_currency": {"USD": 0},
+      "largest_position": {"symbol": "LONG", "value": 100, "weight": 0},
+      "position_count": 2
+    }
+  }
+]
