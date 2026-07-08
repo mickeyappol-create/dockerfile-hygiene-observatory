@@ -1,0 +1,7 @@
+{
+  "date": "2026-07-08",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decisions": [],
+  "reason": "No candidates matched candidates/2026-07-08-*; synthesis decision was skipped before candidate packaging/submission.",
+  "schema": "apex-submission-decision/1"
+}
