@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-11",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "strict prefilter rejected all trend items: candidates are apps/frameworks/platforms/UI products/AI agents/data lists or lack a pinned public OSS pure calculation/data-library release suitable for bounded offline TypeScript reimplementation",
+  "recorded_at": "2026-07-11T06:30:43.310646+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
