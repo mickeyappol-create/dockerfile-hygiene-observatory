@@ -2,6 +2,10 @@
 
 Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories.
 
+[![Use Apex Backtest Check](https://img.shields.io/badge/use-Apex%20Backtest%20Check-0969da?logo=githubactions&logoColor=white)](https://github.com/mickeyappol-create/apex-backtest-check)
+
+For strategy repositories, [Apex Backtest Check](https://github.com/mickeyappol-create/apex-backtest-check) adds a report-only, receipt-backed overfitting diagnostic to GitHub Actions without sending strategy source.
+
 ## What this dataset contains
 
 - `results/YYYY-MM-DD.json`: per-repository neutral facts: repo, stars, root Dockerfile URL, target commit when resolved, Dockerfile SHA-256, Apex `decision`, severity `counts`, rule IDs, and `verification_receipt` metadata.
