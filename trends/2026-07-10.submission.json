@@ -1,0 +1,15 @@
+{
+  "schema": "apex-submission-decision/1",
+  "date": "2026-07-10",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "source": "apex-card-submission-cron",
+  "status": "skipped",
+  "candidate_glob": "candidates/2026-07-10-*",
+  "candidate_count": 0,
+  "submitted_count": 0,
+  "rejected_count": 0,
+  "skipped_count": 0,
+  "reason": "no candidate directories matched candidates/2026-07-10-*; synthesis decision was already skipped because strict prefilter rejected all trend items as unsuitable for bounded offline TypeScript reimplementation",
+  "candidates": [],
+  "recorded_at": "2026-07-10T07:00:14.216930+07:00"
+}
