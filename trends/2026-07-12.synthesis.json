@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-12",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "Strict Apex prefilter rejected all 50 trend items: entries are apps/frameworks/services/lists/tooling/platforms or lack a pinned public upstream version for deterministic data-only TypeScript golden-vector reimplementation.",
+  "recorded_at": "2026-07-12T06:30:51.460795+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
