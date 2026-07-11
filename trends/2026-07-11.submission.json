@@ -1,0 +1,88 @@
+{
+  "candidate_count": 0,
+  "candidate_glob": "candidates/2026-07-11-*",
+  "candidates": [],
+  "date": "2026-07-11",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "not_submitted",
+  "reason": "no candidate directories matched candidates/2026-07-11-*; synthesis decision already skipped because strict prefilter rejected all trend items",
+  "recorded_at": "2026-07-11T07:00:54.355415+07:00",
+  "rejected_count": 0,
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 1,
+  "source": "apex-candidate-submission-cron",
+  "status": "skipped",
+  "strict_filter": {
+    "required": "source-backed regenerable vectors, pinned public upstream, bounded DATA-ONLY TypeScript reimplementation, complete io_contract, passing local vectors, README reproduction, no secrets/private/admin/wallet/order/operator-bypass paths",
+    "result": "no passing candidate available for submission"
+  },
+  "submitted": false,
+  "submitted_count": 0,
+  "trend_audit": {
+    "sample_rejections": [
+      {
+        "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+        "full_name": "freeCodeCamp/freeCodeCamp",
+        "language": "TypeScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+        "full_name": "openclaw/openclaw",
+        "language": "TypeScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+        "full_name": "nilbuild/developer-roadmap",
+        "language": "TypeScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "An agentic skills framework & software development methodology that works.",
+        "full_name": "obra/superpowers",
+        "language": "Shell",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "The library for web and native user interfaces.",
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "Linux kernel source tree",
+        "full_name": "torvalds/linux",
+        "language": "C",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "The agent that grows with you",
+        "full_name": "NousResearch/hermes-agent",
+        "language": "Python",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host ",
+        "full_name": "n8n-io/n8n",
+        "language": "TypeScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "An Open Source Machine Learning Framework for Everyone",
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      },
+      {
+        "description": "Visual Studio Code",
+        "full_name": "microsoft/vscode",
+        "language": "TypeScript",
+        "reason": "not a narrow pinned public OSS pure calculation/data library for bounded offline TypeScript reimplementation"
+      }
+    ],
+    "synthesis_decision_path": "trends/2026-07-11.synthesis.json",
+    "trend_item_count": 50,
+    "trend_path": "trends/2026-07-11.json"
+  }
+}
