@@ -1,0 +1,14 @@
+{
+  "schema": "apex-submission-decision/1",
+  "date": "2026-07-12",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "source": "apex-candidate-submission",
+  "status": "skipped",
+  "candidate_glob": "candidates/2026-07-12-*",
+  "candidates_found": 0,
+  "submitted": false,
+  "decision": "not_submitted",
+  "reason": "No candidate directories matched candidates/2026-07-12-*; existing synthesis decision skipped creation because strict Apex prefilter rejected all 50 trend items as apps/frameworks/services/lists/tooling/platforms or lacking pinned public upstream provenance for deterministic data-only TypeScript golden-vector reimplementation.",
+  "related_synthesis_decision": "trends/2026-07-12.synthesis.json",
+  "recorded_at": "2026-07-12T07:00:25.868718+07:00"
+}
