@@ -1,0 +1,14 @@
+{
+  "schema": "apex-submission-decision/1",
+  "date": "2026-07-13",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "source": "apex-candidate-submission",
+  "status": "skipped",
+  "candidate_glob": "candidates/2026-07-13-*",
+  "candidates_found": 0,
+  "submitted": false,
+  "decision": "not_submitted",
+  "reason": "No candidate directories matched candidates/2026-07-13-*; existing synthesis decision skipped creation because Strict prefilter found no pinned public OSS pure calculation/data library: trend items are apps, frameworks, services, platforms, UI/CLI products, curricula/lists, AI tooling, infrastructure, or media/network tools rather than bounded offline deterministic TypeScript reimplementation targets.",
+  "related_synthesis_decision": "trends/2026-07-13.synthesis.json",
+  "recorded_at": "2026-07-13T07:01:39.167328+07:00"
+}
