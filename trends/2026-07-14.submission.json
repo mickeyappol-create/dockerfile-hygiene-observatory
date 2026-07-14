@@ -1,0 +1,17 @@
+{
+  "schema": "apex-submission-decision/1",
+  "date": "2026-07-14",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "source": "apex-candidate-submission-cron",
+  "recorded_at": "2026-07-14T08:51:30+07:00",
+  "status": "skipped",
+  "submitted": false,
+  "candidate_glob": "candidates/2026-07-14-*",
+  "candidate_count": 0,
+  "submitted_count": 0,
+  "rejected_count": 0,
+  "skipped_count": 0,
+  "trend_count": 50,
+  "reason": "No candidate directories matched candidates/2026-07-14-*; strict Apex submission filter had nothing to submit. Existing synthesis decision skipped candidate creation because strict Apex prefilter found 0/50 trend items suitable: listed repositories are apps/frameworks/services/platforms/curated lists/AI tooling rather than pinned public OSS pure calculation/data libraries for bounded offline TypeScript reimplementation.",
+  "candidates": []
+}
