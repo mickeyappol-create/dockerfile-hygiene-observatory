@@ -1,0 +1,1296 @@
+{
+  "schema": "dockerfile-hygiene-observatory-results/1",
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T05:42:15.194149+00:00",
+  "collection": {
+    "repo_query": "GitHub GraphQL top-star preselection checks HEAD:Dockerfile, then GitHub code search fallback filters root Dockerfile, then broad repository search stars:>10000 fork:false archived:false as last fallback",
+    "dockerfile_path_policy": "root Dockerfile only for Day 1",
+    "collection_requests_used": 21,
+    "lint_runs_used": 20,
+    "collection_requests_used_this_run": 21,
+    "lint_runs_used_this_run": 20,
+    "raw_text_stored": false
+  },
+  "rows": [
+    {
+      "repo": "openclaw/openclaw",
+      "stars": 382963,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/openclaw/openclaw/main/Dockerfile",
+      "target_commit": "5bbf30b85247da42d28fc14c3e1254d024e899bb",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "d9c0bbd05d64e8f4ee34982033e839e83f131a725b4981b4c2c4f032e4a45aca",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 6,
+        "info": 5
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 89,
+      "from_count": 6,
+      "verification_receipt": {
+        "receipt_id": "197eac9e14ad988141e3e9000d41966186258c5d201bd41f70723fc69969c158",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/197eac9e14ad988141e3e9000d41966186258c5d201bd41f70723fc69969c158",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/197eac9e14ad988141e3e9000d41966186258c5d201bd41f70723fc69969c158",
+        "issued_at": "2026-07-15T05:41:35.920Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnk7d60b7dvwbka40gn8hw"
+      }
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "stars": 214993,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/main/Dockerfile",
+      "target_commit": "d2c81eb681dea1382fbd1ed403f58320d5aef575",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "f2ba5713e5b91b2aa7d8c629fed6a10a0f3796705c45271c834bc3f8d5471ffa",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 1,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 58,
+      "from_count": 3,
+      "verification_receipt": {
+        "receipt_id": "47fd247498e2983197d344bcb22a58a93b3a95d36f133d7fca16c3c61de7c38a",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/47fd247498e2983197d344bcb22a58a93b3a95d36f133d7fca16c3c61de7c38a",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/47fd247498e2983197d344bcb22a58a93b3a95d36f133d7fca16c3c61de7c38a",
+        "issued_at": "2026-07-15T05:41:38.804Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnk9le0b7tvwbkweovbz18"
+      }
+    },
+    {
+      "repo": "ollama/ollama",
+      "stars": 176126,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/ollama/ollama/main/Dockerfile",
+      "target_commit": "8a0016f826305b0672daaf02c6c55a34f844bba3",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "c22048c1b3a6555c5dfbead9f73ca35203649e30465830e46814d337aafe8216",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 36,
+        "info": 3
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 174,
+      "from_count": 36,
+      "verification_receipt": {
+        "receipt_id": "110193e6978a32ec0ac90a0d963d45212cba451357ec181f687e10f366d348fc",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/110193e6978a32ec0ac90a0d963d45212cba451357ec181f687e10f366d348fc",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/110193e6978a32ec0ac90a0d963d45212cba451357ec181f687e10f366d348fc",
+        "issued_at": "2026-07-15T05:41:41.251Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkb3m0b89vwbkh8856ud6"
+      }
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "stars": 166059,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/markitdown/main/Dockerfile",
+      "target_commit": "e144e0a2be95b34df17433bac904e635f2c5e551",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "a72e1815a7fee557182cad76cd64b0679c79ca3a950601c0b1105f9dff577f97",
+      "decision": "PASS",
+      "counts": {
+        "critical": 0,
+        "warn": 0,
+        "info": 3
+      },
+      "rules": [
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 15,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "e4e4ad99f385106eef6ef2b1b81a6d29c71a7267bbf44325cdfde8e3a7ef7b0d",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/e4e4ad99f385106eef6ef2b1b81a6d29c71a7267bbf44325cdfde8e3a7ef7b0d",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/e4e4ad99f385106eef6ef2b1b81a6d29c71a7267bbf44325cdfde8e3a7ef7b0d",
+        "issued_at": "2026-07-15T05:41:42.930Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkcem0b8pvwbk2ecmvgbe"
+      }
+    },
+    {
+      "repo": "open-webui/open-webui",
+      "stars": 145462,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/open-webui/open-webui/main/Dockerfile",
+      "target_commit": "ecd48e2f718220a6400ecf49eafd4867a38feb10",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "242789dfbc58d41a3528b9490e93a6b73955cadb097475c6549faf243d89d167",
+      "decision": "BLOCK",
+      "counts": {
+        "critical": 4,
+        "warn": 1,
+        "info": 0
+      },
+      "rules": [
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "curl_pipe_shell",
+          "severity": "critical"
+        }
+      ],
+      "instruction_count": 65,
+      "from_count": 2,
+      "verification_receipt": {
+        "receipt_id": "a0676cac3ddc9d09531d6737a9630c955555d593fabb61ff2e97fdbef42168f6",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/a0676cac3ddc9d09531d6737a9630c955555d593fabb61ff2e97fdbef42168f6",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/a0676cac3ddc9d09531d6737a9630c955555d593fabb61ff2e97fdbef42168f6",
+        "issued_at": "2026-07-15T05:41:45.147Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnke4c0b97vwbkpwiszlg5"
+      }
+    },
+    {
+      "repo": "krahets/hello-algo",
+      "stars": 128521,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/krahets/hello-algo/main/Dockerfile",
+      "target_commit": "4935d2d3877a6205008d89def8d2ba43f7e06275",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "f6198832138fd9ff67b5c43f00a9cca7bac12ada52a4dfede2cdc6952b3788d4",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 1,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 24,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "ac50e87dd97a96d5266d824444a51de767cc36785ac4fb11eb26a160b07a2ccc",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/ac50e87dd97a96d5266d824444a51de767cc36785ac4fb11eb26a160b07a2ccc",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/ac50e87dd97a96d5266d824444a51de767cc36785ac4fb11eb26a160b07a2ccc",
+        "issued_at": "2026-07-15T05:41:46.743Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkfbm0b9nvwbknewd1g0d"
+      }
+    },
+    {
+      "repo": "excalidraw/excalidraw",
+      "stars": 127496,
+      "default_branch": "master",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/Dockerfile",
+      "target_commit": "acb48c3f454f050353c32819d7a5deded201e9db",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "446e034f85b4383450d66da3cce14a0787bf37a9ba6db93c1630798bb79fdba4",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 2,
+        "info": 0
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        }
+      ],
+      "instruction_count": 9,
+      "from_count": 2,
+      "verification_receipt": {
+        "receipt_id": "f05b70b07ff1a81f52a697b45bece0d5fedaafe5130040f5b526d92a70c7eb72",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/f05b70b07ff1a81f52a697b45bece0d5fedaafe5130040f5b526d92a70c7eb72",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/f05b70b07ff1a81f52a697b45bece0d5fedaafe5130040f5b526d92a70c7eb72",
+        "issued_at": "2026-07-15T05:41:48.504Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkgr60ba3vwbk0yycz1m8"
+      }
+    },
+    {
+      "repo": "rustdesk/rustdesk",
+      "stars": 118257,
+      "default_branch": "master",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/rustdesk/rustdesk/master/Dockerfile",
+      "target_commit": "cf2b28faf934fedb498c33b9746cd289426d8645",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "24533b7290ac47e9b97d594bbb79715813c401f66373b577a4cc01bb23a2bf1b",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 3,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "sudo_in_run",
+          "severity": "warn"
+        },
+        {
+          "rule": "sudo_in_run",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 16,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "43a217c760abe03ce3f6f24acd01d5ed61a4b15a5a8264fa3e11876a08aa41ff",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/43a217c760abe03ce3f6f24acd01d5ed61a4b15a5a8264fa3e11876a08aa41ff",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/43a217c760abe03ce3f6f24acd01d5ed61a4b15a5a8264fa3e11876a08aa41ff",
+        "issued_at": "2026-07-15T05:41:50.357Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnki450bajvwbkjlmly85t"
+      }
+    },
+    {
+      "repo": "jaywcjlove/awesome-mac",
+      "stars": 107838,
+      "default_branch": "master",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/jaywcjlove/awesome-mac/master/Dockerfile",
+      "target_commit": "5269824e7fb33ba4a29aade36418662ad1631fb0",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "009a9188b663533c9f5f9e4e216d105288f7b78451f3aefe4d164e47b3fb0fa1",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 2,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 2,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "166f00e27028022d9278ee86ab8de21f9c8fccfbdec376568fb76274f936872d",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/166f00e27028022d9278ee86ab8de21f9c8fccfbdec376568fb76274f936872d",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/166f00e27028022d9278ee86ab8de21f9c8fccfbdec376568fb76274f936872d",
+        "issued_at": "2026-07-15T05:41:52.456Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkjq90bazvwbkmb772wta"
+      }
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "stars": 105991,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/Dockerfile",
+      "target_commit": "fa975395bcc6b609e44735e47320e54f51535d47",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "9237cdb045528365ff73e8a3d0af064a94d6010a7c5d19dcaebed58ec3a23402",
+      "decision": "PASS",
+      "counts": {
+        "critical": 0,
+        "warn": 0,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 35,
+      "from_count": 2,
+      "verification_receipt": {
+        "receipt_id": "139d802a0ca9bffbebd350075629eff7290c5ef5f6aef85cac33b4f7dbc00636",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/139d802a0ca9bffbebd350075629eff7290c5ef5f6aef85cac33b4f7dbc00636",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/139d802a0ca9bffbebd350075629eff7290c5ef5f6aef85cac33b4f7dbc00636",
+        "issued_at": "2026-07-15T05:41:54.354Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkl770bbfvwbk15r54v7k"
+      }
+    },
+    {
+      "repo": "browser-use/browser-use",
+      "stars": 104788,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/browser-use/browser-use/main/Dockerfile",
+      "target_commit": "dbc4d46e0ca59afbba020d456aa10d930279330c",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "bb297700401007fdcc66a78126ba6dec2ff587bb225eb12fb532405f26e2c5ec",
+      "decision": "PASS",
+      "counts": {
+        "critical": 0,
+        "warn": 0,
+        "info": 2
+      },
+      "rules": [
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 31,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "f945395b9c347228e67cb55a6a97355889c4bee96ca690e2b9c1592d3f7e6fc5",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/f945395b9c347228e67cb55a6a97355889c4bee96ca690e2b9c1592d3f7e6fc5",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/f945395b9c347228e67cb55a6a97355889c4bee96ca690e2b9c1592d3f7e6fc5",
+        "issued_at": "2026-07-15T05:41:56.157Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkmlb0bbvvwbk1yyuhgf9"
+      }
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "stars": 101821,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/pytorch/pytorch/main/Dockerfile",
+      "target_commit": "c28ebaf5d450a9b533cba4b624928b1b6764f181",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "c83eebb9e7aeaa9125db1391a206493effa73c42d56d0d6afe473e9df15ae936",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 7,
+        "info": 2
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "apt_lists_not_cleaned",
+          "severity": "info"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 49,
+      "from_count": 6,
+      "verification_receipt": {
+        "receipt_id": "cf505fb4f003136f64ddce67c72bc82cc726357eecada8b73427ad29d2858def",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/cf505fb4f003136f64ddce67c72bc82cc726357eecada8b73427ad29d2858def",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/cf505fb4f003136f64ddce67c72bc82cc726357eecada8b73427ad29d2858def",
+        "issued_at": "2026-07-15T05:41:58.420Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkocm0bcbvwbkbvsetqay"
+      }
+    },
+    {
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "stars": 97494,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/harry0703/MoneyPrinterTurbo/main/Dockerfile",
+      "target_commit": "6b4dd6f49829d793082558373191d530544cbdac",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "24b4830e8319e05d512761de36a12cf945502f4e9033a208d925cff28c6c5bef",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 1,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 12,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "ac9a7b81002dde2e5557de9bffe88aa1e25f14c157beff400b568c21e5d07b26",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/ac9a7b81002dde2e5557de9bffe88aa1e25f14c157beff400b568c21e5d07b26",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/ac9a7b81002dde2e5557de9bffe88aa1e25f14c157beff400b568c21e5d07b26",
+        "issued_at": "2026-07-15T05:41:59.953Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkpj70bcrvwbksuegkm27"
+      }
+    },
+    {
+      "repo": "nvm-sh/nvm",
+      "stars": 94135,
+      "default_branch": "master",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/nvm-sh/nvm/master/Dockerfile",
+      "target_commit": "c7d5d7748b92560783f84d4bfab423cb5de1db02",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "aec6f5f60fd0c2545ba087d0a8f4b279fb8dd1da14d16e3aa8eafbbe1be63eae",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 1,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "sudo_in_run",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 37,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "5beda5b1085cba52625fd106a7387fa43d6a52ee21cebb874c82f58b69725ef6",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/5beda5b1085cba52625fd106a7387fa43d6a52ee21cebb874c82f58b69725ef6",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/5beda5b1085cba52625fd106a7387fa43d6a52ee21cebb874c82f58b69725ef6",
+        "issued_at": "2026-07-15T05:42:01.630Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkqti0bd7vwbkhx4u469t"
+      }
+    },
+    {
+      "repo": "TauricResearch/TradingAgents",
+      "stars": 93028,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/TauricResearch/TradingAgents/main/Dockerfile",
+      "target_commit": "01477f9afb7a47b849ed4c9259d3a9a4738d9fda",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "3fe455736e6ff54f78c6d76c583b274f99faab9325103a375661779a77afd75f",
+      "decision": "PASS",
+      "counts": {
+        "critical": 0,
+        "warn": 0,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 16,
+      "from_count": 2,
+      "verification_receipt": {
+        "receipt_id": "492060be9b6af11ebdb7e2eceed9e80ce47e99631b26f25bcf51024d3874eabe",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/492060be9b6af11ebdb7e2eceed9e80ce47e99631b26f25bcf51024d3874eabe",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/492060be9b6af11ebdb7e2eceed9e80ce47e99631b26f25bcf51024d3874eabe",
+        "issued_at": "2026-07-15T05:42:03.423Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnks6y0bdnvwbky38tx9af"
+      }
+    },
+    {
+      "repo": "home-assistant/core",
+      "stars": 89387,
+      "default_branch": "dev",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/home-assistant/core/dev/Dockerfile",
+      "target_commit": "a72e1d6fb5ca92d74e91a258ecbfb062dddb4c8c",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "264cd0cb2101f0cd88cf955f23da719d42f7b18eaf3892ccf7cb958ab4fa2b07",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 2,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 16,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "5d16ba21186f33fb677382808f771d5b71bb545642c460c8ecd8a4d7b08e51fb",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/5d16ba21186f33fb677382808f771d5b71bb545642c460c8ecd8a4d7b08e51fb",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/5d16ba21186f33fb677382808f771d5b71bb545642c460c8ecd8a4d7b08e51fb",
+        "issued_at": "2026-07-15T05:42:05.728Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnktz70be3vwbk1c70bfw1"
+      }
+    },
+    {
+      "repo": "mermaid-js/mermaid",
+      "stars": 89236,
+      "default_branch": "develop",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/Dockerfile",
+      "target_commit": "f0ffb41c1ee1ff667b528e86c3b082249726eeef",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "3239e4d4a77fe2163be2f4c40baf2f9e9617576836edd788676ae9598837eb6b",
+      "decision": "PASS",
+      "counts": {
+        "critical": 0,
+        "warn": 0,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 6,
+      "from_count": 1,
+      "verification_receipt": {
+        "receipt_id": "a0196b9a01609cf65ce70d66ff484efdb0af8213e36525e87e0216c91f940904",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/a0196b9a01609cf65ce70d66ff484efdb0af8213e36525e87e0216c91f940904",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/a0196b9a01609cf65ce70d66ff484efdb0af8213e36525e87e0216c91f940904",
+        "issued_at": "2026-07-15T05:42:07.529Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkvcv0bejvwbkfylqfqpl"
+      }
+    },
+    {
+      "repo": "gohugoio/hugo",
+      "stars": 88986,
+      "default_branch": "master",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/gohugoio/hugo/master/Dockerfile",
+      "target_commit": "89b8c322008f5285b81d4b357887292e3b61f708",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "73f4f48315da7697ec793736b1b909e07e2ff5b73a4bab7c34e72f9645732fb6",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 4,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 47,
+      "from_count": 6,
+      "verification_receipt": {
+        "receipt_id": "5ead4c803bebe86546795c8af68267ae0ac490b79ca1947da56d28bf45d1e58b",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/5ead4c803bebe86546795c8af68267ae0ac490b79ca1947da56d28bf45d1e58b",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/5ead4c803bebe86546795c8af68267ae0ac490b79ca1947da56d28bf45d1e58b",
+        "issued_at": "2026-07-15T05:42:09.341Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkwra0bezvwbkh9d1kvn5"
+      }
+    },
+    {
+      "repo": "ChatGPTNextWeb/NextChat",
+      "stars": 88457,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat/main/Dockerfile",
+      "target_commit": "706a18b95b714ab29b2a4842d3b9ff4f887935d5",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "36c492a61e0e4227a924b9c8d242f960a93a1fa88f1634b6c95e171bb4842e3e",
+      "decision": "BLOCK",
+      "counts": {
+        "critical": 4,
+        "warn": 4,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "secret_literal_in_env",
+          "severity": "critical"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 32,
+      "from_count": 4,
+      "verification_receipt": {
+        "receipt_id": "21acf0520ad1a9e039f11cdbe89abb5e8f168ad92320fe97433203a52958f779",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/21acf0520ad1a9e039f11cdbe89abb5e8f168ad92320fe97433203a52958f779",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/21acf0520ad1a9e039f11cdbe89abb5e8f168ad92320fe97433203a52958f779",
+        "issued_at": "2026-07-15T05:42:10.948Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnky0m0bffvwbko516ey6n"
+      }
+    },
+    {
+      "repo": "astral-sh/uv",
+      "stars": 87477,
+      "default_branch": "main",
+      "dockerfile_path": "Dockerfile",
+      "raw_url": "https://raw.githubusercontent.com/astral-sh/uv/main/Dockerfile",
+      "target_commit": "f450710da58b267bb06624b7cc3703aea7462cfc",
+      "collected_at": "2026-07-15T05:41:31.961020+00:00",
+      "dockerfile_sha256": "a2357bda769575d9caf2b4bfc78e2fca76a9338e1cb10daff8df32335ac114ed",
+      "decision": "REVIEW",
+      "counts": {
+        "critical": 0,
+        "warn": 3,
+        "info": 1
+      },
+      "rules": [
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "unpinned_base_image",
+          "severity": "warn"
+        },
+        {
+          "rule": "runs_as_root",
+          "severity": "warn"
+        },
+        {
+          "rule": "no_healthcheck",
+          "severity": "info"
+        }
+      ],
+      "instruction_count": 28,
+      "from_count": 2,
+      "verification_receipt": {
+        "receipt_id": "2e59ca06726716a0210007fcac049da4401d376ea2f26eea7cd531c6f6cc2878",
+        "verify_url": "https://api.smartapex.uk/v1/receipts/2e59ca06726716a0210007fcac049da4401d376ea2f26eea7cd531c6f6cc2878",
+        "cite_as": "Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/2e59ca06726716a0210007fcac049da4401d376ea2f26eea7cd531c6f6cc2878",
+        "issued_at": "2026-07-15T05:42:12.890Z",
+        "identity_level": "verified_agent_passport",
+        "agent_client": "hermes-agent",
+        "checks": [
+          "permissionless_tool_allowlist",
+          "permissionless_rate_limit_checked",
+          "data_only_read_only",
+          "no_order_execution",
+          "no_wallet_access",
+          "no_private_balance",
+          "no_source_release",
+          "agent_passport_signature_valid"
+        ]
+      },
+      "usage_review": {
+        "status": "accepted",
+        "id": "cmrlnkzi60bfvvwbkonnxyql1"
+      }
+    }
+  ]
+}
