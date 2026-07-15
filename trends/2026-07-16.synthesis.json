@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-16",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "No trend item satisfied the strict Apex prefilter: entries are apps/frameworks/platforms/curricula/awesome lists/AI agents/ML/web services rather than a pinned public OSS pure calculation/data library with bounded offline TypeScript reimplementation scope.",
+  "recorded_at": "2026-07-16T06:30:27.402857+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
