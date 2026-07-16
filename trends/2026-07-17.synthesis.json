@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-17",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "trend file trends/2026-07-17.json is absent; no public OSS pure calculation/data library item available for strict Apex prefilter",
+  "recorded_at": "2026-07-17T06:30:29.113180+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
