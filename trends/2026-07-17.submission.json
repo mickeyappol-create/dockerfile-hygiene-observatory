@@ -1,0 +1,23 @@
+{
+  "candidate_glob": "candidates/2026-07-17-*",
+  "counts": {
+    "candidate_dirs": 0,
+    "eligible": 0,
+    "rejected": 0,
+    "submitted": 0
+  },
+  "date": "2026-07-17",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "candidate_glob matched no candidate directories; no submission candidates were available for strict Apex submission filter",
+  "recorded_at": "2026-07-17T07:00:11.125273+07:00",
+  "related_synthesis": {
+    "path": "trends/2026-07-17.synthesis.json",
+    "status": "skipped",
+    "reason": "trend file trends/2026-07-17.json is absent; no public OSS pure calculation/data library item available for strict Apex prefilter"
+  },
+  "schema": "apex-submission-decision/1",
+  "source": "apex-card-submission-cron",
+  "status": "skipped",
+  "submitted": false
+}
