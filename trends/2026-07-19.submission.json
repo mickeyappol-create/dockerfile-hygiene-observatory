@@ -1,0 +1,24 @@
+{
+  "candidate_count": 0,
+  "candidate_glob": "candidates/2026-07-19-*",
+  "date": "2026-07-19",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "evaluated_count": 0,
+  "reason": "no submission candidates matched candidates/2026-07-19-*; synthesis was skipped before candidate creation",
+  "recorded_at": "2026-07-19T09:24:44.102374+07:00",
+  "rejected_count": 0,
+  "related_synthesis": {
+    "candidate": null,
+    "path": "trends/2026-07-19.synthesis.json",
+    "reason": "strict prefilter rejected all 50 trend items: none is a pinned public OSS pure calculation/data library suitable for bounded offline TypeScript reimplementation; observed items are apps/frameworks/platforms/services/lists/tooling/AI agents or lack a pinned upstream release",
+    "schema": "apex-synthesis-decision/1",
+    "status": "skipped"
+  },
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 0,
+  "source": "apex-card-submit",
+  "status": "skipped",
+  "submitted": false,
+  "submitted_count": 0
+}
