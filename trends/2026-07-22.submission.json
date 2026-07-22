@@ -1,0 +1,21 @@
+{
+  "schema": "apex-submission-decision/1",
+  "date": "2026-07-22",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "candidate_glob": "candidates/2026-07-22-*",
+  "status": "skipped",
+  "decision": "skipped_no_submission_candidates",
+  "submitted": false,
+  "candidate_count": 0,
+  "submitted_count": 0,
+  "rejected_count": 0,
+  "skipped_count": 0,
+  "reason": "no submission candidates matched candidates/2026-07-22-*; synthesis was skipped because strict prefilter rejected all trend items",
+  "recorded_at": "2026-07-22T23:35:49.712208+07:00",
+  "related_synthesis": {
+    "path": "trends/2026-07-22.synthesis.json",
+    "schema": "apex-synthesis-decision/1",
+    "status": "skipped",
+    "reason": "strict prefilter rejected all 50 trend items: candidates were apps/frameworks/services/lists/AI tooling or lacked a pinned public upstream release; none was a bounded offline public OSS pure calculation/data library suitable for TypeScript golden-vector reimplementation"
+  }
+}
