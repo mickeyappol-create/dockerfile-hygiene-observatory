@@ -1,0 +1,20 @@
+{
+  "candidate_glob": "candidates/2026-07-26-*",
+  "candidates_considered": 0,
+  "candidates_rejected": 0,
+  "candidates_submitted": 0,
+  "date": "2026-07-26",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "candidate_glob matched no candidate directories; related synthesis was skipped, so there are no submission candidates for this pipeline date",
+  "recorded_at": "2026-07-26T07:00:14.245800+07:00",
+  "related_synthesis": {
+    "path": "trends/2026-07-26.synthesis.json",
+    "status": "skipped",
+    "reason": "strict prefilter found no pinned public OSS pure calculation/data library suitable for bounded offline TypeScript data-only reimplementation; trend set contains apps/frameworks/services/platforms/lists/tooling or repos without pinned releases"
+  },
+  "schema": "apex-submission-decision/1",
+  "source": "apex-card-submission-cron",
+  "status": "skipped",
+  "submitted": false
+}
