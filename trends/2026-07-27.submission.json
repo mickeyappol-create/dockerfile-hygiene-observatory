@@ -1,0 +1,24 @@
+{
+  "candidate_glob": "candidates/2026-07-27-*",
+  "candidate_count": 0,
+  "candidates": [],
+  "date": "2026-07-27",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "No submission candidates matched candidates/2026-07-27-*; related synthesis was skipped because 0/50 trend items passed the strict Apex prefilter.",
+  "recorded_at": "2026-07-27T07:00:20.116755+07:00",
+  "rejected_count": 0,
+  "related_synthesis": {
+    "path": "trends/2026-07-27.synthesis.json",
+    "reason": "0/50 trend items passed strict Apex prefilter: entries are apps/frameworks/platforms/UI/AI/trading/general repositories; the only algorithm-like item lacks a pinned public release/version, so no bounded offline TypeScript OSS pure calculation/data reimplementation candidate was eligible.",
+    "status": "skipped"
+  },
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 0,
+  "source": "apex-card-submission",
+  "status": "skipped",
+  "submitted": false,
+  "submitted_count": 0,
+  "trend_exists": true,
+  "trend_path": "trends/2026-07-27.json"
+}
