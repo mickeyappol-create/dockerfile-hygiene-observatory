@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-29",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "0/50 trend items passed strict Apex prefilter: no pinned public OSS pure calculation/data library suitable for bounded offline TypeScript reimplementation; closest algorithm-like/library items were frameworks/apps/platforms or lacked a pinned public release/version.",
+  "recorded_at": "2026-07-29T06:31:03.052745+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
