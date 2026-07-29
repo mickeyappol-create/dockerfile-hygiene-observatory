@@ -1,0 +1,10 @@
+{
+  "candidate": null,
+  "date": "2026-07-30",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "reason": "0/50 strict prefilter: no item was a pinned public OSS pure calculation/data library suitable for bounded offline TypeScript reimplementation; algorithm-like interview items lacked pinned public release/version",
+  "recorded_at": "2026-07-30T06:30:57.904279+07:00",
+  "schema": "apex-synthesis-decision/1",
+  "source": "apex-card-synthesis",
+  "status": "skipped"
+}
