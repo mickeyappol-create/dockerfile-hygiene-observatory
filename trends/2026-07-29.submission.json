@@ -1,0 +1,26 @@
+{
+  "candidate_count": 0,
+  "candidate_glob": "candidates/2026-07-29-*",
+  "candidates": [],
+  "date": "2026-07-29",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "No submission candidates matched candidates/2026-07-29-*; related synthesis was skipped because 0/50 trend items passed the strict Apex prefilter.",
+  "recorded_at": "2026-07-29T07:00:32.005648+07:00",
+  "related_synthesis": {
+    "path": "trends/2026-07-29.synthesis.json",
+    "reason": "0/50 trend items passed strict Apex prefilter: no pinned public OSS pure calculation/data library suitable for bounded offline TypeScript reimplementation; closest algorithm-like/library items were frameworks/apps/platforms or lacked a pinned public release/version.",
+    "status": "skipped"
+  },
+  "rejected_count": 0,
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 0,
+  "source": "apex-card-submission",
+  "status": "skipped",
+  "submitted": false,
+  "submitted_count": 0,
+  "trend": {
+    "exists": true,
+    "path": "trends/2026-07-29.json"
+  }
+}
