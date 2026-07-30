@@ -5,24 +5,25 @@
 </head><body>
 <h1>OSS Dockerfile Hygiene Observatory</h1>
 <p class="note">Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories. Neutral ecosystem-level measurement; no rankings or blame framing.</p>
-<h2>Latest snapshot: 2026-07-29</h2>
-<ul><li>Repositories scanned: <strong>20</strong></li><li>Apex verification receipts preserved: <strong>20</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-07-29.json"><code>results/2026-07-29.json</code></a></li></ul>
-<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>6</td><td>30.0%</td></tr>
-<tr><td>REVIEW</td><td>12</td><td>60.0%</td></tr>
-<tr><td>BLOCK</td><td>2</td><td>10.0%</td></tr>
+<h2>Latest snapshot: 2026-07-30</h2>
+<ul><li>Repositories scanned: <strong>30</strong></li><li>Apex verification receipts preserved: <strong>30</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-07-30.json"><code>results/2026-07-30.json</code></a></li></ul>
+<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>6</td><td>20.0%</td></tr>
+<tr><td>REVIEW</td><td>19</td><td>63.3%</td></tr>
+<tr><td>BLOCK</td><td>5</td><td>16.7%</td></tr>
 <tr><td>UNKNOWN</td><td>0</td><td>0.0%</td></tr></tbody></table>
-<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>17</td><td>17</td><td>1.00</td><td>85.0%</td></tr>
-<tr><td>runs_as_root</td><td>10</td><td>10</td><td>1.00</td><td>50.0%</td></tr>
-<tr><td>unpinned_base_image</td><td>9</td><td>58</td><td>6.44</td><td>45.0%</td></tr>
-<tr><td>apt_lists_not_cleaned</td><td>5</td><td>11</td><td>2.20</td><td>25.0%</td></tr>
-<tr><td>secret_literal_in_env</td><td>2</td><td>7</td><td>3.50</td><td>10.0%</td></tr>
-<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>10.0%</td></tr>
-<tr><td>curl_pipe_shell</td><td>1</td><td>1</td><td>1.00</td><td>5.0%</td></tr></tbody></table>
+<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>27</td><td>27</td><td>1.00</td><td>90.0%</td></tr>
+<tr><td>runs_as_root</td><td>19</td><td>19</td><td>1.00</td><td>63.3%</td></tr>
+<tr><td>unpinned_base_image</td><td>13</td><td>66</td><td>5.08</td><td>43.3%</td></tr>
+<tr><td>apt_lists_not_cleaned</td><td>6</td><td>12</td><td>2.00</td><td>20.0%</td></tr>
+<tr><td>secret_literal_in_env</td><td>3</td><td>9</td><td>3.00</td><td>10.0%</td></tr>
+<tr><td>curl_pipe_shell</td><td>2</td><td>2</td><td>1.00</td><td>6.7%</td></tr>
+<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>6.7%</td></tr>
+<tr><td>missing_from</td><td>1</td><td>1</td><td>1.00</td><td>3.3%</td></tr></tbody></table>
 <h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
-<h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/e5c5787b07eb8fb3552a2a1481800b5b24faf1ee473df902f78bb9e561f6a6d4'>e5c5787b07eb…</a></td><td>verified_agent_passport</td><td>2026-07-29T06:06:32.421Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/36a53eca7946b7fbb08ac194da0bd22367eba6260859dd8b0af20debeba26647'>36a53eca7946…</a></td><td>verified_agent_passport</td><td>2026-07-29T06:06:34.737Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/cb3283566d447479227b5f572c55ceae3072dbbd121dddddbf19c01456adb87c'>cb3283566d44…</a></td><td>verified_agent_passport</td><td>2026-07-29T06:06:36.413Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/2a41b041e9d15ca09c7acc92d462f4512980825b78945620e814f832fc4842bc'>2a41b041e9d1…</a></td><td>verified_agent_passport</td><td>2026-07-29T06:06:38.788Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/8b139ac026dc10bbc4e5677756a8f24102cd953ded5c5235cd37fc9232ea29e7'>8b139ac026dc…</a></td><td>verified_agent_passport</td><td>2026-07-29T06:06:39.973Z</td></tr></tbody></table>
-<p><strong>cite_as:</strong> Validate individual rows via their <code>verification_receipt.verify_url</code>. Example citation: Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/e5c5787b07eb8fb3552a2a1481800b5b24faf1ee473df902f78bb9e561f6a6d4.</p>
+<h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/dc2e712281e216d600b057cfc75930079e439d336d4e6a50cb456c9568b4edba'>dc2e712281e2…</a></td><td>verified_agent_passport</td><td>2026-07-30T05:52:17.926Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/447415a4f34808bbc0c0da6deed380949d9500066f20d3e3fa67666182970bbe'>447415a4f348…</a></td><td>verified_agent_passport</td><td>2026-07-30T05:52:20.193Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/3f8a59ca725fdf908da812b50e382052a244869678325fbefbe0db520837dd0d'>3f8a59ca725f…</a></td><td>verified_agent_passport</td><td>2026-07-30T05:52:22.590Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/e31d50e0bb288a00806a29a75a45efbdb1641889113177f07b3c45d5244e25c2'>e31d50e0bb28…</a></td><td>verified_agent_passport</td><td>2026-07-30T05:52:24.407Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/7cc9a155d1954c63fcf823047958b4ea25e90487351d8365c713dbb7372716b2'>7cc9a155d195…</a></td><td>verified_agent_passport</td><td>2026-07-30T05:52:26.103Z</td></tr></tbody></table>
+<p><strong>cite_as:</strong> Validate individual rows via their <code>verification_receipt.verify_url</code>. Example citation: Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/dc2e712281e216d600b057cfc75930079e439d336d4e6a50cb456c9568b4edba.</p>
 </body></html>
