@@ -1,0 +1,28 @@
+{
+  "candidate_count": 0,
+  "candidate_glob": "candidates/2026-08-01-*",
+  "candidates": [],
+  "date": "2026-08-01",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "No submission candidates matched candidates/2026-08-01-* for the ICT/UTC+7 pipeline date; synthesis was skipped before candidate creation.",
+  "recorded_at": "2026-08-01T07:00:49.849649+07:00",
+  "rejected_count": 0,
+  "related_synthesis": {
+    "exists": true,
+    "path": "trends/2026-08-01.synthesis.json",
+    "reason": "0/50 trend items passed strict Apex prefilter: 48 lacked a pinned public upstream release/version; the 2 released items (NousResearch/hermes-agent v2026.7.30, n8n-io/n8n n8n@2.32.7) are apps/frameworks/services/tooling/content rather than narrow public OSS pure calculation/data libraries",
+    "schema": "apex-synthesis-decision/1",
+    "status": "skipped"
+  },
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 0,
+  "source": "apex-card-submit",
+  "status": "skipped",
+  "submitted": false,
+  "submitted_count": 0,
+  "trend": {
+    "exists": true,
+    "path": "trends/2026-08-01.json"
+  }
+}
