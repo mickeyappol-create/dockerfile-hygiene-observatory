@@ -1,0 +1,29 @@
+{
+  "candidate_count": 0,
+  "candidate_glob": "candidates/2026-08-02-*",
+  "candidates": [],
+  "date": "2026-08-02",
+  "date_basis": "ICT/UTC+7 pipeline date",
+  "decision": "skipped_no_submission_candidates",
+  "reason": "No submission candidates matched candidates/2026-08-02-* for the ICT/UTC+7 pipeline date; related synthesis was skipped: 0/50 trend items passed strict prefilter: algorithm-like items lacked pinned public releases; released items were apps/frameworks/services, not narrow pure calculation/data libraries.",
+  "recorded_at": "2026-08-02T07:01:41.019346+07:00",
+  "rejected_count": 0,
+  "related_synthesis": {
+    "exists": true,
+    "path": "trends/2026-08-02.synthesis.json",
+    "reason": "0/50 trend items passed strict prefilter: algorithm-like items lacked pinned public releases; released items were apps/frameworks/services, not narrow pure calculation/data libraries.",
+    "schema": "apex-synthesis-decision/1",
+    "status": "skipped"
+  },
+  "schema": "apex-submission-decision/1",
+  "skipped_count": 0,
+  "source": "apex-card-submit",
+  "status": "skipped",
+  "submitted": false,
+  "submitted_count": 0,
+  "trend": {
+    "denominator": 50,
+    "exists": true,
+    "path": "trends/2026-08-02.json"
+  }
+}
