@@ -6,18 +6,19 @@
 <h1>OSS Dockerfile Hygiene Observatory</h1>
 <p class="note">Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories. Neutral ecosystem-level measurement; no rankings or blame framing.</p>
 <h2>Latest snapshot: 2026-08-23</h2>
-<ul><li>Repositories scanned: <strong>19</strong></li><li>Apex verification receipts preserved: <strong>19</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-08-23.json"><code>results/2026-08-23.json</code></a></li></ul>
-<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>6</td><td>31.6%</td></tr>
-<tr><td>REVIEW</td><td>12</td><td>63.2%</td></tr>
-<tr><td>BLOCK</td><td>1</td><td>5.3%</td></tr>
+<ul><li>Repositories scanned: <strong>39</strong></li><li>Apex verification receipts preserved: <strong>39</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-08-23.json"><code>results/2026-08-23.json</code></a></li></ul>
+<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>7</td><td>17.9%</td></tr>
+<tr><td>REVIEW</td><td>24</td><td>61.5%</td></tr>
+<tr><td>BLOCK</td><td>8</td><td>20.5%</td></tr>
 <tr><td>UNKNOWN</td><td>0</td><td>0.0%</td></tr></tbody></table>
-<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>17</td><td>17</td><td>1.00</td><td>89.5%</td></tr>
-<tr><td>runs_as_root</td><td>10</td><td>10</td><td>1.00</td><td>52.6%</td></tr>
-<tr><td>unpinned_base_image</td><td>7</td><td>49</td><td>7.00</td><td>36.8%</td></tr>
-<tr><td>apt_lists_not_cleaned</td><td>4</td><td>6</td><td>1.50</td><td>21.1%</td></tr>
-<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>10.5%</td></tr>
-<tr><td>curl_pipe_shell</td><td>1</td><td>1</td><td>1.00</td><td>5.3%</td></tr>
-<tr><td>secret_literal_in_env</td><td>1</td><td>3</td><td>3.00</td><td>5.3%</td></tr></tbody></table>
+<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>34</td><td>34</td><td>1.00</td><td>87.2%</td></tr>
+<tr><td>runs_as_root</td><td>27</td><td>27</td><td>1.00</td><td>69.2%</td></tr>
+<tr><td>unpinned_base_image</td><td>15</td><td>69</td><td>4.60</td><td>38.5%</td></tr>
+<tr><td>apt_lists_not_cleaned</td><td>10</td><td>19</td><td>1.90</td><td>25.6%</td></tr>
+<tr><td>secret_literal_in_env</td><td>6</td><td>12</td><td>2.00</td><td>15.4%</td></tr>
+<tr><td>curl_pipe_shell</td><td>3</td><td>4</td><td>1.33</td><td>7.7%</td></tr>
+<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>5.1%</td></tr>
+<tr><td>missing_from</td><td>1</td><td>1</td><td>1.00</td><td>2.6%</td></tr></tbody></table>
 <h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
 <h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/59d7805e446d944a6b426fd9ccc875c85ead93ff755c91afd56d475ea42e566b'>59d7805e446d…</a></td><td>verified_agent_passport</td><td>2026-08-23T02:18:35.868Z</td></tr>
 <tr><td><a href='https://api.smartapex.uk/v1/receipts/9f5002f2a1b12d9b61fcf31792ac46ca24288f697d7af55ad897e18d99e11688'>9f5002f2a1b1…</a></td><td>verified_agent_passport</td><td>2026-08-23T02:18:38.565Z</td></tr>
