@@ -1,24 +1,56 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OSS Dockerfile Hygiene Observatory</title>
-<style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.5}table{border-collapse:collapse;width:100%;margin:1rem 0}td,th{border:1px solid #ddd;padding:.5rem;text-align:left}code{background:#f4f4f4;padding:.1rem .25rem}.note{background:#f8fafc;border:1px solid #e5e7eb;padding:1rem}</style>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.5}table{border-collapse:collapse;width:100%;margin:1rem 0}td,th{border:1px solid #ddd;padding:.5rem;text-align:left}code{background:#f4f4f4;padding:.1rem .25rem}.note{background:#f8fafc;border:1px solid #e5e7eb;padding:1rem}
+#freshness{margin:1rem 0}
+html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){opacity:.4}</style>
 </head><body>
 <h1>OSS Dockerfile Hygiene Observatory</h1>
+<div id="freshness" class="note">Snapshot date is 2026-08-23. Enable JavaScript and this box will tell you how old that is.</div>
+<script>
+// This page is written BY the scan. When the scan dies nothing here updates - including
+// any claim that it is current - so the page cannot report its own silence. The check
+// therefore runs on the reader's clock, which is the one that keeps going when ours stops.
+//
+// Written 2026-08-23 after this dashboard served 2026-07-30 for twenty-three nights under
+// a green build badge. cwahq put it exactly: a stale shelf with a green light is
+// counterfeit stock. So when the cadence dies, the storefront closes itself.
+(function () {
+  var snapshot = new Date("2026-08-23T00:00:00Z");
+  var days = Math.floor((Date.now() - snapshot.getTime()) / 86400000);
+  var el = document.getElementById("freshness");
+  if (!el || isNaN(days)) return;
+  if (days <= 2) {
+    el.textContent = "Scanned " + (days === 0 ? "today" : days + " day(s) ago") + ". This page is current.";
+    return;
+  }
+  document.documentElement.className += " stale";
+  el.style.background = "#fef2f2";
+  el.style.borderColor = "#dc2626";
+  el.innerHTML =
+    "<strong>STALE - this says daily and has not run in " + days + " days.</strong>" +
+    "<br>Everything below is from " + "2026-08-23" +
+    " and is dimmed on purpose. Do not cite it as current." +
+    "<br>The build history is public: " +
+    "<a href='https://github.com/mickeyappol-create/dockerfile-hygiene-observatory/actions'>see why it stopped</a>.";
+})();
+</script>
 <p class="note">Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories. Neutral ecosystem-level measurement; no rankings or blame framing.</p>
 <h2>Latest snapshot: 2026-08-23</h2>
-<ul><li>Repositories scanned: <strong>39</strong></li><li>Apex verification receipts preserved: <strong>39</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-08-23.json"><code>results/2026-08-23.json</code></a></li></ul>
-<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>7</td><td>17.9%</td></tr>
-<tr><td>REVIEW</td><td>24</td><td>61.5%</td></tr>
-<tr><td>BLOCK</td><td>8</td><td>20.5%</td></tr>
+<ul><li>Repositories scanned: <strong>50</strong></li><li>Apex verification receipts preserved: <strong>50</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-08-23.json"><code>results/2026-08-23.json</code></a></li></ul>
+<h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>8</td><td>16.0%</td></tr>
+<tr><td>REVIEW</td><td>34</td><td>68.0%</td></tr>
+<tr><td>BLOCK</td><td>8</td><td>16.0%</td></tr>
 <tr><td>UNKNOWN</td><td>0</td><td>0.0%</td></tr></tbody></table>
-<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>34</td><td>34</td><td>1.00</td><td>87.2%</td></tr>
-<tr><td>runs_as_root</td><td>27</td><td>27</td><td>1.00</td><td>69.2%</td></tr>
-<tr><td>unpinned_base_image</td><td>15</td><td>69</td><td>4.60</td><td>38.5%</td></tr>
-<tr><td>apt_lists_not_cleaned</td><td>10</td><td>19</td><td>1.90</td><td>25.6%</td></tr>
-<tr><td>secret_literal_in_env</td><td>6</td><td>12</td><td>2.00</td><td>15.4%</td></tr>
-<tr><td>curl_pipe_shell</td><td>3</td><td>4</td><td>1.33</td><td>7.7%</td></tr>
-<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>5.1%</td></tr>
-<tr><td>missing_from</td><td>1</td><td>1</td><td>1.00</td><td>2.6%</td></tr></tbody></table>
+<h2>Most frequent rule hits</h2><table><thead><tr><th>Rule</th><th>Repos (repos_with_rule)</th><th>Occurrences</th><th>Avg per affected repo</th><th>Rate over scanned repos</th></tr></thead><tbody><tr><td>no_healthcheck</td><td>43</td><td>43</td><td>1.00</td><td>86.0%</td></tr>
+<tr><td>runs_as_root</td><td>37</td><td>37</td><td>1.00</td><td>74.0%</td></tr>
+<tr><td>unpinned_base_image</td><td>17</td><td>71</td><td>4.18</td><td>34.0%</td></tr>
+<tr><td>apt_lists_not_cleaned</td><td>11</td><td>21</td><td>1.91</td><td>22.0%</td></tr>
+<tr><td>secret_literal_in_env</td><td>6</td><td>12</td><td>2.00</td><td>12.0%</td></tr>
+<tr><td>curl_pipe_shell</td><td>3</td><td>4</td><td>1.33</td><td>6.0%</td></tr>
+<tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>4.0%</td></tr>
+<tr><td>add_instead_of_copy</td><td>2</td><td>2</td><td>1.00</td><td>4.0%</td></tr>
+<tr><td>missing_from</td><td>1</td><td>1</td><td>1.00</td><td>2.0%</td></tr></tbody></table>
 <h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
 <h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/59d7805e446d944a6b426fd9ccc875c85ead93ff755c91afd56d475ea42e566b'>59d7805e446d…</a></td><td>verified_agent_passport</td><td>2026-08-23T02:18:35.868Z</td></tr>
 <tr><td><a href='https://api.smartapex.uk/v1/receipts/9f5002f2a1b12d9b61fcf31792ac46ca24288f697d7af55ad897e18d99e11688'>9f5002f2a1b1…</a></td><td>verified_agent_passport</td><td>2026-08-23T02:18:38.565Z</td></tr>
