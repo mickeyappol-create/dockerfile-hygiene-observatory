@@ -440,9 +440,40 @@ def render_page(aggregate: dict[str, Any], rows: list[dict[str, Any]]) -> None:
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OSS Dockerfile Hygiene Observatory</title>
-<style>body{{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.5}}table{{border-collapse:collapse;width:100%;margin:1rem 0}}td,th{{border:1px solid #ddd;padding:.5rem;text-align:left}}code{{background:#f4f4f4;padding:.1rem .25rem}}.note{{background:#f8fafc;border:1px solid #e5e7eb;padding:1rem}}</style>
+<style>body{{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.5}}table{{border-collapse:collapse;width:100%;margin:1rem 0}}td,th{{border:1px solid #ddd;padding:.5rem;text-align:left}}code{{background:#f4f4f4;padding:.1rem .25rem}}.note{{background:#f8fafc;border:1px solid #e5e7eb;padding:1rem}}
+#freshness{{margin:1rem 0}}
+html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){{opacity:.4}}</style>
 </head><body>
 <h1>OSS Dockerfile Hygiene Observatory</h1>
+<div id="freshness" class="note">Snapshot date is {latest['date']}. Enable JavaScript and this box will tell you how old that is.</div>
+<script>
+// This page is written BY the scan. When the scan dies nothing here updates - including
+// any claim that it is current - so the page cannot report its own silence. The check
+// therefore runs on the reader's clock, which is the one that keeps going when ours stops.
+//
+// Written 2026-08-23 after this dashboard served 2026-07-30 for twenty-three nights under
+// a green build badge. cwahq put it exactly: a stale shelf with a green light is
+// counterfeit stock. So when the cadence dies, the storefront closes itself.
+(function () {{
+  var snapshot = new Date("{latest['date']}T00:00:00Z");
+  var days = Math.floor((Date.now() - snapshot.getTime()) / 86400000);
+  var el = document.getElementById("freshness");
+  if (!el || isNaN(days)) return;
+  if (days <= 2) {{
+    el.textContent = "Scanned " + (days === 0 ? "today" : days + " day(s) ago") + ". This page is current.";
+    return;
+  }}
+  document.documentElement.className += " stale";
+  el.style.background = "#fef2f2";
+  el.style.borderColor = "#dc2626";
+  el.innerHTML =
+    "<strong>STALE - this says daily and has not run in " + days + " days.</strong>" +
+    "<br>Everything below is from " + "{latest['date']}" +
+    " and is dimmed on purpose. Do not cite it as current." +
+    "<br>The build history is public: " +
+    "<a href='https://github.com/mickeyappol-create/dockerfile-hygiene-observatory/actions'>see why it stopped</a>.";
+}})();
+</script>
 <p class="note">Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories. Neutral ecosystem-level measurement; no rankings or blame framing.</p>
 <h2>Latest snapshot: {latest['date']}</h2>
 <ul><li>Repositories scanned: <strong>{latest['repo_count']}</strong></li><li>Apex verification receipts preserved: <strong>{latest['receipt_count']}</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="{aggregate['data_links']['latest_results']}"><code>{aggregate['data_links']['latest_results']}</code></a></li></ul>
