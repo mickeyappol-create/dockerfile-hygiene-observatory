@@ -528,12 +528,39 @@ def main() -> int:
             print(f"{len(rows):03d}/{args.limit} {repo['full_name']} {row['decision']} receipt={receipt_id}")
             time.sleep(0.35)
         except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", "replace")[:1000]
+            body = e.read().decode("utf-8", "replace")[:2000]
             print(f"lint failed {repo['full_name']} HTTP {e.code}: {body}", file=sys.stderr)
             if e.code == 429:
                 break
             if e.code == 428:
-                break
+                # 428 means Apex is holding a receipt we never reviewed, and it hands us the
+                # receipt_id in the body. We used to read that and break anyway, which is a
+                # deadlock: the review is what unlocks the next run, and the only code that
+                # files one sits on the success path we can no longer reach. That cost this
+                # observatory 23 nights of silent failure (2026-07-30 to 2026-08-22) while the
+                # dashboard kept serving stale data as if it were current.
+                #
+                # So: pay the debt the error is asking for, then carry on.
+                pending_id = None
+                try:
+                    pending_id = ((json.loads(body).get("pending_feedback") or {})
+                                  .get("receipt_id"))
+                except Exception:
+                    pass
+                if not pending_id:
+                    print("428 without a pending receipt_id - cannot self-heal", file=sys.stderr)
+                    break
+                paid = submit_review(
+                    pending_id,
+                    "Backfilled usage review for a receipt left unreviewed by an earlier run",
+                )
+                if isinstance(paid, dict) and paid.get("error_status"):
+                    print(f"backfill review failed: {paid.get('error_status')} {paid.get('error_body')}",
+                          file=sys.stderr)
+                    break
+                print(f"backfilled the pending usage review for {pending_id[:12]}; continuing",
+                      file=sys.stderr)
+                continue
         except Exception as e:
             print(f"lint failed {repo['full_name']}: {e}", file=sys.stderr)
     if len(rows) < args.limit:
