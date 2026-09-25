@@ -1,54 +1,54 @@
 {
   "schema": "dockerfile-hygiene-observatory-aggregate/1",
-  "updated_at": "2026-09-24T08:27:00.732455+00:00",
+  "updated_at": "2026-09-25T08:46:48.490363+00:00",
   "latest": {
-    "date": "2026-09-24",
-    "repo_count": 34,
+    "date": "2026-09-25",
+    "repo_count": 20,
     "decision_counts": {
-      "REVIEW": 22,
-      "PASS": 8,
-      "BLOCK": 4
+      "REVIEW": 13,
+      "PASS": 5,
+      "BLOCK": 2
     },
     "decision_rates": {
-      "REVIEW": 0.6470588235294118,
-      "PASS": 0.23529411764705882,
-      "BLOCK": 0.11764705882352941
+      "REVIEW": 0.65,
+      "PASS": 0.25,
+      "BLOCK": 0.1
     },
     "rule_counts": {
-      "unpinned_base_image": 81,
-      "no_healthcheck": 28,
-      "runs_as_root": 20,
-      "apt_lists_not_cleaned": 13,
-      "secret_literal_in_env": 10,
+      "unpinned_base_image": 61,
+      "no_healthcheck": 17,
+      "apt_lists_not_cleaned": 12,
+      "runs_as_root": 11,
+      "secret_literal_in_env": 4,
       "sudo_in_run": 3,
       "curl_pipe_shell": 2
     },
     "rule_counts_meaning": "occurrences across all scanned Dockerfiles; a single repo can contribute multiple occurrences",
     "rule_repos_with_rule": {
-      "no_healthcheck": 28,
-      "runs_as_root": 20,
-      "unpinned_base_image": 15,
-      "apt_lists_not_cleaned": 7,
-      "secret_literal_in_env": 4,
+      "no_healthcheck": 17,
+      "runs_as_root": 11,
+      "unpinned_base_image": 10,
+      "apt_lists_not_cleaned": 6,
+      "secret_literal_in_env": 2,
       "curl_pipe_shell": 2,
       "sudo_in_run": 2
     },
     "rule_rates": {
-      "apt_lists_not_cleaned": 0.20588235294117646,
-      "unpinned_base_image": 0.4411764705882353,
-      "no_healthcheck": 0.8235294117647058,
-      "runs_as_root": 0.5882352941176471,
-      "curl_pipe_shell": 0.058823529411764705,
-      "secret_literal_in_env": 0.11764705882352941,
-      "sudo_in_run": 0.058823529411764705
+      "apt_lists_not_cleaned": 0.3,
+      "unpinned_base_image": 0.5,
+      "runs_as_root": 0.55,
+      "no_healthcheck": 0.85,
+      "secret_literal_in_env": 0.1,
+      "curl_pipe_shell": 0.1,
+      "sudo_in_run": 0.1
     },
     "rule_rates_meaning": "repos_with_rule divided by repo_count; each rule counted at most once per repo",
     "severity_counts": {
-      "warn": 104,
-      "info": 41,
-      "critical": 12
+      "warn": 75,
+      "info": 29,
+      "critical": 6
     },
-    "receipt_count": 34,
+    "receipt_count": 20,
     "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count)."
   },
   "series": [
@@ -2916,10 +2916,60 @@
       },
       "receipt_count": 34,
       "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count)."
+    },
+    {
+      "date": "2026-09-25",
+      "repo_count": 20,
+      "decision_counts": {
+        "REVIEW": 13,
+        "PASS": 5,
+        "BLOCK": 2
+      },
+      "decision_rates": {
+        "REVIEW": 0.65,
+        "PASS": 0.25,
+        "BLOCK": 0.1
+      },
+      "rule_counts": {
+        "unpinned_base_image": 61,
+        "no_healthcheck": 17,
+        "apt_lists_not_cleaned": 12,
+        "runs_as_root": 11,
+        "secret_literal_in_env": 4,
+        "sudo_in_run": 3,
+        "curl_pipe_shell": 2
+      },
+      "rule_counts_meaning": "occurrences across all scanned Dockerfiles; a single repo can contribute multiple occurrences",
+      "rule_repos_with_rule": {
+        "no_healthcheck": 17,
+        "runs_as_root": 11,
+        "unpinned_base_image": 10,
+        "apt_lists_not_cleaned": 6,
+        "secret_literal_in_env": 2,
+        "curl_pipe_shell": 2,
+        "sudo_in_run": 2
+      },
+      "rule_rates": {
+        "apt_lists_not_cleaned": 0.3,
+        "unpinned_base_image": 0.5,
+        "runs_as_root": 0.55,
+        "no_healthcheck": 0.85,
+        "secret_literal_in_env": 0.1,
+        "curl_pipe_shell": 0.1,
+        "sudo_in_run": 0.1
+      },
+      "rule_rates_meaning": "repos_with_rule divided by repo_count; each rule counted at most once per repo",
+      "severity_counts": {
+        "warn": 75,
+        "info": 29,
+        "critical": 6
+      },
+      "receipt_count": 20,
+      "method": "High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count)."
     }
   ],
   "data_links": {
-    "latest_results": "results/2026-09-24.json"
+    "latest_results": "results/2026-09-25.json"
   },
   "limits": {
     "daily_lint_max": 100,
