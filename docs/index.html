@@ -6,7 +6,7 @@
 html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){opacity:.4}</style>
 </head><body>
 <h1>OSS Dockerfile Hygiene Observatory</h1>
-<div id="freshness" class="note">Snapshot date is 2026-11-20. Enable JavaScript and this box will tell you how old that is.</div>
+<div id="freshness" class="note">Snapshot date is 2026-11-21. Enable JavaScript and this box will tell you how old that is.</div>
 <script>
 // This page is written BY the scan. When the scan dies nothing here updates - including
 // any claim that it is current - so the page cannot report its own silence. The check
@@ -16,7 +16,7 @@ html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){op
 // a green build badge. cwahq put it exactly: a stale shelf with a green light is
 // counterfeit stock. So when the cadence dies, the storefront closes itself.
 (function () {
-  var snapshot = new Date("2026-11-20T00:00:00Z");
+  var snapshot = new Date("2026-11-21T00:00:00Z");
   var days = Math.floor((Date.now() - snapshot.getTime()) / 86400000);
   var el = document.getElementById("freshness");
   if (!el || isNaN(days)) return;
@@ -29,15 +29,15 @@ html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){op
   el.style.borderColor = "#dc2626";
   el.innerHTML =
     "<strong>STALE - this says daily and has not run in " + days + " days.</strong>" +
-    "<br>Everything below is from " + "2026-11-20" +
+    "<br>Everything below is from " + "2026-11-21" +
     " and is dimmed on purpose. Do not cite it as current." +
     "<br>The build history is public: " +
     "<a href='https://github.com/mickeyappol-create/dockerfile-hygiene-observatory/actions'>see why it stopped</a>.";
 })();
 </script>
 <p class="note">Daily signed Apex scans of public root Dockerfiles from high-star open-source GitHub repositories. Neutral ecosystem-level measurement; no rankings or blame framing.</p>
-<h2>Latest snapshot: 2026-11-20</h2>
-<ul><li>Repositories scanned: <strong>20</strong></li><li>Apex verification receipts preserved: <strong>20</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-11-20.json"><code>results/2026-11-20.json</code></a></li></ul>
+<h2>Latest snapshot: 2026-11-21</h2>
+<ul><li>Repositories scanned: <strong>20</strong></li><li>Apex verification receipts preserved: <strong>20</strong></li><li>This page as data: <a href="aggregate.json"><code>aggregate.json</code></a> · raw snapshot: <a href="results/2026-11-21.json"><code>results/2026-11-21.json</code></a></li></ul>
 <h2>Decision mix</h2><table><thead><tr><th>Decision</th><th>Count</th><th>Rate</th></tr></thead><tbody><tr><td>PASS</td><td>5</td><td>25.0%</td></tr>
 <tr><td>REVIEW</td><td>14</td><td>70.0%</td></tr>
 <tr><td>BLOCK</td><td>1</td><td>5.0%</td></tr>
@@ -47,13 +47,13 @@ html.stale h2,html.stale table,html.stale ul,html.stale .note:not(#freshness){op
 <tr><td>unpinned_base_image</td><td>10</td><td>83</td><td>8.30</td><td>50.0%</td></tr>
 <tr><td>apt_lists_not_cleaned</td><td>5</td><td>10</td><td>2.00</td><td>25.0%</td></tr>
 <tr><td>sudo_in_run</td><td>2</td><td>3</td><td>1.50</td><td>10.0%</td></tr>
-<tr><td>curl_pipe_shell</td><td>1</td><td>1</td><td>1.00</td><td>5.0%</td></tr>
-<tr><td>secret_literal_in_env</td><td>1</td><td>3</td><td>3.00</td><td>5.0%</td></tr></tbody></table>
+<tr><td>secret_literal_in_env</td><td>1</td><td>3</td><td>3.00</td><td>5.0%</td></tr>
+<tr><td>curl_pipe_shell</td><td>1</td><td>1</td><td>1.00</td><td>5.0%</td></tr></tbody></table>
 <h2>Method</h2><p>High-star public GitHub repositories were sorted by stargazers; root Dockerfile was fetched from raw.githubusercontent.com; each Dockerfile text was submitted once to Apex agent-dockerfile-lint via signed Agent Passport headers; only decisions, counts, rule IDs, file hashes, target refs, and receipt metadata are stored. Rule counts are occurrences; rule rates are repo-level prevalence (repos_with_rule / repo_count).</p><p>Stored per repository: repo name, stars, branch/path, raw URL, target commit when resolved, Dockerfile SHA-256, Apex decision/counts/rule IDs, and verification receipt metadata. Raw Dockerfile text and finding prose are not stored.</p>
-<h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/ac02aa51fced54254bc22b436b52fd786cdb7a4ecad4dcb679895addde1237fc'>ac02aa51fced…</a></td><td>verified_agent_passport</td><td>2026-11-20T11:28:23.582Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/3b9b74d6d7aa897265edb8b6ad2c52fed6a7a3e0fa13384f6d257b800e7a31c2'>3b9b74d6d7aa…</a></td><td>verified_agent_passport</td><td>2026-11-20T11:28:26.877Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/8b71631cfa032ccf5520e6497ed84bf0da9455cb266953351be8e7209c18ab30'>8b71631cfa03…</a></td><td>verified_agent_passport</td><td>2026-11-20T11:28:29.676Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/4739b32c08be1cb38fd20926aa272ee35ab7667b7621ccfd725450635ba0d754'>4739b32c08be…</a></td><td>verified_agent_passport</td><td>2026-11-20T11:28:31.758Z</td></tr>
-<tr><td><a href='https://api.smartapex.uk/v1/receipts/25e748da45116b1c8eebc28e1aa0767cd4234c68190e82d6b76b909c488cedb4'>25e748da4511…</a></td><td>verified_agent_passport</td><td>2026-11-20T11:28:34.080Z</td></tr></tbody></table>
-<p><strong>cite_as:</strong> Validate individual rows via their <code>verification_receipt.verify_url</code>. Example citation: Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/ac02aa51fced54254bc22b436b52fd786cdb7a4ecad4dcb679895addde1237fc.</p>
+<h2>Receipt evidence (sample)</h2><table><thead><tr><th>Receipt</th><th>Identity</th><th>Issued at</th></tr></thead><tbody><tr><td><a href='https://api.smartapex.uk/v1/receipts/83cfb3afc3b7ecb94c72aadb485f71198ad620bed9b6ddf5c2f488028f867218'>83cfb3afc3b7…</a></td><td>verified_agent_passport</td><td>2026-11-21T10:55:36.650Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/34fe26ad693906fb3914bd10155c102360a8d86b14fc6fe1052e47948e502236'>34fe26ad6939…</a></td><td>verified_agent_passport</td><td>2026-11-21T10:55:39.024Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/0d4ec8302fb7a46ff49dbdff6619b5fb675fd78e87f21f826673a66bffca3bf1'>0d4ec8302fb7…</a></td><td>verified_agent_passport</td><td>2026-11-21T10:55:40.393Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/d225cdf695aca988d39592ad2ef7473cc544e851a8bd128a57d9b594ec33b790'>d225cdf695ac…</a></td><td>verified_agent_passport</td><td>2026-11-21T10:55:41.794Z</td></tr>
+<tr><td><a href='https://api.smartapex.uk/v1/receipts/b55146037eeb9698123262e3546136c1b17ecd38b686835c1bce5b384af637f9'>b55146037eeb…</a></td><td>verified_agent_passport</td><td>2026-11-21T10:55:43.379Z</td></tr></tbody></table>
+<p><strong>cite_as:</strong> Validate individual rows via their <code>verification_receipt.verify_url</code>. Example citation: Validated via Apex (smartapex.uk) agent-dockerfile-lint - receipt: https://api.smartapex.uk/v1/receipts/83cfb3afc3b7ecb94c72aadb485f71198ad620bed9b6ddf5c2f488028f867218.</p>
 </body></html>
